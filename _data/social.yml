@@ -1,0 +1,9 @@
+- name: Twitter
+  url: https://twitter.com/jekyllrb
+  icon: twitter
+- name: GitHub
+  url: https://github.com/jekyll
+  icon: github
+- name: LinkedIn
+  url: https://linkedin.com/company/marcus-engineering-llc
+  icon: linkedin

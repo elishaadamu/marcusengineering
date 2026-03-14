@@ -1,0 +1,100 @@
+---
+layout: default
+---
+
+<section class="py-32 bg-transparent min-h-screen">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-24 gap-y-16">
+            
+            <!-- Contact Info & Form -->
+            <div>
+                <h2 class="text-base font-black leading-7 text-brand uppercase tracking-[0.3em] mb-4">Get In Touch</h2>
+                <h1 class="text-4xl font-extrabold text-slate-900 font-display uppercase tracking-tight sm:text-7xl mb-8 leading-none">Contact <span class="text-brand">Us</span></h1>
+                <p class="text-xl text-slate-600 mb-12 font-medium">
+                    Have a project in mind or need technical consultation? Reach out to our engineering lab.
+                </p>
+
+                <div class="space-y-10 mb-12">
+                    <div class="flex gap-6">
+                        <div class="h-12 w-12 flex-none rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-center">
+                            <svg class="h-6 w-6 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 uppercase tracking-widest text-sm mb-1">Our Lab</h3>
+                            <p class="text-slate-600 font-medium leading-relaxed">2440 N Coyote Dr. #128<br>Tucson, AZ 85745</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-6">
+                        <div class="h-12 w-12 flex-none rounded-2xl bg-slate-50 border border-slate-200 flex items-center justify-center">
+                            <svg class="h-6 w-6 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" /></svg>
+                        </div>
+                        <div>
+                            <h3 class="font-bold text-slate-900 uppercase tracking-widest text-sm mb-2">Phone</h3>
+                            <span class="inline-block px-4 py-2 bg-white rounded-xl border border-slate-200 text-brand font-mono font-bold tracking-wider">520-369-3051</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <form action="#" method="POST" class="space-y-6 bg-white p-10 rounded-[2.5rem] border border-slate-200 shadow-xl shadow-slate-200/50 backdrop-blur-sm">
+                    <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
+                        <div>
+                            <label for="name" class="block text-[10px] font-black leading-6 text-slate-600 uppercase tracking-widest">Your Name</label>
+                            <div class="mt-2.5">
+                                <input type="text" name="name" id="name" autocomplete="name" class="block w-full rounded-2xl border-0 bg-white px-4 py-3 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-200 placeholder:text-slate-600 focus:ring-2 focus:ring-inset focus:ring-brand sm:text-sm sm:leading-6" required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="email" class="block text-[10px] font-black leading-6 text-slate-600 uppercase tracking-widest">Your Email</label>
+                            <div class="mt-2.5">
+                                <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-2xl border-0 bg-white px-4 py-3 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-200 placeholder:text-slate-600 focus:ring-2 focus:ring-inset focus:ring-brand sm:text-sm sm:leading-6" required>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="subject" class="block text-[10px] font-black leading-6 text-slate-600 uppercase tracking-widest">Subject</label>
+                        <div class="mt-2.5">
+                            <input type="text" name="subject" id="subject" class="block w-full rounded-2xl border-0 bg-white px-4 py-3 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-200 placeholder:text-slate-600 focus:ring-2 focus:ring-inset focus:ring-brand sm:text-sm sm:leading-6">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-[10px] font-black leading-6 text-slate-600 uppercase tracking-widest">Your Message</label>
+                        <div class="mt-2.5">
+                            <textarea name="message" id="message" rows="4" class="block w-full rounded-2xl border-0 bg-white px-4 py-3 text-slate-900 shadow-sm ring-1 ring-inset ring-slate-200 placeholder:text-slate-600 focus:ring-2 focus:ring-inset focus:ring-brand sm:text-sm sm:leading-6" required></textarea>
+                        </div>
+                    </div>
+                    
+                    <!-- Recaptcha Placeholder -->
+                    <div class="py-2">
+                        <div class="bg-slate-50 rounded-2xl p-5 flex items-center justify-between border border-slate-200">
+                            <div class="flex items-center gap-4">
+                                <input type="checkbox" class="h-6 w-6 rounded border-slate-200 bg-white text-brand focus:ring-brand">
+                                <span class="text-xs font-bold text-slate-600 uppercase tracking-widest">I'm not a robot</span>
+                            </div>
+                            <img src="https://www.gstatic.com/recaptcha/api2/logo_48.png" alt="reCAPTCHA" class="h-8 grayscale opacity-50">
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full rounded-full bg-brand px-10 py-5 text-center text-sm font-black text-white shadow-lg shadow-brand/30 hover:bg-brand-light transition-all uppercase tracking-[0.2em] hover:scale-[1.02] active:scale-[0.98]">Send Message</button>
+                </form>
+            </div>
+
+            <!-- Map Side -->
+            <div class="lg:h-full min-h-[500px] relative">
+                <div class="absolute -inset-4 bg-brand/5 blur-3xl opacity-50"></div>
+                <div class="relative h-full rounded-[3rem] overflow-hidden border border-slate-200 bg-white shadow-xl shadow-slate-200/50 grayscale hover:grayscale-0 transition-all duration-1000">
+                    <iframe 
+                        width="100%" 
+                        height="100%" 
+                        frameborder="0" 
+                        scrolling="no" 
+                        marginheight="0" 
+                        marginwidth="0" 
+                        src="https://maps.google.com/maps?q=2440%20N%20Coyote%20Dr%20%23128%2C%20Tucson%2C%20AZ%2085745&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                        style="filter: brightness(105%) contrast(110%);">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

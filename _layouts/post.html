@@ -1,0 +1,37 @@
+---
+layout: default
+---
+
+<article class="py-32 bg-transparent min-h-screen">
+    <div class="mx-auto max-w-3xl px-6 lg:px-8">
+        <header class="mb-16">
+            <div class="flex items-center gap-x-4 text-[10px] mb-6">
+                <time datetime="{{ page.date | date_to_xmlschema }}" class="text-slate-500 font-bold uppercase tracking-[0.2em]">{{ page.date | date: "%B %-d, %Y" }}</time>
+                {% if page.categories %}
+                    {% for category in page.categories %}
+                    <span class="relative z-10 rounded-full bg-brand/10 px-3 py-1 font-bold text-brand uppercase tracking-widest text-[9px]">{{ category }}</span>
+                    {% endfor %}
+                {% endif %}
+            </div>
+            <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-6xl font-display uppercase leading-tight">
+                {{ page.title | escape }}
+            </h1>
+        </header>
+
+        <div class="prose prose-lg max-w-none prose-headings:font-display prose-headings:uppercase prose-headings:tracking-tight prose-a:text-brand hover:prose-a:text-brand-light prose-img:rounded-3xl prose-pre:rounded-2xl prose-pre:bg-slate-900 prose-pre:border prose-pre:border-slate-800 text-slate-700 leading-relaxed">
+            {{ content }}
+        </div>
+
+        <footer class="mt-24 pt-12 border-t border-slate-200">
+            <div class="flex items-center justify-between">
+                <a href="/blog/" class="text-[10px] font-bold text-brand uppercase tracking-widest flex items-center gap-2 hover:gap-3 transition-all">
+                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg> 
+                    Back to Blog
+                </a>
+                <div class="flex gap-4">
+                    <!-- Share buttons placeholder -->
+                </div>
+            </div>
+        </footer>
+    </div>
+</article>

@@ -1,0 +1,25 @@
+{% assign expertise_info = site.data.expertise_section %}
+<section class="py-24 bg-white relative overflow-hidden border-y border-slate-100">
+    <!-- Dot Grid Background -->
+    <svg class="absolute inset-0 w-full h-full opacity-[0.08] pointer-events-none" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <pattern id="expertise-dots" width="24" height="24" patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="2" r="1" fill="#48A23F" />
+            </pattern>
+        </defs>
+        <rect width="100%" height="100%" fill="url(#expertise-dots)" />
+    </svg>
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 relative">
+        <div class="mb-16 text-left">
+            <div class="inline-flex items-center gap-3 px-0 mb-12">
+                <div class="h-px w-8 bg-brand"></div>
+                <span class="text-[10px] font-black uppercase tracking-[0.4em] text-brand">{{ expertise_info.badge }}</span>
+            </div>
+            <h2 class="text-6xl font-extrabold text-slate-900 sm:text-7xl font-display tracking-tight uppercase leading-[0.9]">
+                {{ expertise_info.title_part1 }}<span class="pantone-text">{{ expertise_info.title_part2 }}</span>
+            </h2>
+        </div>
+
+        {% include expertise-grid.html %}
+    </div>
+</section>

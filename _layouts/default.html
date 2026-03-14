@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- SEO Tag -->
+    {% seo %}
+    
+    <!-- Tailwind CSS -->
+    <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+    
+    <!-- Alpine.js for Interactivity -->
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    
+    {% feed_meta %}
+</head>
+<body class="bg-transparent text-slate-900 font-sans selection:bg-brand/20 selection:text-brand flex flex-col min-h-screen overflow-x-hidden {% if page.layout == 'home' %}is-home{% endif %}" x-data="{ mobileMenuOpen: false }">
+    <!-- Premium Preloader -->
+    <div id="preloader" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: #0f172a; z-index: 9999; display: flex; align-items: center; justify-content: center; transition: opacity 0.8s ease, visibility 0.8s;">
+        <style>
+            @keyframes lp-spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+            @keyframes lp-pulse-text { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
+            @keyframes lp-ping-core { 0% { transform: scale(1); opacity: 0.2; } 75%, 100% { transform: scale(2.5); opacity: 0; } }
+            .animate-lp-spin { animation: lp-spin 0.8s linear infinite; }
+            .animate-lp-pulse { animation: lp-pulse-text 1.5s ease-in-out infinite; }
+            .animate-lp-ping { animation: lp-ping-core 1.5s cubic-bezier(0, 0, 0.2, 1) infinite; }
+        </style>
+        <div style="position: relative; display: flex; flex-direction: column; align-items: center;">
+            <!-- Pulsing Ring -->
+            <div class="animate-lp-spin" style="width: 6rem; height: 6rem; border-radius: 9999px; border-top: 2px solid #48A23F; border-right: 2px solid #48A23F; border-left: 2px solid transparent; border-bottom: 2px solid transparent; margin-bottom: 2rem;"></div>
+            <!-- Logo Pulse -->
+            <div style="position: absolute; top: 1.75rem;">
+                <div class="animate-lp-ping" style="width: 2.5rem; height: 2.5rem; background-color: #48A23F; border-radius: 9999px;"></div>
+            </div>
+            <span class="animate-lp-pulse" style="font-size: 10px; font-weight: 900; color: white; text-transform: uppercase; letter-spacing: 0.5em;">Initializing Systems</span>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            const loader = document.getElementById('preloader');
+            setTimeout(() => {
+                loader.style.opacity = '0';
+                loader.style.visibility = 'hidden';
+                document.body.style.overflow = 'auto';
+            }, 500);
+        });
+        // Prevent scrolling during load
+        document.body.style.overflow = 'hidden';
+    </script>
+
+    <!-- Global AI Gradient Background -->
+    <div class="fixed inset-0 -z-50 pointer-events-none w-full h-full bg-linear-to-br from-slate-50 via-white to-slate-100">
+        <!-- AI Glowing Orbs -->
+        <div class="absolute top-0 right-1/4 w-[600px] h-[600px] bg-brand/10 rounded-full blur-[120px] mix-blend-multiply opacity-50 animate-pulse transition-all duration-1000"></div>
+        <div class="absolute bottom-1/4 left-0 w-[500px] h-[500px] bg-emerald-300/20 rounded-full blur-[120px] mix-blend-multiply opacity-40 animate-pulse transition-all duration-1000" style="animation-delay: 2s;"></div>
+    </div>
+
+    {% include header.html %}
+
+    <main class="flex-grow pt-20">
+        {{ content }}
+    </main>
+
+    {% include footer.html %}
+
+</body>
+</html>

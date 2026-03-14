@@ -1,0 +1,45 @@
+- title: Industries
+  url: /industries/
+  dropdown:
+    - title: Medical Devices
+      url: /industries/medical-devices/
+    - title: Aerospace & Defense
+      url: /industries/aerospace-defense/
+    - title: Energy & Solar
+      url: /industries/energy-solar/
+    - title: Industrial Automation
+      url: /industries/industrial-automation/
+    - title: Consumer Electronics
+      url: /industries/consumer-electronics/
+- title: Applications
+  url: /applications/
+  dropdown:
+    - title: Embedded Systems
+      url: /applications/embedded-systems/
+    - title: Wireless & IoT
+      url: /applications/wireless-iot/
+    - title: Sensing & Instrumentation
+      url: /applications/sensing-instrumentation/
+    - title: Power Electronics
+      url: /applications/power-electronics/
+    - title: Control Systems
+      url: /applications/control-systems/
+- title: Expertise
+  url: /expertise/
+  dropdown:
+    - title: PCB Design & Layout
+      url: /expertise/pcb-design-lay-out/
+    - title: Firmware Engineering
+      url: /expertise/firmware-engineering/
+    - title: Analog & Mixed Signal
+      url: /expertise/analog-mixed-signal/
+    - title: FPGA Design
+      url: /expertise/fpga-design/
+    - title: Mechanical Integration
+      url: /expertise/mechanical-integration/
+- title: About
+  url: /about/
+- title: Blog
+  url: /blog/
+- title: Contact
+  url: /contact/

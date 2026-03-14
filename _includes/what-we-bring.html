@@ -1,0 +1,31 @@
+{% assign bring = site.data.what_we_bring %}
+<section class="py-16 relative bg-transparent">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:items-center lg:gap-x-24">
+            <div>
+                <div class="relative group">
+                    <div class="absolute -inset-4 bg-linear-to-r from-brand to-slate-900 opacity-20 blur-2xl group-hover:opacity-30 transition duration-1000"></div>
+                    <div class="relative aspect-4/3 overflow-hidden rounded-4xl border border-white bg-slate-100 shadow-2xl">
+                        <img src="{{ bring.image | relative_url }}" alt="{{ bring.image_alt }}" class="h-full w-full object-cover transition-transform duration-1000 group-hover:scale-105">
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="inline-flex items-center gap-3 px-0 mb-12">
+                    <div class="h-px w-8 bg-brand"></div>
+                    <span class="text-[10px] font-black uppercase tracking-[0.4em] text-brand">{{ bring.badge }}</span>
+                </div>
+                <h2 class="text-5xl font-extrabold tracking-tight text-slate-900 sm:text-6xl font-display uppercase leading-[0.9] mb-12">
+                    {{ bring.title }}
+                </h2>
+                <p class="mt-8 text-xl leading-relaxed text-slate-600 max-w-xl font-medium mb-10">
+                    {{ bring.description }}
+                </p>
+                <a href="{{ bring.button_link | relative_url }}" class="inline-flex items-center justify-center rounded-full border-2 border-slate-900 bg-transparent px-10 py-4 text-xs font-black text-slate-900 hover:bg-slate-900 hover:text-white transition-all uppercase tracking-[0.2em] transform hover:-translate-y-1">
+                    {{ bring.button_text }}
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
