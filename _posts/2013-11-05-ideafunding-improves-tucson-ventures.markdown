@@ -6,7 +6,7 @@ categories: ['Business', 'Community Engagement', 'Education']
 permalink: /ideafunding-improves-tucson-ventures/
 ---
 
-<a href="http://www.marcusengineering.com/wp-content/uploads/2013/11/IdeaFunding-1.jpg"><img class="size-medium wp-image-4282 " src="http://www.marcusengineering.com/wp-content/uploads/2013/11/IdeaFunding-1-300x193.jpg" alt="Team SpeakEsy from the McGuire Program presents its venture concept during the Rocket Pitch competition" width="300" height="193" /></a> Team SpeakEsy from the McGuire Program presents its venture concept during the Rocket Pitch competition.
+<a href="/assets/images/posts/IdeaFunding-1.webp"><img class="size-medium wp-image-4282 " src="/assets/images/posts/IdeaFunding-1-300x193.webp" alt="Team SpeakEsy from the McGuire Program presents its venture concept during the Rocket Pitch competition" width="300" height="193" /></a> Team SpeakEsy from the McGuire Program presents its venture concept during the Rocket Pitch competition.
 
 Starting a new business involves a variety of considerations. Much like researching target markets and identifying competitors, choosing a thriving entrepreneurial location is a key element. The 2011 Kaufman Index of Entrepreneurial Activity named Arizona the number-one start-up state, as .5% of Arizona adults started a business that year. But what makes our state different from the other 49?
 
@@ -14,7 +14,7 @@ Let’s take a look at how Tucson fosters start-up development. Organizations li
 
 IdeaFunding also gave twelve entrepreneurship teams an opportunity to present their ideas to judges from varying backgrounds, not to mention a ballroom full of colleagues. This Rocket Pitch competition was a great academic exercise to help entrepreneurs improve their concepts. The winning team, SpeakEsy from the University of Arizona's McGuire Center for Entrepreneurship, is developing a virtual training software program to improve public speaking.
 
-<a href="http://www.marcusengineering.com/wp-content/uploads/2013/11/Idea-Funding-2.jpg"><img class="size-medium wp-image-4311 " src="http://www.marcusengineering.com/wp-content/uploads/2013/11/Idea-Funding-2-300x225.jpg" alt="Idea Funding 2" width="300" height="225" /></a> Tucson entrepreneurship enthusiasts discuss their most recent innovations.
+<a href="/assets/images/posts/Idea-Funding-2.webp"><img class="size-medium wp-image-4311 " src="/assets/images/posts/Idea-Funding-2-300x225.webp" alt="Idea Funding 2" width="300" height="225" /></a> Tucson entrepreneurship enthusiasts discuss their most recent innovations.
 
 For more recent start-ups like Marcus Engineering, IdeaFunding is a great way to reach out to less-experienced entrepreneurs while also learning from start-up veterans. As an entrepreneurship student myself, I am glad that my teammates and I had the opportunity to connect with Marcus Engineering CEO Patrick Marcus, who has even continued advising us after IdeaFunding.
 

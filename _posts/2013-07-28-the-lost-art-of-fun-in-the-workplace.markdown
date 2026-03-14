@@ -19,4 +19,4 @@ Startups are strenuous and unpredictable at best. Rarely is there a chance to wa
 Entrepreneurial environments have to compete on culture, opportunity and innovation rather than fat salaries and cushy benefits.    Not very many of us can brag to our friends about playing Xbox in the conference room with our co-workers and free food in the fridge.
 
 I'd like to think the little things, that don't always improve the bottom line,  make a big difference.
-<a href="http://www.marcusengineering.com/wp-content/uploads/2013/07/IMG_2730_resize.jpg"><img class="alignright size-large wp-image-4241 pretty" alt="IMG_2730_resize" src="http://www.marcusengineering.com/wp-content/uploads/2013/07/IMG_2730_resize-550x412.jpg" width="550" height="412" /></a>
+<a href="/assets/images/posts/IMG_2730_resize.webp"><img class="alignright size-large wp-image-4241 pretty" alt="IMG_2730_resize" src="/assets/images/posts/IMG_2730_resize-550x412.webp" width="550" height="412" /></a>

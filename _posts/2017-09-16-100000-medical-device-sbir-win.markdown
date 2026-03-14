@@ -18,7 +18,7 @@ Through a Small Business Innovation Research Grant the company will help medical
 
 TUCSON, AZ, August 29, 2017
 
-A battlefield hospital is a fast paced environment where every second counts.  But even in this hectic place, some of the things a civilian needs when they seek medical care still need to be created.  Medical records need to be accessed and attached to the right patient.  Vital signs must be captured and appended to that medical record.  Without good record keeping, the consequences can literally be  life and death.<a href="http://www.marcusengineering.com/wp-content/uploads/2017/09/MAIM-diagram.jpg"><img class="alignleft wp-image-5444 size-large" src="http://www.marcusengineering.com/wp-content/uploads/2017/09/MAIM-diagram-550x365.jpg" alt="" width="550" height="365" /></a>
+A battlefield hospital is a fast paced environment where every second counts.  But even in this hectic place, some of the things a civilian needs when they seek medical care still need to be created.  Medical records need to be accessed and attached to the right patient.  Vital signs must be captured and appended to that medical record.  Without good record keeping, the consequences can literally be  life and death.<a href="/assets/images/posts/MAIM-diagram.webp"><img class="alignleft wp-image-5444 size-large" src="/assets/images/posts/MAIM-diagram-550x365.webp" alt="" width="550" height="365" /></a>
 
 The Defense Health Agency is seeking a better way to handle these critical steps when every second counts for a wounded soldier.  To that end the DHA just awarded a Phase I SBIR (Small Business Innovation Research) grant to Tucson company Marcus Engineering to further study a combined medical device the company calls MAIM (Micro-Intelligence Arterial Management).  This device is a combination of multiple technologies, including a fingerprint biometric sensor and physiological vital sign gathering tool with the ability to not only identify a patient who may be unconscious, but to append data to electronic health records.  After the MAIM device is put onto a soldier’s finger by a medic, heart rate, blood oxygen levels, and PPG waves are automatically appended to the specific soldier’s medical file via a wireless connection based on the soldier's individual fingerprint. MAIM allows for quick patient identification, access to that individual’s medical health records, and for patient tracking, therefore making this device useful in rural, first responder, or emergency medicine settings.
 
@@ -32,7 +32,7 @@ Phase I of an SBIR grant is a technical feasibility phase which lasts no longer 
 
 Provided the outcomes of Phase I meet the expectations of the Defense Health Agency Marcus Engineer would move to Phase 2 which provides up to $1 million dollars for a two year prototype development process.
 
-<img class="alignright size-medium wp-image-5411" src="http://www.marcusengineering.com/wp-content/uploads/2017/07/Alice-Ferng-Bio-Image-Temporary-300x300.jpg" alt="" width="300" height="300" />
+<img class="alignright size-medium wp-image-5411" src="/assets/images/posts/Alice-Ferng-Bio-Image-Temporary-300x300.webp" alt="" width="300" height="300" />
 
 <strong>Marcus Engineering MAIM Team</strong>
 
@@ -40,7 +40,7 @@ Provided the outcomes of Phase I meet the expectations of the Defense Health Age
 
 Dr. Patrick Marcus is the president of Marcus Engineering, LLC, an electronics engineering firm, in Tucson, AZ.  Dr. Marcus’ background includes founding and growing high technology companies. Patrick earned his PhD in Biomedical Engineering and BS in Electrical Engineering with Honors, Cum Laude from the University of Arizona.
 
-Dr. Patrick Marcus is the president of Marcus Engineering, LLC, whose background includes founding and growing high technology companies. Dr. Marcus earned his PhD in Biomedical Engineering from the University of Arizona. He is a graduate of the prestigious McGuire Entrepreneurship Program at the Eller College of Management, University of Arizona and is highly decorated for efforts in STEM Education, Engineering Innovation, and Community Engagement.<a href="http://www.marcusengineering.com/wp-content/uploads/2013/03/Dr.Marcus.jpg"><img class="size-medium wp-image-3946 alignleft" src="http://www.marcusengineering.com/wp-content/uploads/2013/03/Dr.Marcus-300x300.jpg" alt="" width="300" height="300" /></a>
+Dr. Patrick Marcus is the president of Marcus Engineering, LLC, whose background includes founding and growing high technology companies. Dr. Marcus earned his PhD in Biomedical Engineering from the University of Arizona. He is a graduate of the prestigious McGuire Entrepreneurship Program at the Eller College of Management, University of Arizona and is highly decorated for efforts in STEM Education, Engineering Innovation, and Community Engagement.<a href="/assets/images/posts/Dr.Marcus.webp"><img class="size-medium wp-image-3946 alignleft" src="/assets/images/posts/Dr.Marcus-300x300.webp" alt="" width="300" height="300" /></a>
 
 <strong>About Marcus Engineering</strong>
 

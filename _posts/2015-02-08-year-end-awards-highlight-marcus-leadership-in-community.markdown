@@ -14,7 +14,7 @@ The Bear Down Award, established in 1986, is given to alumni and non-alumni who 
 
 Since starting his own company in 2011, Marcus says he is committed to connecting with the university and business community wherever possible to provide advice and service in the areas entrepreneurship, engineering and innovation to help grow the local economy. He has guest lectured at the UA and the Eller College of Business, and has participated as an advisory board member, mentor and resource for students.
 
-<a href="http://www.marcusengineering.com/wp-content/uploads/2015/02/breakfast_20141107_143.jpg"><img class="wp-image-4975 size-medium" src="http://www.marcusengineering.com/wp-content/uploads/2015/02/breakfast_20141107_143-300x200.jpg" alt="breakfast_20141107_143" width="300" height="200" /></a> Dr. Marcus's enthusiastic acceptance of the Bear Down Award from his good friend Dean Jeff Goldberg
+<a href="/assets/images/posts/breakfast_20141107_143.webp"><img class="wp-image-4975 size-medium" src="/assets/images/posts/breakfast_20141107_143-300x200.webp" alt="breakfast_20141107_143" width="300" height="200" /></a> Dr. Marcus's enthusiastic acceptance of the Bear Down Award from his good friend Dean Jeff Goldberg
 
 &nbsp;
 

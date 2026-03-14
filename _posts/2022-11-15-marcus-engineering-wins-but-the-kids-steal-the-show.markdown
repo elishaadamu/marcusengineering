@@ -29,7 +29,7 @@ permalink: /marcus-engineering-wins-but-the-kids-steal-the-show/
 <div class="wp-block-group"><div class="wp-block-group__inner-container"><!-- wp:group -->
 <div class="wp-block-group"><div class="wp-block-group__inner-container"><!-- wp:group -->
 <div class="wp-block-group"><div class="wp-block-group__inner-container"><!-- wp:image {"id":6352,"sizeSlug":"large","linkDestination":"none","className":"is-style-default"} -->
-<figure class="wp-block-image size-large is-style-default"><img src="https://www.marcusengineering.com/wp-content/uploads/2022/11/20221108_203514.jpg" alt="" class="wp-image-6352"/><figcaption> James Rowley, Electrical Engineer and Dana Gunn, Operations Manager at the 2022 Governor's Celebration of Innovation Tech Showcase.</figcaption></figure>
+<figure class="wp-block-image size-large is-style-default"><img src="/assets/images/posts/20221108_203514.webp" alt="" class="wp-image-6352"/><figcaption> James Rowley, Electrical Engineer and Dana Gunn, Operations Manager at the 2022 Governor's Celebration of Innovation Tech Showcase.</figcaption></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->

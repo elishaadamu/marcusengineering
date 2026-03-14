@@ -8,11 +8,11 @@ permalink: /dumpster-diving/
 
 One common characteristic of bright hands on engineers is the love of gadgets, goodies, and JUNK.  We had a field day yesterday when one of our colleague companies called us to say they were tossing a bunch of old junk.  "To the Bat Mobile".  Actually it was Robbie's suburban but that's a better choice for hauling goodies anyway.  2 hours and one full truck later we had pulled some old high current power supplies, storage bins, soldering equipment... and more power supplies.  Good God an awful lot of power supplies!!!!!! We left with five boxes of power supply bricks.
 
-<a href="http://www.marcusengineering.com/wp-content/uploads/2014/03/IMG_20140320_155649_resize.jpg"><img class="wp-image-4676 size-medium" src="http://www.marcusengineering.com/wp-content/uploads/2014/03/IMG_20140320_155649_resize-225x300.jpg" alt="IMG_20140320_155649_resize" width="225" height="300" /></a> Scott and Robbie seeking goodies
+<a href="/assets/images/posts/IMG_20140320_155649_resize.webp"><img class="wp-image-4676 size-medium" src="/assets/images/posts/IMG_20140320_155649_resize-225x300.webp" alt="IMG_20140320_155649_resize" width="225" height="300" /></a> Scott and Robbie seeking goodies
 
 
 
-<a href="http://www.marcusengineering.com/wp-content/uploads/2014/03/IMG_20140320_155433_resize.jpg"><img class="wp-image-4675 size-medium" src="http://www.marcusengineering.com/wp-content/uploads/2014/03/IMG_20140320_155433_resize-225x300.jpg" alt="Dumpster Diving" width="225" height="300" /></a> Dumpster Junk
+<a href="/assets/images/posts/IMG_20140320_155433_resize.webp"><img class="wp-image-4675 size-medium" src="/assets/images/posts/IMG_20140320_155433_resize-225x300.webp" alt="Dumpster Diving" width="225" height="300" /></a> Dumpster Junk
 
 &nbsp;
 

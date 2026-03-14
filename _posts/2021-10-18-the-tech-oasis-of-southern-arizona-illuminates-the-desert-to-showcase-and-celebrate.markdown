@@ -27,7 +27,7 @@ permalink: /the-tech-oasis-of-southern-arizona-illuminates-the-desert-to-showcas
 <!-- /wp:separator -->
 
 <!-- wp:image {"id":6088,"sizeSlug":"large","linkDestination":"none"} -->
-<figure class="wp-block-image size-large"><img src="https://www.marcusengineering.com/wp-content/uploads/2021/10/2021-tech-and-business-expo-booth-550x367.jpg" alt="" class="wp-image-6088"/></figure>
+<figure class="wp-block-image size-large"><img src="/assets/images/posts/2021-tech-and-business-expo-booth-550x367.webp" alt="" class="wp-image-6088"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->

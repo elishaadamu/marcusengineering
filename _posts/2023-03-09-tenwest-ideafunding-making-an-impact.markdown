@@ -7,7 +7,7 @@ permalink: /tenwest-ideafunding-making-an-impact/
 ---
 
 <!-- wp:image {"id":6427,"sizeSlug":"large","linkDestination":"none","className":"is-style-default"} -->
-<figure class="wp-block-image size-large is-style-default"><img src="https://www.marcusengineering.com/wp-content/uploads/2023/03/20221103_093022-1.jpg" alt="" class="wp-image-6427"/></figure>
+<figure class="wp-block-image size-large is-style-default"><img src="/assets/images/posts/20221103_093022-1.webp" alt="" class="wp-image-6427"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -24,7 +24,7 @@ permalink: /tenwest-ideafunding-making-an-impact/
 
 <!-- wp:group -->
 <div class="wp-block-group"><div class="wp-block-group__inner-container"><!-- wp:gallery {"ids":,"linkTo":"none"} -->
-<figure class="wp-block-gallery columns-2 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img src="https://www.marcusengineering.com/wp-content/uploads/2023/03/20221103_121259-4-550x402.jpg" alt="" data-id="6440" data-full-url="https://www.marcusengineering.com/wp-content/uploads/2023/03/20221103_121259-4-scaled.jpg" data-link="https://www.marcusengineering.com/tenwests-most-popular-event__trashed/attachment/20221103_121259-4/" class="wp-image-6440"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://www.marcusengineering.com/wp-content/uploads/2023/03/20221103_130337.jpg" alt="" data-id="6450" data-link="https://www.marcusengineering.com/?attachment_id=6450" class="wp-image-6450"/></figure></li></ul></figure>
+<figure class="wp-block-gallery columns-2 is-cropped"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><img src="/assets/images/posts/20221103_121259-4-550x402.webp" alt="" data-id="6440" data-full-url="/assets/images/posts/20221103_121259-4-scaled.webp" data-link="https://www.marcusengineering.com/tenwests-most-popular-event__trashed/attachment/20221103_121259-4/" class="wp-image-6440"/></figure></li><li class="blocks-gallery-item"><figure><img src="/assets/images/posts/20221103_130337.webp" alt="" data-id="6450" data-link="https://www.marcusengineering.com/?attachment_id=6450" class="wp-image-6450"/></figure></li></ul></figure>
 <!-- /wp:gallery --></div></div>
 <!-- /wp:group -->
 

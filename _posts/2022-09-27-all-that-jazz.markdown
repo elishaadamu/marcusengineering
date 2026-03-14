@@ -19,7 +19,7 @@ permalink: /all-that-jazz/
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"left","id":6296,"width":299,"height":251,"sizeSlug":"large","linkDestination":"none"} -->
-<div class="wp-block-image"><figure class="alignleft size-large is-resized"><img src="https://www.marcusengineering.com/wp-content/uploads/2022/09/20220923_191906-550x463.jpg" alt="" class="wp-image-6296" width="299" height="251"/></figure></div>
+<div class="wp-block-image"><figure class="alignleft size-large is-resized"><img src="/assets/images/posts/20220923_191906-550x463.webp" alt="" class="wp-image-6296" width="299" height="251"/></figure></div>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
@@ -31,7 +31,7 @@ permalink: /all-that-jazz/
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"right","id":6292,"width":328,"height":245} -->
-<div class="wp-block-image"><figure class="alignright is-resized"><img src="https://www.marcusengineering.com/wp-content/uploads/2022/09/20220923_181036.jpg" alt="" class="wp-image-6292" width="328" height="245"/></figure></div>
+<div class="wp-block-image"><figure class="alignright is-resized"><img src="/assets/images/posts/20220923_181036.webp" alt="" class="wp-image-6292" width="328" height="245"/></figure></div>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->

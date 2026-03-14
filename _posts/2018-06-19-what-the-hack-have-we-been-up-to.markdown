@@ -12,11 +12,11 @@ What’s special about a Hackathon is the freedom from all constraints, meaning 
 
 &nbsp;
 
-<img class="size-medium wp-image-5612 alignleft" src="http://www.marcusengineering.com/wp-content/uploads/2018/06/another-hack-photo-300x169.jpg" alt="" width="300" height="169" />
+<img class="size-medium wp-image-5612 alignleft" src="/assets/images/posts/another-hack-photo-300x169.webp" alt="" width="300" height="169" />
 
 Coincidentally, Dr. Marcus was able to recruit two extremely talented students, James and Mark, by volunteering as a judge and mentor at another hackathon. This alone proves that the connections made at these events are real and beneficial for all engineers involved. If you’re interested in attending one of these software-coding parties, <a href="http://hackarizona.org/">HACK AZ</a> puts on the largest Hackathon in the southwest. It takes place at the beginning of each calendar year in the University of Arizona Science and Engineering Library. If you cannot possibly wait until next year, there is a convenient calendar of Hackathons across the country <a href="https://mlh.io/seasons/na-2018/events">here.</a> You could potentially win a money prize, meet your next employer, and have fun with your friends all in the same weekend.
 
-<img class="wp-image-5604 aligncenter" src="http://www.marcusengineering.com/wp-content/uploads/2018/06/another-hackathon-photo-300x169.jpg" alt="" width="315" height="178" />
+<img class="wp-image-5604 aligncenter" src="/assets/images/posts/another-hackathon-photo-300x169.webp" alt="" width="315" height="178" />
 
 &nbsp;
 

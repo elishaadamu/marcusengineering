@@ -10,7 +10,7 @@ permalink: /welcome-scott-otterbacher/
 
 Marcus Engineering extends a warm welcome to our newest engineer: Scott Otterbacher.
 
-<a href="http://www.marcusengineering.com/wp-content/uploads/2013/03/ScottO.jpg"><img class="alignleft pretty" alt="Scott O" src="http://www.marcusengineering.com/wp-content/uploads/2013/03/ScottO-214x300.jpg" width="214" height="300" /></a>
+<a href="/assets/images/posts/ScottO.webp"><img class="alignleft pretty" alt="Scott O" src="/assets/images/posts/ScottO-214x300.webp" width="214" height="300" /></a>
 
 Scott visited Tucson looking for work at a number of engineering firms.  After meeting with Patrick Marcus he was “impressed by Patrick’s enthusiasm and ambition and felt that joining Marcus engineering was an excellent opportunity to pursue”.
 

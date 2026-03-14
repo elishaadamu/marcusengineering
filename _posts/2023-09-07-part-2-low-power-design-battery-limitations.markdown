@@ -28,7 +28,7 @@ permalink: /part-2-low-power-design-battery-limitations/
 <div class="wp-block-columns"><!-- wp:column {"width":"50%"} -->
 <div class="wp-block-column" style="flex-basis:50%"><!-- wp:group -->
 <div class="wp-block-group"><div class="wp-block-group__inner-container"><!-- wp:image {"align":"center","width":80,"height":209,"className":"is-style-rounded"} -->
-<div class="wp-block-image is-style-rounded"><figure class="aligncenter is-resized"><img src="https://www.marcusengineering.com/wp-content/uploads/2023/08/image.png" alt="This image has an empty alt attribute; its file name is image.png" width="80" height="209"/></figure></div>
+<div class="wp-block-image is-style-rounded"><figure class="aligncenter is-resized"><img src="/assets/images/posts/image.webp" alt="This image has an empty alt attribute; its file name is image.png" width="80" height="209"/></figure></div>
 <!-- /wp:image --></div></div>
 <!-- /wp:group --></div>
 <!-- /wp:column -->
@@ -61,7 +61,7 @@ permalink: /part-2-low-power-design-battery-limitations/
 
 <!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:image {"align":"center","id":6541,"width":155,"height":125,"className":"is-style-default"} -->
-<div class="wp-block-image is-style-default"><figure class="aligncenter is-resized"><img src="https://www.marcusengineering.com/wp-content/uploads/2023/08/image-1.png" alt="" class="wp-image-6541" width="155" height="125"/></figure></div>
+<div class="wp-block-image is-style-default"><figure class="aligncenter is-resized"><img src="/assets/images/posts/image-1.webp" alt="" class="wp-image-6541" width="155" height="125"/></figure></div>
 <!-- /wp:image --></div>
 <!-- /wp:column --></div>
 <!-- /wp:columns --></div>
@@ -79,7 +79,7 @@ permalink: /part-2-low-power-design-battery-limitations/
 <!-- wp:columns {"verticalAlignment":"center"} -->
 <div class="wp-block-columns are-vertically-aligned-center"><!-- wp:column {"verticalAlignment":"center","width":"50%"} -->
 <div class="wp-block-column is-vertically-aligned-center" style="flex-basis:50%"><!-- wp:image {"align":"center","id":6542,"width":95,"height":188,"sizeSlug":"large","linkDestination":"none","className":"is-style-default"} -->
-<div class="wp-block-image is-style-default"><figure class="aligncenter size-large is-resized"><img src="https://www.marcusengineering.com/wp-content/uploads/2023/08/image-2.png" alt="" class="wp-image-6542" width="95" height="188"/></figure></div>
+<div class="wp-block-image is-style-default"><figure class="aligncenter size-large is-resized"><img src="/assets/images/posts/image-2.webp" alt="" class="wp-image-6542" width="95" height="188"/></figure></div>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
@@ -109,7 +109,7 @@ permalink: /part-2-low-power-design-battery-limitations/
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"align":"right","id":6543,"width":303,"height":221,"sizeSlug":"large","linkDestination":"none","className":"is-style-default"} -->
-<div class="wp-block-image is-style-default"><figure class="alignright size-large is-resized"><img src="https://www.marcusengineering.com/wp-content/uploads/2023/08/image-3-550x401.png" alt="" class="wp-image-6543" width="303" height="221"/></figure></div>
+<div class="wp-block-image is-style-default"><figure class="alignright size-large is-resized"><img src="/assets/images/posts/image-3-550x401.webp" alt="" class="wp-image-6543" width="303" height="221"/></figure></div>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->

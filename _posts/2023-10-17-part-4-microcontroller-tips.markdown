@@ -15,7 +15,7 @@ permalink: /part-4-microcontroller-tips/
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":6586,"sizeSlug":"large","linkDestination":"none","className":"is-style-default"} -->
-<figure class="wp-block-image size-large is-style-default"><img src="https://www.marcusengineering.com/wp-content/uploads/2023/10/image-3-550x380.png" alt="" class="wp-image-6586"/></figure>
+<figure class="wp-block-image size-large is-style-default"><img src="/assets/images/posts/image-3-550x380.webp" alt="" class="wp-image-6586"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:heading -->
@@ -67,7 +67,7 @@ permalink: /part-4-microcontroller-tips/
 <!-- /wp:paragraph -->
 
 <!-- wp:image {"id":6585,"sizeSlug":"large","linkDestination":"none","className":"is-style-default"} -->
-<figure class="wp-block-image size-large is-style-default"><img src="https://www.marcusengineering.com/wp-content/uploads/2023/10/image-2-550x313.png" alt="" class="wp-image-6585"/></figure>
+<figure class="wp-block-image size-large is-style-default"><img src="/assets/images/posts/image-2-550x313.webp" alt="" class="wp-image-6585"/></figure>
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->

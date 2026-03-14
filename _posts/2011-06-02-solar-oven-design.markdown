@@ -32,31 +32,31 @@ Notice that the template is not a half circle, but instead it is a special curve
 After you cut out your cardboard it is important to poke a hole in it, right in the middle of the big dot. This is where your hotdog will go. Remember, we want the light (solar energy) to focus on the hotdog so the hotdog needs to be at the focal point. You can see some examples of the cut out parabolas in Figure 2.
 Also, put a mark on your cardboard right at the center of the top of the parabola. We will use this to help us aim our ovens at the sun later when we start cooking! Don’t forget we need two pieces of cardboard cut with the parabolic shape.
 
-<img class="size-large wp-image-3237 pretty" title="Solar Oven 2" alt="" src="http://www.marcusengineering.com/wp-content/uploads/2011/06/IMG_1218_resize-550x325.jpg" width="550" height="325" /> Figure 1
+<img class="size-large wp-image-3237 pretty" title="Solar Oven 2" alt="" src="/assets/images/posts/IMG_1218_resize-550x325.webp" width="550" height="325" /> Figure 1
 
-<img class="size-large wp-image-3238 pretty" style="line-height: 1.5em;" title="Solar Oven 3" alt="" src="http://www.marcusengineering.com/wp-content/uploads/2011/06/IMG_1219_resize-550x218.jpg" width="550" height="218" /> Figure 2
+<img class="size-large wp-image-3238 pretty" style="line-height: 1.5em;" title="Solar Oven 3" alt="" src="/assets/images/posts/IMG_1219_resize-550x218.webp" width="550" height="218" /> Figure 2
 
 <span style="font-size: 1.17em; line-height: 1.5em;">Making the Reflector</span>
 
 Next we need to make a reflector. The reflector is a piece of poster board covered with aluminum foil. It is easy to make. Using a ruler and scissors cut out a square piece of poster board which is 23” long and 7” wide like in Figures 3 and 4.
 
-<img class="pretty" title="Solar Oven 4" alt="" src="http://www.marcusengineering.com/wp-content/uploads/2011/06/IMG_1220_resize-438x550.jpg" width="438" height="550" /> Figure 3
+<img class="pretty" title="Solar Oven 4" alt="" src="/assets/images/posts/IMG_1220_resize-438x550.webp" width="438" height="550" /> Figure 3
 
-<img class="size-large wp-image-3240 pretty" style="line-height: 1.5em;" title="Solar Oven 5" alt="" src="http://www.marcusengineering.com/wp-content/uploads/2011/06/IMG_1221_resize-550x412.jpg" width="550" height="412" /> Figure 4
+<img class="size-large wp-image-3240 pretty" style="line-height: 1.5em;" title="Solar Oven 5" alt="" src="/assets/images/posts/IMG_1221_resize-550x412.webp" width="550" height="412" /> Figure 4
 
 <span style="line-height: 1.5em;">Now, take a piece of aluminum foil that is a little bigger than the poster board so you can fold it over the poster board like in Figure 5. This part is pretty important! Aluminum foil has two sides, and one side is shinier than the other. Be sure to put the shiny side of the aluminum foil facing out. This will make a better reflector. Also, try very hard to keep the aluminum foil flat and un-crinkled. The flatter it is the better oven you will have! Tape the folded over aluminum foil to the poster board so it won’t come off. When you are done you should have a reflector that looks like Figure 6.</span>
 
-<img class="size-large wp-image-3241 pretty" title="Solar Oven 6" alt="" src="http://www.marcusengineering.com/wp-content/uploads/2011/06/IMG_1222_resize-550x412.jpg" width="550" height="412" /> Figure 5
+<img class="size-large wp-image-3241 pretty" title="Solar Oven 6" alt="" src="/assets/images/posts/IMG_1222_resize-550x412.webp" width="550" height="412" /> Figure 5
 
-<img class="size-large wp-image-3242 pretty" style="line-height: 1.5em;" title="Solar Oven 7" alt="" src="http://www.marcusengineering.com/wp-content/uploads/2011/06/IMG_1223_resize-550x412.jpg" width="550" height="412" /> Figure 6
+<img class="size-large wp-image-3242 pretty" style="line-height: 1.5em;" title="Solar Oven 7" alt="" src="/assets/images/posts/IMG_1223_resize-550x412.webp" width="550" height="412" /> Figure 6
 
 <span style="font-size: 1.17em; line-height: 1.5em;">Assembling the Oven</span>
 
 The next step is a little tricky! We have to tape the reflector to the cardboard parabola we just made. With the shiny side of the reflector facing up, tape the curved part of the cardboard to the edge of the reflector. It is hard to describe with words so take a look at Figures 7 and 8. Make sure to use some tape to keep the reflector attached to the cardboard. Don’t be afraid to ask for help with this part if you don’t understand.
 
-<img class="size-large wp-image-3243 pretty" title="Solar Oven 8" alt="" src="http://www.marcusengineering.com/wp-content/uploads/2011/06/IMG_1224_resize-550x412.jpg" width="550" height="412" /> Figure 7
+<img class="size-large wp-image-3243 pretty" title="Solar Oven 8" alt="" src="/assets/images/posts/IMG_1224_resize-550x412.webp" width="550" height="412" /> Figure 7
 
-<img class="size-large wp-image-3244 pretty" style="line-height: 1.5em;" title="Solar Oven 9" alt="" src="http://www.marcusengineering.com/wp-content/uploads/2011/06/IMG_1225_resize-550x412.jpg" width="550" height="412" /> Figure 8
+<img class="size-large wp-image-3244 pretty" style="line-height: 1.5em;" title="Solar Oven 9" alt="" src="/assets/images/posts/IMG_1225_resize-550x412.webp" width="550" height="412" /> Figure 8
 
 <span style="font-size: 1.17em; line-height: 1.5em;">Finishing Up</span>
 
@@ -64,7 +64,7 @@ Congratulations! You are almost done.
 Remember the small hole we put in the cardboard at the focal point of the parabola? Now it is time put push the wooden skewer through that small hole. Be careful though. We have to get a hotdog on here too. Push the skewer through the first hole in your oven.. Be careful that the tape on the reflector doesn’t come undone. You need to be gentle. The oven is delicate!
 Now, get your hotdog! After the skewer is pushed through the first hole you will need to put the hot dog on the skewer and then push the skewer through the second hole. This part is also a little tricky so don’t be afraid to get some help. You can see the oven with a skewer in it in Figure 9. (Sorry; there’s no hotdog in the picture.)
 
-<img class="size-large wp-image-3236 pretty" title="Solar Oven 1" alt="" src="http://www.marcusengineering.com/wp-content/uploads/2011/06/IMG_1228_resize-550x412.jpg" width="550" height="412" /> Figure 9
+<img class="size-large wp-image-3236 pretty" title="Solar Oven 1" alt="" src="/assets/images/posts/IMG_1228_resize-550x412.webp" width="550" height="412" /> Figure 9
 
 &nbsp;
 <h3>Cooking</h3>

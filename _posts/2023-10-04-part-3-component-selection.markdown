@@ -21,7 +21,7 @@ permalink: /part-3-component-selection/
 <div class="wp-block-column is-vertically-aligned-top" style="flex-basis:100%"><!-- wp:group -->
 <div class="wp-block-group"><div class="wp-block-group__inner-container"><!-- wp:group -->
 <div class="wp-block-group"><div class="wp-block-group__inner-container"><!-- wp:freeform -->
-<p><img class="alignright" src="https://www.marcusengineering.com/wp-content/uploads/2023/10/image.png" alt="This image has an empty alt attribute; its file name is image.png" width="166" height="167" /><span style="font-size: inherit;">Linear regulators may appear to be a low cost and cheap solution at first glance but are flawed by their inherent design. They act as a variable resistor at their base, wasting excess power in the form of heat. For an application that saves every microwatt of power, they are not a good selection for low power design. </span></p>
+<p><img class="alignright" src="/assets/images/posts/image.webp" alt="This image has an empty alt attribute; its file name is image.png" width="166" height="167" /><span style="font-size: inherit;">Linear regulators may appear to be a low cost and cheap solution at first glance but are flawed by their inherent design. They act as a variable resistor at their base, wasting excess power in the form of heat. For an application that saves every microwatt of power, they are not a good selection for low power design. </span></p>
 <p>If you require a stable voltage reference, consider using dedicated low power voltage reference modules, as opposed to a voltage regulator.</p>
 <!-- /wp:freeform --></div></div>
 <!-- /wp:group --></div></div>
@@ -48,7 +48,7 @@ permalink: /part-3-component-selection/
 <div class="wp-block-group"><div class="wp-block-group__inner-container"><!-- wp:group -->
 <div class="wp-block-group"><div class="wp-block-group__inner-container"><!-- wp:group -->
 <div class="wp-block-group"><div class="wp-block-group__inner-container"><!-- wp:paragraph {"align":"left"} -->
-<p class="has-text-align-left"><img class="wp-image-6562 alignright" src="https://www.marcusengineering.com/wp-content/uploads/2023/10/image-1.png" alt="">Not all switching regulators are created equal. While many are highly efficient at moderate or high loads, most will suffer from very low efficiency at currents below a few milliamps. A subset of these devices is designed with ultra-low power design in mind and efforts to reduce quiescent current and boost regulation efficiency at very low currents. Typically, the maximum current output will suffer as a tradeoff, ensuring your system peak currents are not violated. Otherwise, additional bulk capacitors will be needed to supply your capacity for instantaneous currents.</p>
+<p class="has-text-align-left"><img class="wp-image-6562 alignright" src="/assets/images/posts/image-1.webp" alt="">Not all switching regulators are created equal. While many are highly efficient at moderate or high loads, most will suffer from very low efficiency at currents below a few milliamps. A subset of these devices is designed with ultra-low power design in mind and efforts to reduce quiescent current and boost regulation efficiency at very low currents. Typically, the maximum current output will suffer as a tradeoff, ensuring your system peak currents are not violated. Otherwise, additional bulk capacitors will be needed to supply your capacity for instantaneous currents.</p>
 <!-- /wp:paragraph --></div></div>
 <!-- /wp:group --></div></div>
 <!-- /wp:group --></div></div>

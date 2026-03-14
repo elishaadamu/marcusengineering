@@ -22,29 +22,55 @@ pagination:
             {% endfor %}
         </div>
         
-        <!-- Pagination Nav -->
+        <!-- Premium Responsive Pagination -->
         {% if paginator.total_pages > 1 %}
-        <nav class="mt-24 flex items-center justify-center gap-x-2" aria-label="Pagination">
-            {% if paginator.previous_page %}
-                <a href="{{ paginator.previous_page_path | relative_url }}" class="flex items-center gap-x-2 rounded-full bg-white border border-slate-200 px-6 py-2.5 text-[10px] font-black uppercase tracking-widest text-slate-600 hover:bg-brand hover:text-white transition-all">
-                    <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.25-4a.75.75 0 010-1.08l4.25-4a.75.75 0 011.06.02z" clip-rule="evenodd" /></svg>
-                    Previous
-                </a>
-            {% endif %}
+        <nav class="blog-pagination" aria-label="Pagination">
+            <div class="pagination-container">
+                {% if paginator.previous_page %}
+                    <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-btn prev" title="Previous Page">
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.25-4a.75.75 0 010-1.08l4.25-4a.75.75 0 011.06.02z" clip-rule="evenodd" /></svg>
+                    </a>
+                {% else %}
+                    <div class="pagination-btn disabled">
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.25-4a.75.75 0 010-1.08l4.25-4a.75.75 0 011.06.02z" clip-rule="evenodd" /></svg>
+                    </div>
+                {% endif %}
 
-            <div class="flex items-center gap-x-2 px-6">
-                <span class="text-[10px] font-black uppercase tracking-widest text-slate-500">Page</span>
-                <span class="text-[10px] font-black uppercase tracking-widest text-brand">{{ paginator.page }}</span>
-                <span class="text-[10px] font-black uppercase tracking-widest text-slate-500">/</span>
-                <span class="text-[10px] font-black uppercase tracking-widest text-slate-900">{{ paginator.total_pages }}</span>
+                <div class="pagination-numbers">
+                    {% for trail in paginator.page_trail %}
+                        <a href="{{ trail.path | relative_url }}" 
+                           class="pagination-number {% if paginator.page == trail.num %}active{% endif %}"
+                           {% if paginator.page == trail.num %}aria-current="page"{% endif %}>
+                            {{ trail.num }}
+                            {% if paginator.page == trail.num %}
+                                <span class="pagination-active-dot"></span>
+                            {% endif %}
+                        </a>
+                    {% endfor %}
+                </div>
+
+                {% if paginator.next_page %}
+                    <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-btn next" title="Next Page">
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.25 4a.75.75 0 010 1.08l-4.25 4a.75.75 0 01-1.06-.02z" clip-rule="evenodd" /></svg>
+                    </a>
+                {% else %}
+                    <div class="pagination-btn disabled">
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.25 4a.75.75 0 010 1.08l-4.25 4a.75.75 0 01-1.06-.02z" clip-rule="evenodd" /></svg>
+                    </div>
+                {% endif %}
             </div>
 
-            {% if paginator.next_page %}
-                <a href="{{ paginator.next_page_path | relative_url }}" class="flex items-center gap-x-2 rounded-full bg-white border border-slate-200 px-6 py-2.5 text-[10px] font-black uppercase tracking-widest text-slate-600 hover:bg-brand hover:text-white transition-all">
-                    Next
-                    <svg class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.25 4a.75.75 0 010 1.08l-4.25 4a.75.75 0 01-1.06-.02z" clip-rule="evenodd" /></svg>
-                </a>
-            {% endif %}
+            <!-- Enhanced Status Indicator -->
+            <div class="pagination-status">
+                <div class="pagination-line"></div>
+                <div class="pagination-label">
+                    <span>Section</span>
+                    <span class="current">{{ paginator.page }}</span>
+                    <span>/</span>
+                    <span class="total">{{ paginator.total_pages }}</span>
+                </div>
+                <div class="pagination-line"></div>
+            </div>
         </nav>
         {% endif %}
         

@@ -41,7 +41,7 @@ permalink: /drive-determines-opportunity/
 <!-- wp:columns -->
 <div class="wp-block-columns"><!-- wp:column {"width":"33.33%"} -->
 <div class="wp-block-column" style="flex-basis:33.33%"><!-- wp:image {"align":"center","id":6195,"width":197,"height":305,"sizeSlug":"large","linkDestination":"none"} -->
-<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="https://www.marcusengineering.com/wp-content/uploads/2022/05/cropped-picture-1.png" alt="" class="wp-image-6195" width="197" height="305"/></figure></div>
+<div class="wp-block-image"><figure class="aligncenter size-large is-resized"><img src="/assets/images/posts/cropped-picture-1.webp" alt="" class="wp-image-6195" width="197" height="305"/></figure></div>
 <!-- /wp:image --></div>
 <!-- /wp:column -->
 
