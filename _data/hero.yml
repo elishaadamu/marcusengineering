@@ -1,6 +1,6 @@
 video_poster: "/assets/images/home_images/5th_grade_fab_lab_20.webp"
-video_webm: "/assets/videos/v.webm"
-video_mp4: "/assets/videos/v.mp4"
+video_webm: "/assets/videos/v2.webm"
+video_mp4: "/assets/videos/v1.mp4"
 badge: "AI-Ready Engineering"
 title: "Intelligent <br> <span style=\"color: #48A23F !important;\">Hardware</span> <br> Systems."
 description: "High-reliability electronic design, AI-driven embedded platforms, and edge-computing development for the world's most demanding sectors."
