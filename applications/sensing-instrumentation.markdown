@@ -1,6 +1,6 @@
----
 layout: default
-title: Sensing & Instrumentation
+title: Sensing & Instrumentation Specialists | Marcus Engineering
+description: Precision sensing and instrumentation for industrial and medical applications. We design high-accuracy data acquisition and measurement systems.
 ---
 
 <section class="py-32 bg-transparent min-h-screen">

@@ -1,6 +1,6 @@
----
 layout: default
-title: Power Electronics
+title: Power Electronics Engineering | Marcus Engineering Design
+description: High-efficiency power electronics design, including converters, motor controls, and battery management systems for industrial and renewable energy.
 ---
 
 <section class="py-32 bg-transparent min-h-screen">

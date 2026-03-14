@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Analog & Mixed Signal
+title: Analog & Mixed Signal Design | Marcus Engineering
+description: Professional Analog and Mixed-Signal engineering solutions for high-performance systems and instrumentation.
 ---
 
 <section class="py-32 bg-transparent min-h-screen">

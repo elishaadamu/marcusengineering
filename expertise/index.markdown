@@ -1,6 +1,6 @@
----
 layout: default
-title: Expertise
+title: Our Expertise | Marcus Engineering Specialist Services
+description: Explore our core engineering competencies including Analog/Mixed-Signal, Firmware, FPGA, PCB Design, and more.
 ---
 
 <section class="py-32 bg-transparent">
@@ -22,7 +22,7 @@ title: Expertise
                 </div>
                 <h3 class="text-2xl font-bold text-slate-900 group-hover:text-brand transition-colors font-display uppercase tracking-tighter mb-4 leading-tight">{{ item.title }}</h3>
                 <p class="text-slate-500 leading-relaxed mb-10 font-medium">Deep domain knowledge and industry-leading specialized solutions in {{ item.title }}.</p>
-                <span class="mt-auto text-[10px] font-black text-brand font-bold uppercase tracking-[0.2em] flex items-center gap-3 transition-all group-hover:gap-5">Explore Specialist <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg></span>
+                <span class="mt-auto text-[10px] font-black text-brand uppercase tracking-[0.2em] flex items-center gap-3 transition-all group-hover:gap-5">Explore Specialist <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg></span>
             </a>
             {% endfor %}
         </div>

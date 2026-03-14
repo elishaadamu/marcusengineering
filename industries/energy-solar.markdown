@@ -1,6 +1,6 @@
----
 layout: default
-title: Energy & Solar
+title: Energy & Solar Engineering | Power Electronics & Intelligence
+description: Engineering solutions for the Energy and Solar industry, from power conversion to intelligent grid monitoring and industrial renewables.
 ---
 
 <section class="py-32 bg-transparent min-h-screen">

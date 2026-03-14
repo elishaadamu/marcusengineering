@@ -1,6 +1,6 @@
----
 layout: default
-title: PCB Design & Layout
+title: PCB Design & Layout | High-Reliability Engineering
+description: Advanced PCB layout and precision hardware architecture tailored for complex medical and industrial systems.
 ---
 
 <section class="py-32 bg-transparent min-h-screen">

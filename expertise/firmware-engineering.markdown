@@ -1,6 +1,6 @@
----
 layout: default
-title: Firmware Engineering
+title: Firmware Engineering | Marcus Engineering Specialists
+description: Mission-critical firmware development and edge-AI integration for high-reliability embedded systems.
 ---
 
 <section class="py-32 bg-transparent min-h-screen">

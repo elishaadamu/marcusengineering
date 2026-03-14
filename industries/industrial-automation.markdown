@@ -1,6 +1,6 @@
----
 layout: default
-title: Industrial Automation
+title: Industrial Automation Engineering | Marcus Engineering
+description: Advanced control systems, robotics, and industrial automation solutions. We bridge the gap between software intelligence and physical production.
 ---
 
 <section class="py-32 bg-transparent min-h-screen">

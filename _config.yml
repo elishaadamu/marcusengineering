@@ -19,6 +19,17 @@ description: >-
   electronics, instrumentation, industrial automation, and embedded systems design.
 baseurl: ""
 url: "https://www.marcusengineering.com"
+logo: "/assets/logo/Logo large.png"
+image: "/assets/logo/Logo large.png"
+
+social:
+  type: Organization
+  name: Marcus Engineering
+  links:
+    - https://twitter.com/marcusengineer
+    - https://facebook.com/marcusengineering
+    - https://linkedin.com/company/marcus-engineering-llc
+
 
 # Design tokens (reference)
 brand_color: "#49A942" # Pantone 7738

@@ -1,6 +1,6 @@
----
 layout: default
-title: Control Systems
+title: Control Systems Engineering | Marcus Engineering
+description: Design and optimization of advanced control systems for robotics, automation, and complex industrial processes.
 ---
 
 <section class="py-32 bg-transparent min-h-screen">

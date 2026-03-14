@@ -1,6 +1,6 @@
----
 layout: default
-title: Aerospace & Defense
+title: Aerospace & Defense Engineering | High-Reliability Systems
+description: Marcus Engineering provides mission-critical hardware and firmware for Aerospace and Defense, specializing in ruggedized systems and high-reliability design.
 ---
 
 <section class="py-32 bg-transparent min-h-screen">

@@ -1,6 +1,6 @@
----
 layout: default
-title: Wireless & IoT
+title: Wireless & IoT Engineering Solutions | Marcus Engineering
+description: Design and implementation of secure, low-power Wireless and IoT systems. From sensor networks to cloud-connected industrial platforms.
 ---
 
 <section class="py-32 bg-transparent min-h-screen">

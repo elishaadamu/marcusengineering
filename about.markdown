@@ -1,6 +1,6 @@
----
 layout: default
-title: About Us
+title: About Marcus Engineering | Our History & Mission
+description: Founded in Tucson, Arizona, Marcus Engineering is a leading product development firm specializing in high-reliability systems.
 ---
 
 <section class="py-32 bg-transparent">
@@ -15,7 +15,7 @@ title: About Us
                     Founded in Tucson, Arizona, Marcus Engineering has grown into a leading product development firm. We specialize in high-reliability systems where precision is paramount.
                 </p>
                 <div class="mt-12 space-y-8">
-                    <div class="bg-white p-8 rounded-4xl border-l-4 border-brand border-y border-r border-slate-100 shadow-xl shadow-slate-200/50">
+                    <div class="bg-white p-8 rounded-4xl border border-slate-100 border-l-4 border-l-brand shadow-xl shadow-slate-200/50">
                         <h3 class="font-black text-slate-900 mb-3 uppercase tracking-widest text-sm">Our Mission</h3>
                         <p class="text-slate-600 leading-relaxed font-medium">To provide world-class engineering services that bridge the gap between complex technical challenges and innovative market solutions.</p>
                     </div>

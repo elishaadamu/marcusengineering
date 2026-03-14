@@ -1,6 +1,6 @@
----
 layout: default
-title: FPGA Design
+title: FPGA Design Specialists | Marcus Engineering
+description: Advanced FPGA design and hardware acceleration for complex signal processing and industrial applications.
 ---
 
 <section class="py-32 bg-transparent min-h-screen">

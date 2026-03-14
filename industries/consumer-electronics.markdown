@@ -1,6 +1,6 @@
----
 layout: default
-title: Consumer Electronics
+title: Consumer Electronics Design | Product Lifecycle Specialists
+description: Full-cycle product development for consumer electronics. From rapid prototyping to global manufacturing and scale.
 ---
 
 <section class="py-32 bg-transparent min-h-screen">

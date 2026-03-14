@@ -1,6 +1,6 @@
----
 layout: default
-title: Mechanical Integration
+title: Mechanical Integration | Marcus Engineering Product Development
+description: Full-cycle mechanical integration and electro-mechanical system design for global manufacturing.
 ---
 
 <section class="py-32 bg-transparent min-h-screen">
