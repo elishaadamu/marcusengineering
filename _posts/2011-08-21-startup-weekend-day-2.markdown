@@ -4,6 +4,7 @@ title: "Startup Weekend: Day 2"
 date: 2011-08-21 15:18:24 
 categories: ['Uncategorized']
 permalink: /startup-weekend-day-2/
+thumbnail: ""
 ---
 
 <h3>Disappointment: You're Not So Novel</h3>

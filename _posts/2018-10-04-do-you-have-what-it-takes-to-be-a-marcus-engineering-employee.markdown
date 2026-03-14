@@ -4,6 +4,7 @@ title: "Do you have what it takes to be a Marcus Engineering Employee?"
 date: 2018-10-04 13:52:35 
 categories: ['Uncategorized']
 permalink: /do-you-have-what-it-takes-to-be-a-marcus-engineering-employee/
+thumbnail: ""
 ---
 
 Think you would make a valuable contribution? Take this short test to find out...

@@ -4,6 +4,7 @@ title: "Dr. Marcus Receives Catapult Award for Ecosystem Impact"
 date: 2014-04-17 08:57:09 
 categories: ['Business', 'Community Engagement', 'Education']
 permalink: /dr-marcus-receives-catapult-award-for-ecosystem-impact/
+thumbnail: ""
 ---
 
 <a href="http://objectwidth=480height=360paramname=movievalue=//www.youtube.com/v/pqjrOS9sVlE?version=3&amp;hl=en_US&amp;rel=0/paramparamname=allowFullScreenvalue=true/paramparamname=allowscriptaccessvalue=always/paramembedsrc=//www.youtube.com/v/pqjrOS9sVlE?version=3&amp;hl=en_US&amp;rel=0type=application/x-shockwave-flashwidth=480height=360allowscriptaccess=alwaysallowfullscreen=true/embed/object"><object width="480" height="360" classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="allowFullScreen" value="true" /><param name="allowscriptaccess" value="always" /><param name="src" value="//www.youtube.com/v/pqjrOS9sVlE?version=3&amp;hl=en_US&amp;rel=0" /><param name="allowfullscreen" value="true" /><embed width="480" height="360" type="application/x-shockwave-flash" src="//www.youtube.com/v/pqjrOS9sVlE?version=3&amp;hl=en_US&amp;rel=0" allowfullscreen="allowfullscreen" allowscriptaccess="always" allowfullscreen="allowfullscreen" /></object></a>

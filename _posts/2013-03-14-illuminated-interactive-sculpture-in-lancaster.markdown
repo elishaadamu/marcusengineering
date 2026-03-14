@@ -4,6 +4,7 @@ title: "Illuminated & Interactive Sculpture in Lancaster"
 date: 2013-03-14 11:34:52 
 categories: ['Community Engagement', 'Electronics']
 permalink: /illuminated-interactive-sculpture-in-lancaster/
+thumbnail: ""
 ---
 
 <strong> </strong>

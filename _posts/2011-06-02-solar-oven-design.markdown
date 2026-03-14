@@ -5,6 +5,7 @@ date: 2011-06-02 23:08:35
 categories: ['Community Engagement']
 tags: ['education', 'solar']
 permalink: /solar-oven-design/
+thumbnail: ""
 ---
 
 <h3>Introduction</h3>

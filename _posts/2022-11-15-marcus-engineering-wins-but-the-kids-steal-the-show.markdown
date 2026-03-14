@@ -4,6 +4,7 @@ title: "Marcus Engineering Wins but the Kids Steal the Show!"
 date: 2022-11-15 15:41:13 
 categories: ['Business', 'Community Engagement', 'Education', 'Engineering', 'Entrepreneurship']
 permalink: /marcus-engineering-wins-but-the-kids-steal-the-show/
+thumbnail: ""
 ---
 
 <!-- wp:paragraph -->

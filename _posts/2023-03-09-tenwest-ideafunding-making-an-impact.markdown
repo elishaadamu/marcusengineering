@@ -4,6 +4,7 @@ title: "TENWEST IdeaFunding Making an Impact"
 date: 2023-03-09 18:04:22 
 categories: ['Business', 'Community Engagement', 'Education', 'Entrepreneurship']
 permalink: /tenwest-ideafunding-making-an-impact/
+thumbnail: ""
 ---
 
 <!-- wp:image {"id":6427,"sizeSlug":"large","linkDestination":"none","className":"is-style-default"} -->

@@ -2,36 +2,96 @@
 layout: default
 ---
 
-<article class="py-32 bg-transparent min-h-screen">
-    <div class="mx-auto max-w-3xl px-6 lg:px-8">
-        <header class="mb-16">
-            <div class="flex items-center gap-x-4 text-[10px] mb-6">
-                <time datetime="{{ page.date | date_to_xmlschema }}" class="text-slate-500 font-bold uppercase tracking-[0.2em]">{{ page.date | date: "%B %-d, %Y" }}</time>
-                {% if page.categories %}
-                    {% for category in page.categories %}
-                    <span class="relative z-10 rounded-full bg-brand/10 px-3 py-1 font-bold text-brand uppercase tracking-widest text-[9px]">{{ category }}</span>
-                    {% endfor %}
+<article class="bg-transparent min-h-screen pb-24">
+    <!-- Hero Section -->
+    <div class="relative w-full overflow-hidden flex flex-col items-center justify-center pt-24 pb-16 px-6 lg:px-8">
+        <!-- Centered Thumbnail Image -->
+        <div class="relative z-10 w-full max-w-5xl flex flex-col items-center">
+            <div class="w-[100%] md:w-[70%] h-[300px] md:h-[400px] rounded-[2.5rem] overflow-hidden shadow-2xl shadow-slate-200 border border-slate-100 bg-slate-50 group">
+                {% if page.thumbnail and page.thumbnail != "" %}
+                    <img src="{{ page.thumbnail | relative_url }}" alt="{{ page.title }}" class="w-full h-full object-contain transition-transform duration-1000 group-hover:scale-105">
+                {% else %}
+                    <div class="w-full h-full bg-linear-to-br from-slate-100 to-slate-200 flex items-center justify-center">
+                        <svg class="h-16 w-16 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" /></svg>
+                    </div>
                 {% endif %}
             </div>
-            <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-6xl font-display uppercase leading-tight">
-                {{ page.title | escape }}
-            </h1>
-        </header>
 
-        <div class="prose prose-lg max-w-none prose-headings:font-display prose-headings:uppercase prose-headings:tracking-tight prose-a:text-brand hover:prose-a:text-brand-light prose-img:rounded-3xl prose-pre:rounded-2xl prose-pre:bg-slate-900 prose-pre:border prose-pre:border-slate-800 text-slate-700 leading-relaxed">
+            <!-- Title & Meta section BELOW the image -->
+            <div class="mt-16 text-center max-w-4xl">
+                <div class="flex flex-col items-center gap-6">
+                    <div class="flex items-center gap-x-3 bg-slate-100/50 backdrop-blur-md rounded-full px-4 py-2 border border-slate-200/50">
+                        <time datetime="{{ page.date | date_to_xmlschema }}" class="text-slate-500 font-black uppercase tracking-[0.3em] text-[10px]">{{ page.date | date: "%B %-d, %Y" }}</time>
+                    </div>
+                    
+                    <h1 class="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-4xl font-display uppercase leading-[1.1]">
+                        {{ page.title | escape }}
+                    </h1>
+
+                    {% if page.categories %}
+                    <div class="flex flex-wrap justify-center gap-3 mt-4">
+                        {% for category in page.categories %}
+                        <span class="rounded-full bg-brand/5 border border-brand/10 px-4 py-1.5 font-bold text-brand uppercase tracking-widest text-[9px]">
+                            {{ category }}
+                        </span>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        
+        <!-- Background decorative elements -->
+        <div class="absolute inset-0 -z-10 bg-slate-50/50">
+            <div class="absolute top-0 right-1/4 w-[600px] h-[600px] bg-brand/5 rounded-full blur-[120px]"></div>
+            <div class="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-slate-200/50 rounded-full blur-[120px]"></div>
+        </div>
+    </div>
+
+
+    <!-- Content Section -->
+    <div class="mx-auto max-w-4xl px-6 lg:px-8">
+        <div class="prose prose-lg lg:prose-xl max-w-none prose-headings:font-display prose-headings:uppercase prose-headings:tracking-tight prose-a:text-brand hover:prose-a:text-brand-light prose-img:rounded-3xl prose-img:shadow-2xl prose-pre:rounded-2xl prose-pre:bg-slate-900 prose-pre:border prose-pre:border-slate-800 text-slate-700 leading-relaxed marker:text-brand selection:bg-brand/10">
             {{ content }}
         </div>
 
-        <footer class="mt-24 pt-12 border-t border-slate-200">
-            <div class="flex items-center justify-between">
-                <a href="/blog/" class="text-[10px] font-bold text-brand uppercase tracking-widest flex items-center gap-2 hover:gap-3 transition-all">
-                    <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg> 
-                    Back to Blog
-                </a>
-                <div class="flex gap-4">
-                    <!-- Share buttons placeholder -->
+        <!-- Meta Section (Categories & Tags at bottom) -->
+        <div class="mt-24 py-12 border-t border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-8">
+            <div class="flex flex-col gap-4">
+                <span class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Posted in Categories</span>
+                <div class="flex flex-wrap gap-2">
+                    {% for category in page.categories %}
+                    <a href="/blog/?category={{ category | slugify }}" class="px-5 py-2 rounded-2xl bg-slate-50 border border-slate-100 text-xs font-bold text-slate-600 hover:bg-brand hover:text-white hover:border-brand transition-all duration-300">
+                        {{ category }}
+                    </a>
+                    {% endfor %}
                 </div>
             </div>
-        </footer>
+            
+            <div class="flex gap-4">
+                <a href="/blog/" class="group flex items-center gap-3 px-6 py-3 rounded-2xl bg-slate-900 text-white text-[10px] font-black uppercase tracking-widest hover:bg-brand transition-all duration-300 shadow-xl shadow-slate-900/20">
+                    <svg class="w-4 h-4 transition-transform group-hover:-translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg> 
+                    Back to Blog
+                </a>
+            </div>
+        </div>
+
+        <!-- More Blogs Section -->
+        <div class="mt-24">
+            <div class="flex items-center gap-8 mb-12">
+                <h2 class="text-2xl font-extrabold text-slate-900 font-display uppercase tracking-tight whitespace-nowrap">More <span class="text-brand">Insights</span></h2>
+                <div class="h-px w-full bg-slate-100"></div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                {% assign recent_posts = site.posts | where_exp: "item", "item.url != page.url" | slice: 0, 2 %}
+
+
+
+                {% for post in recent_posts %}
+                    {% include post-card.html post=post %}
+                {% endfor %}
+            </div>
+        </div>
     </div>
 </article>
+

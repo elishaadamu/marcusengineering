@@ -4,6 +4,7 @@ title: "Robotic Fish Tests the Waters in Tahoe"
 date: 2013-12-03 18:05:41 
 categories: ['Community Engagement', 'Education', 'Electronics', 'Industrial Controls and Automation']
 permalink: /robotic-fish-tests-the-waters-in-tahoe/
+thumbnail: ""
 ---
 
 Each year, the University of Arizona College of Engineering holds a Senior Design Day to showcase student-made engineering projects. With the purpose of solving real-world problems, the industry-sponsored final products come in all shapes and sizes, including sea creatures this year.

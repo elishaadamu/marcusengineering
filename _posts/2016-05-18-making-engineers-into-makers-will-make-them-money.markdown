@@ -4,6 +4,7 @@ title: "Making Engineers into Makers, will Make them Money!"
 date: 2016-05-18 11:36:23 
 categories: ['Community Engagement', 'Education', 'Engineering']
 permalink: /making-engineers-into-makers-will-make-them-money/
+thumbnail: ""
 ---
 
 <span style="font-weight: 400;">Developing the hands-on skills, and enthusiasm of young people into a productive engineering skill set, and career, is at the core of a program being launched by <a href="https://www.pima.edu/" target="_blank">Pima Community College</a>, <a href="http://jobpath.net/" target="_blank">Job Path</a>, <a href="http://www.xerocraft.org/" target="_blank">Xerocraft</a> and InnovEngine.  <a href="http://www.marcusengineering.com/" target="_blank">Marcus Engineering</a> is participating as the voice of the industry, who seeks to hire talented, hands-on engineers.  “The skills gap is becoming a serious problem” stated Dr. Patrick Marcus, president of Marcus Engineering.  “The Universities continue to generate students strong in the science of engineering, but not quite as strong at the practical side of being an engineer.”  </span>

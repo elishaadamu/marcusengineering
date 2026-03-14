@@ -4,6 +4,7 @@ title: "The Lost Art of FUN in the Workplace"
 date: 2013-07-28 20:20:12 
 categories: ['Business', 'Education']
 permalink: /the-lost-art-of-fun-in-the-workplace/
+thumbnail: ""
 ---
 
 A healthy work environment isn't always about maximizing productivity pushing up hours and going to a cheaper coffee brand to improve the bottom line.

@@ -4,6 +4,7 @@ title: "Connection: A Tech Ecosystem Multiplier"
 date: 2022-01-10 10:38:43 
 categories: ['Business', 'Community Engagement']
 permalink: /connection-a-tech-ecosystem-multiplier/
+thumbnail: ""
 ---
 
 <!-- wp:paragraph -->

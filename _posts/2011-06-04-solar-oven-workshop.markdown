@@ -5,6 +5,7 @@ date: 2011-06-04 19:10:57
 categories: ['Community Engagement']
 tags: ['education', 'solar']
 permalink: /solar-oven-workshop/
+thumbnail: ""
 ---
 
 Did you ever think that cooking a hot dog would support K-12 education and deliver a message for a solar powered future?  I had the fantastic experience of cooking some hot dogs that shaped the futures of, bright and excited elementary school children.   Sounds like a pretty good way to spend a hot May afternoon right?  It was a daunting task at first.  Although I was pretty certain I could take on the inquisitive nature and high energy level of <a title="John B. Wright Elementary" href="http://edweb.tusd.k12.az.us/wright/index.htm" target="_blank">John B. Wright Elementary's</a> 10 year olds in small groups I wasn't sure about 65 of them!  Did I really have what it takes to teach 5th graders about solar?

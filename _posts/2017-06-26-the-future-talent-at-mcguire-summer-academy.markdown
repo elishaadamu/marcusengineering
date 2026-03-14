@@ -4,6 +4,7 @@ title: "The Future Talent at McGuire Summer Academy"
 date: 2017-06-26 12:30:02 
 categories: ['Business', 'Community Engagement', 'Education', 'Entrepreneurship']
 permalink: /the-future-talent-at-mcguire-summer-academy/
+thumbnail: ""
 ---
 
 <span style="font-weight: 400;">This year, Dr. Patrick Marcus, was invited to be a guest speaker at the McGuire Summer Academy Program at the University of Arizona. The McGuire Summer Academy Program is a program designed to help young people cultivate their entrepreneurial skills. Students from various high schools are invited to live on the campus grounds for one week. Throughout the week, students work in teams and develop business ventures from an idea to a fully-fledged pitch. At the end of the week, students compete in front of a panel and pitch their business venture ideas. Afterwards, the winning team is awarded 300 dollars. </span>

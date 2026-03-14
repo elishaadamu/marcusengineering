@@ -4,6 +4,7 @@ title: "The Entrepreneurial Minds of Tomorrow Are FORGE(D) In Arizona"
 date: 2021-03-19 12:48:14 
 categories: ['Business', 'Community Engagement', 'Education', 'Entrepreneurship']
 permalink: /the-entrepreneurial-minds-of-tomorrow-are-forged-in-arizona/
+thumbnail: ""
 ---
 
 <!-- wp:paragraph -->

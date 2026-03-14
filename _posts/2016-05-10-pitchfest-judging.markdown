@@ -4,6 +4,7 @@ title: "Pitchfest Judging"
 date: 2016-05-10 15:10:16 
 categories: ['Business', 'Community Engagement', 'Uncategorized']
 permalink: /pitchfest-judging/
+thumbnail: ""
 ---
 
 <span style="font-weight: 400;">In 2016 hundreds of students at the University of Arizona took a chance. They put themselves in front of a camera and shared an idea. These students participated in the second annual <a href="http://pitchfest.arizona.edu/">University of Arizona Pitchfest. </a></span>

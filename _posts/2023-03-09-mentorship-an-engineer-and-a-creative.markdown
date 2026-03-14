@@ -4,6 +4,7 @@ title: "Mentorship: An engineer and a creative"
 date: 2023-03-09 11:11:29 
 categories: ['Business', 'Community Engagement', 'Education', 'Entrepreneurship', 'Thought Leadership']
 permalink: /mentorship-an-engineer-and-a-creative/
+thumbnail: ""
 ---
 
 <!-- wp:paragraph -->

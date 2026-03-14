@@ -4,6 +4,7 @@ title: "Marcus Engineering Intern Receives National Recognition"
 date: 2014-01-06 09:59:36 
 categories: ['Business', 'Engineering']
 permalink: /marcus-engineering-intern-receives-national-recognition/
+thumbnail: ""
 ---
 
 <img class="alignright" src="/assets/images/posts/Robbie11-411x550.webp" alt="Robbie Laity" width="247" height="330" />Marcus Engineering takes pride in hiring and training the most talented engineers and it's getting noticed. On January 6th 2014, Robbie Laity, a recent graduate in Electrical Engineer from The University of Arizona and a veteran intern at <a href="http://www.marcusengineering.com/">Marcus Engineering</a>, was recognized by <a href="http://www.designnews.com/">Design News Magazine</a>, (a national industry resource for engineering news), as one of our nations <a href="http://www.designnews.com/author.asp?section_id=1386&amp;f_src=designnews_sitedefault&amp;doc_id=270762&amp;image_number=2">Rising Engineering Stars</a>. "We're so proud to have Robbie as part of the team.  He's a brilliant and generous engineer." said Marcus Engineering President Dr. Patrick Marcus "Recognition like this proves that we doing the right things as a community to grow and maintain top talent."
