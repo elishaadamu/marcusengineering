@@ -1,3 +1,4 @@
+---
 layout: default
 title: Engineering Applications | Embedded, IoT & More | Marcus Engineering
 description: Explore our engineering applications including Embedded Systems, Wireless & IoT, Sensing & Instrumentation, and Power Electronics.

@@ -1,3 +1,4 @@
+---
 layout: default
 title: Mechanical Integration | Marcus Engineering Product Development
 description: Full-cycle mechanical integration and electro-mechanical system design for global manufacturing.

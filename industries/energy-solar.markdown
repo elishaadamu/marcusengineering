@@ -1,3 +1,4 @@
+---
 layout: default
 title: Energy & Solar Engineering | Power Electronics & Intelligence
 description: Engineering solutions for the Energy and Solar industry, from power conversion to intelligent grid monitoring and industrial renewables.

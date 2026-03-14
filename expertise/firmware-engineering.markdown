@@ -1,3 +1,4 @@
+---
 layout: default
 title: Firmware Engineering | Marcus Engineering Specialists
 description: Mission-critical firmware development and edge-AI integration for high-reliability embedded systems.

@@ -1,3 +1,4 @@
+---
 layout: default
 title: PCB Design & Layout | High-Reliability Engineering
 description: Advanced PCB layout and precision hardware architecture tailored for complex medical and industrial systems.

@@ -1,3 +1,4 @@
+---
 layout: default
 title: Engineering Insights Blog | Marcus Engineering Lab
 description: Technical deep dives, project updates, and engineering news from the Marcus Engineering team. Stay informed on AI, embedded systems, and hardware design.

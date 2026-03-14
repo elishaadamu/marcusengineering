@@ -1,3 +1,4 @@
+---
 layout: default
 title: Embedded Systems Application Design | Marcus Engineering
 description: High-performance embedded systems for mission-critical applications. We specialize in edge-AI, real-time processing, and robust hardware/software integration.
