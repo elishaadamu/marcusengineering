@@ -2,19 +2,30 @@
 layout: default
 title: Engineering Insights Blog | Marcus Engineering Lab
 description: Technical deep dives, project updates, and engineering news from the Marcus Engineering team. Stay informed on AI, embedded systems, and hardware design.
+image: /assets/images/marketing folder/insightmedi-app-medical_t20_LQy1aY.webp
 pagination: 
   enabled: true
 ---
 
 <div x-data="{ view: 'latest' }">
-    <!-- Simple Static Header -->
-    <section class="pt-40 pb-20 bg-white border-b border-slate-100">
-        <div class="mx-auto max-w-7xl px-6 lg:px-8">
+    <!-- Premium Image Hero -->
+    <section class="relative pt-20 flex items-center min-h-screen overflow-hidden bg-slate-900 border-b border-brand/20">
+        <!-- Background Image with Overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="{{ page.image | relative_url }}" 
+                 alt="Medical Engineering Insight" 
+                 class="w-full h-full object-cover opacity-60">
+            <div class="absolute inset-0 bg-slate-900/30 backdrop-blur-[2px]"></div>
+        </div>
+
+        <div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 w-full">
             <div class="mx-auto max-w-3xl lg:text-center">
-                <h2 class="text-xs font-black leading-7 text-brand uppercase tracking-[0.4em] mb-6">Innovation Lab</h2>
-                <p class="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-6xl font-display uppercase leading-none mb-8">Engineering <span class="text-brand">Insights</span></p>
-                <div class="h-1 w-20 bg-brand mx-auto mb-8"></div>
-                <p class="text-lg leading-8 text-slate-500 font-medium">
+                <h2 class="text-xs font-black leading-7 text-brand uppercase tracking-[0.5em] mb-6">Innovation Lab</h2>
+                <p class="text-4xl font-extrabold tracking-tight text-white sm:text-7xl font-display uppercase leading-none mb-8">
+                    Engineering <span class="text-brand">Insights</span>
+                </p>
+                <div class="h-1.5 w-24 bg-brand mx-auto mb-10"></div>
+                <p class="text-xl leading-8 text-white font-medium drop-shadow-sm">
                     A decade of engineering knowledge, project updates, and technical deep dives from the Marcus Engineering team.
                 </p>
             </div>
@@ -32,36 +43,99 @@ pagination:
 
             <!-- LATEST VIEW (Default Cards) -->
             <div x-show="view === 'latest'" x-transition:enter="transition-opacity duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {% for post in paginator.posts %}
-                        {% include post-card.html post=post %}
-                    {% endfor %}
-                </div>
-                
-                <!-- Minimal Pagination -->
-                {% if paginator.total_pages > 1 %}
-                <nav class="blog-pagination" aria-label="Pagination">
-                    <div class="pagination-container">
-                        {% if paginator.previous_page %}
-                            <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-btn">
-                                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.25-4a.75.75 0 010-1.08l4.25-4a.75.75 0 011.06.02z" clip-rule="evenodd" /></svg>
-                            </a>
-                        {% endif %}
+                <div class="grid grid-cols-1 lg:grid-cols-[1fr_320px] gap-12">
+                    <!-- Main Content -->
+                    <div class="space-y-12">
+                        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+                            {% for post in paginator.posts %}
+                                {% include post-card.html post=post %}
+                            {% endfor %}
+                        </div>
 
-                        {% for trail in paginator.page_trail %}
-                            <a href="{{ trail.path | relative_url }}" class="pagination-number {% if paginator.page == trail.num %}active{% endif %}">
-                                {{ trail.num }}
-                            </a>
-                        {% endfor %}
+                        <!-- Minimal Pagination -->
+                        {% if paginator.total_pages > 1 %}
+                        <nav class="blog-pagination mt-12! pt-8!" aria-label="Pagination">
+                            <div class="pagination-container">
+                                {% if paginator.previous_page %}
+                                    <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-btn">
+                                        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.25-4a.75.75 0 010-1.08l4.25-4a.75.75 0 011.06.02z" clip-rule="evenodd" /></svg>
+                                    </a>
+                                {% endif %}
 
-                        {% if paginator.next_page %}
-                            <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-btn">
-                                <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.25 4a.75.75 0 010 1.08l-4.25 4a.75.75 0 01-1.06-.02z" clip-rule="evenodd" /></svg>
-                            </a>
+                                {% for trail in paginator.page_trail %}
+                                    <a href="{{ trail.path | relative_url }}" class="pagination-number {% if paginator.page == trail.num %}active{% endif %}">
+                                        {{ trail.num }}
+                                    </a>
+                                {% endfor %}
+
+                                {% if paginator.next_page %}
+                                    <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-btn">
+                                        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.25 4a.75.75 0 010 1.08l-4.25 4a.75.75 0 01-1.06-.02z" clip-rule="evenodd" /></svg>
+                                    </a>
+                                {% endif %}
+                            </div>
+                        </nav>
                         {% endif %}
                     </div>
-                </nav>
-                {% endif %}
+
+                    <!-- Sidebar -->
+                    <aside class="space-y-12">
+                        <!-- Recent Posts -->
+                        <div>
+                            <h4 class="text-xs font-black text-slate-400 uppercase tracking-[0.3em] mb-8 flex items-center gap-4">
+                                Recent Insights
+                                <span class="h-px flex-1 bg-slate-100"></span>
+                            </h4>
+                            <div class="space-y-6">
+                                {% for recent in site.posts limit:5 %}
+                                    <a href="{{ recent.url | relative_url }}" class="group flex items-start gap-4">
+                                        <div class="shrink-0 w-12 h-12 rounded-xl bg-slate-100 overflow-hidden">
+                                            {% assign recent_image = recent.thumbnail | default: recent.image %}
+                                            {% if recent_image %}
+                                                <img src="{{ recent_image | relative_url }}" class="w-full h-full object-cover transition-transform group-hover:scale-110">
+                                            {% endif %}
+                                        </div>
+                                        <div class="flex-1">
+                                            <span class="text-[9px] font-black text-brand uppercase tracking-wider mb-1 block">{{ recent.date | date: "%b %d, %Y" }}</span>
+                                            <h5 class="text-xs font-bold text-slate-900 group-hover:text-brand transition-colors leading-tight">{{ recent.title }}</h5>
+                                        </div>
+                                    </a>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <!-- Categories -->
+                        <div>
+                            <h4 class="text-xs font-black text-slate-400 uppercase tracking-[0.3em] mb-8 flex items-center gap-4">
+                                Categories
+                                <span class="h-px flex-1 bg-slate-100"></span>
+                            </h4>
+                            <div class="flex flex-wrap gap-2">
+                                {% assign categories = site.categories | sort %}
+                                {% for category in categories %}
+                                    <button @click="view = 'topic'; $nextTick(() => { document.getElementById('topic-{{ category[0] | slugify }}').scrollIntoView({ behavior: 'smooth' }) })" 
+                                            class="px-4 py-2 bg-slate-50 hover:bg-brand hover:text-white rounded-lg text-[10px] font-bold text-slate-600 transition-all uppercase tracking-wider">
+                                        {{ category[0] }}
+                                    </button>
+                                {% endfor %}
+                            </div>
+                        </div>
+
+                        <!-- Tags Cloud -->
+                        <div>
+                            <h4 class="text-xs font-black text-slate-400 uppercase tracking-[0.3em] mb-8 flex items-center gap-4">
+                                Popular Tags
+                                <span class="h-px flex-1 bg-slate-100"></span>
+                            </h4>
+                            <div class="flex flex-wrap gap-x-4 gap-y-2">
+                                {% assign tags = site.tags | sort %}
+                                {% for tag in tags limit:20 %}
+                                    <span class="text-[10px] font-medium text-slate-400 hover:text-brand cursor-default">#{{ tag[0] | upcase }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </aside>
+                </div>
             </div>
 
             <!-- BY YEAR VIEW (List) -->
@@ -80,7 +154,7 @@ pagination:
                 </div>
 
                 {% for year in postsByYear %}
-                    <div class="year-header mt-24 mb-12" id="year-{{ year.name }}">
+                    <div class="year-header mt-12 mb-12" id="year-{{ year.name }}">
                         <h2>{{ year.name }}</h2>
                         <span>Vault / {{ year.name }}</span>
                     </div>
@@ -114,15 +188,27 @@ pagination:
 
             <!-- BY TOPIC VIEW (List) -->
             <div x-show="view === 'topic'" x-cloak x-transition:enter="transition-opacity duration-300" x-transition:enter-start="opacity-0" x-transition:enter-end="opacity-100">
-                <div class="year-header mt-24 mb-12">
+                <div class="year-header mt-12 mb-12">
                     <h2>Topics</h2>
                     <span>Archive / Categorized</span>
                 </div>
-                
+
                 {% assign categories = site.categories %}
+                
+                <!-- Topic Selector Dropdown -->
+                <div class="year-selector-wrap">
+                    <span class="year-selector-label">Jump to Topic:</span>
+                    <select class="year-select" @change="const el = document.getElementById('topic-' + $event.target.value.toLowerCase().replace(/[^a-z0-0]/g, '-')); if(el) el.scrollIntoView({ behavior: 'smooth' })">
+                        <option value="" disabled selected>Select Topic</option>
+                        {% for category in categories %}
+                            <option value="{{ category[0] }}">{{ category[0] }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                
                 <div class="space-y-20">
                     {% for category in categories %}
-                        <div class="py-12">
+                        <div class="py-12 topic-section" id="topic-{{ category[0] | slugify }}">
                             <h3 class="text-2xl font-black text-slate-800 uppercase tracking-tight mb-8 border-l-4 border-brand pl-6">
                                 {{ category[0] }}
                             </h3>

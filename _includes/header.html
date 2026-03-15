@@ -38,12 +38,21 @@
             </ul>
         </nav>
 
-        <!-- Mobile Menu Toggle -->
-        <button class="mobile-toggle" :class="{ 'open': mobileMenuOpen }" @click="mobileMenuOpen = !mobileMenuOpen" aria-label="Toggle menu">
-            <span class="burger-line"></span>
-            <span class="burger-line"></span>
-            <span class="burger-line"></span>
-        </button>
+        <!-- Search & Mobile Menu Toggle -->
+        <div class="flex items-center gap-6 ml-8 lg:ml-12">
+            <button @click="searchOpen = true" class="search-trigger-btn" aria-label="Open Search">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+
+            <button class="mobile-toggle" :class="{ 'open': mobileMenuOpen }" @click="mobileMenuOpen = !mobileMenuOpen" aria-label="Toggle menu">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
+        </div>
     </div>
 
     <!-- Mobile Navigation Overlay -->

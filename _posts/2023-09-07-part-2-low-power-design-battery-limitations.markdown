@@ -4,7 +4,7 @@ title: "Part 2 – Low Power Design Battery Limitations"
 date: 2023-09-07 15:36:38 
 categories: ['Electronics', 'Engineering', 'Low Power Design Series']
 permalink: /part-2-low-power-design-battery-limitations/
-thumbnail: ""
+thumbnail: "/assets/images/marketing folder/7-33-28.webp"
 ---
 
 <!-- wp:paragraph {"align":"left","fontSize":"medium"} -->

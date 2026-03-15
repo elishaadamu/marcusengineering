@@ -1,0 +1,129 @@
+<div x-show="searchOpen" 
+     x-transition:enter="transition ease-out duration-300"
+     x-transition:enter-start="opacity-0"
+     x-transition:enter-end="opacity-100"
+     x-transition:leave="transition ease-in duration-200"
+     x-transition:leave-start="opacity-100"
+     x-transition:leave-end="opacity-0"
+     class="fixed inset-0 z-2000 flex items-start justify-center pt-24 sm:pt-32 px-6"
+     x-cloak
+     @keydown.window.escape="searchOpen = false"
+     x-data="{ 
+        query: '', 
+        results: [], 
+        allData: [],
+        isLoading: false,
+        async initSearch() {
+            this.isLoading = true;
+            try {
+                const response = await fetch('{{ "/search.json" | relative_url }}');
+                this.allData = await response.json();
+            } catch (e) {
+                console.error('Search index failed to load', e);
+            }
+            this.isLoading = false;
+        },
+        performSearch() {
+            if (this.query.length < 2) {
+                this.results = [];
+                return;
+            }
+            const q = this.query.toLowerCase();
+            this.results = this.allData.filter(item => {
+                return item.title.toLowerCase().includes(q) || 
+                       (item.content && item.content.toLowerCase().includes(q));
+            }).slice(0, 8);
+        }
+     }"
+     x-init="initSearch()">
+    
+    <!-- Backdrop -->
+    <div class="fixed inset-0 bg-slate-900/60 backdrop-blur-md" @click="searchOpen = false"></div>
+
+    <!-- Modal Content -->
+    <div class="relative w-full max-w-2xl bg-white rounded-3xl shadow-2xl shadow-slate-900/40 overflow-hidden border border-slate-100"
+         x-show="searchOpen"
+         x-transition:enter="transition ease-out duration-300 transform"
+         x-transition:enter-start="opacity-0 scale-95 translate-y-4"
+         x-transition:enter-end="opacity-100 scale-100 translate-y-0"
+         @click.away="searchOpen = false">
+        
+        <div class="relative">
+            <div class="absolute inset-y-0 left-6 flex items-center pointer-events-none">
+                <svg class="h-5 w-5 text-slate-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </div>
+            <input type="text" 
+                   class="w-full pl-16 pr-6 py-6 bg-transparent text-slate-800 placeholder-slate-400 font-display text-lg focus:outline-none border-b border-slate-100" 
+                   placeholder="Search insights, projects, or lab news..."
+                   x-model="query"
+                   @input="performSearch()"
+                   x-ref="searchInput"
+                   x-effect="if (searchOpen) { $nextTick(() => { $refs.searchInput.focus(); }) }">
+        </div>
+
+        <!-- Results Area -->
+        <div class="max-h-[60vh] overflow-y-auto p-4 custom-scrollbar">
+            <!-- Loading State -->
+            <div x-show="isLoading" class="p-12 text-center">
+                <div class="inline-block w-8 h-8 border-4 border-brand/20 border-t-brand rounded-full animate-spin"></div>
+                <p class="mt-4 text-xs font-black text-slate-400 uppercase tracking-widest">Indexing Lab Data...</p>
+            </div>
+
+            <!-- Empty State -->
+            <div x-show="!isLoading && query.length > 1 && results.length === 0" class="p-12 text-center">
+                <p class="text-slate-400 font-display uppercase tracking-widest text-sm">No results found for "<span x-text="query" class="text-slate-600"></span>"</p>
+            </div>
+
+            <!-- Pre-search / Help -->
+            <div x-show="query.length < 2 && !isLoading" class="p-8">
+                <div class="flex flex-col items-center text-center">
+                    <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center mb-4">
+                        <svg class="w-8 h-8 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                    </div>
+                    <h3 class="text-sm font-black text-slate-900 uppercase tracking-tight">Quick Search</h3>
+                    <p class="mt-2 text-xs text-slate-500 max-w-[240px]">Search for "Embedded", "AI", "Medical", or "Case Studies" to explore our expertise.</p>
+                </div>
+            </div>
+
+            <!-- Results List -->
+            <div x-show="results.length > 0" class="space-y-1">
+                <template x-for="item in results" :key="item.url">
+                    <a :href="item.url" class="group flex items-start gap-4 p-4 rounded-2xl bg-transparent hover:bg-slate-50 transition-all border border-transparent hover:border-slate-100">
+                        <div class="shrink-0 w-10 h-10 rounded-xl bg-slate-100 flex items-center justify-center text-brand group-hover:bg-brand group-hover:text-white transition-colors">
+                            <template x-if="item.type === 'Post'">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 20H5a2 2 0 01-2-2V6a2 2 0 012-2h10l4 4v10a2 2 0 01-2 2zM7 8h4m-4 4h8m-8 4h8" /></svg>
+                            </template>
+                            <template x-if="item.type === 'Page'">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6" /></svg>
+                            </template>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex items-center gap-2 mb-1">
+                                <span x-text="item.type" class="text-[9px] font-black uppercase tracking-wider text-brand px-2 py-0.5 bg-brand/5 rounded-md"></span>
+                                <template x-if="item.date">
+                                    <span x-text="item.date" class="text-[9px] font-bold text-slate-400 uppercase tracking-tight"></span>
+                                </template>
+                            </div>
+                            <h4 x-text="item.title" class="text-sm font-black text-slate-900 group-hover:text-brand transition-colors uppercase tracking-tight"></h4>
+                            <p x-text="item.content" class="mt-1 text-xs text-slate-500 line-clamp-1"></p>
+                        </div>
+                    </a>
+                </template>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="bg-slate-50 px-6 py-3 flex items-center justify-between border-t border-slate-100">
+            <div class="flex items-center gap-4">
+                <div class="flex items-center gap-1.5">
+                    <kbd class="px-1.5 py-0.5 bg-white border border-slate-200 rounded text-[10px] font-bold text-slate-500 shadow-sm">ESC</kbd>
+                    <span class="text-[10px] text-slate-400 font-bold uppercase tracking-tight">to close</span>
+                </div>
+            </div>
+            <p class="text-[10px] text-slate-400 font-black uppercase tracking-widest">Marcus Engineering Lab Search</p>
+        </div>
+    </div>
+</div>

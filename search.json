@@ -1,0 +1,35 @@
+---
+layout: none
+---
+{% assign search_items = "" | split: "" %}
+
+{% for p in site.pages %}
+  {% if p.title and p.url contains ".html" or p.url == "/" %}
+    {% capture item %}
+    {
+      "title": {{ p.title | jsonify }},
+      "url": {{ p.url | relative_url | jsonify }},
+      "type": "Page",
+      "content": {{ p.content | strip_html | strip_newlines | truncate: 160 | jsonify }}
+    }
+    {% endcapture %}
+    {% assign search_items = search_items | push: item %}
+  {% endif %}
+{% endfor %}
+
+{% for post in site.posts %}
+  {% capture item %}
+  {
+    "title": {{ post.title | jsonify }},
+    "url": {{ post.url | relative_url | jsonify }},
+    "type": "Post",
+    "date": "{{ post.date | date: '%B %d, %Y' }}",
+    "content": {{ post.excerpt | strip_html | strip_newlines | truncate: 160 | jsonify }}
+  }
+  {% endcapture %}
+  {% assign search_items = search_items | push: item %}
+{% endfor %}
+
+[
+  {{ search_items | join: "," }}
+]

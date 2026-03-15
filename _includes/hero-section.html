@@ -21,9 +21,48 @@
                 <span class="badge-text">{{ hero.badge }}</span>
             </div>
             
-            <!-- Main Heading -->
-            <h1 class="hero-title">
-                {{ hero.title }}
+            <!-- Main Heading with Writing Animation -->
+            <h1 class="hero-title min-h-[3.3em] flex flex-col items-center lg:items-start gap-1" 
+                x-data="{ 
+                    text1: 'Intelligent',
+                    text2: 'Hardware',
+                    text3: 'Systems.',
+                    display1: '',
+                    display2: '',
+                    display3: '',
+                    cursor: true,
+                    async type() {
+                        // Type Line 1
+                        for (let i = 0; i <= this.text1.length; i++) {
+                            this.display1 = this.text1.substring(0, i);
+                            await new Promise(r => setTimeout(r, 120));
+                        }
+                        await new Promise(r => setTimeout(r, 800));
+                        
+                        // Type Line 2
+                        for (let i = 0; i <= this.text2.length; i++) {
+                            this.display2 = this.text2.substring(0, i);
+                            await new Promise(r => setTimeout(r, 140));
+                        }
+                        await new Promise(r => setTimeout(r, 1000));
+
+                        // Type Line 3
+                        for (let i = 0; i <= this.text3.length; i++) {
+                            this.display3 = this.text3.substring(0, i);
+                            await new Promise(r => setTimeout(r, 160));
+                        }
+                        this.cursor = false; // Hide cursor when finished
+                    }
+                }" 
+                x-init="setTimeout(() => type(), 1500)">
+                
+                <span class="block" x-text="display1"></span>
+                <span class="block relative py-1" :class="display2.length > 0 ? '' : 'opacity-0'">
+                    <span class="highlight-marker text-white relative z-10" x-text="display2"></span>
+                </span>
+                <span class="block relative" x-text="display3">
+                    <span x-show="cursor" class="inline-block w-1 h-[0.8em] bg-brand ml-1 animate-pulse"></span>
+                </span>
             </h1>
             
             <!-- Description -->
