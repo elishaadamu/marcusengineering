@@ -1,13 +1,20 @@
 {% assign blog_info = site.data.blog_section %}
-<section class="py-16 bg-transparent border-t border-slate-200">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+<section class="py-16 bg-transparent border-t border-slate-200 relative overflow-hidden">
+    <!-- Organic Curved Blobs -->
+    <div class="blob-container">
+        <div class="blob-shape blob-1"></div>
+        <div class="blob-shape blob-3"></div>
+    </div>
+    <!-- Square Grid Background -->
+    <div class="absolute inset-0 bg-square-grid pointer-events-none"></div>
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
         <div class="flex items-end justify-between mb-20">
             <div class="max-w-2xl">
                 <div class="inline-flex items-center gap-3 px-0 mb-8">
                     <div class="h-px w-8 bg-brand"></div>
                     <span class="text-[10px] font-black uppercase tracking-[0.4em] text-brand">{{ blog_info.badge }}</span>
                 </div>
-                <p class="text-5xl font-extrabold tracking-tight text-slate-900 sm:text-7xl font-display uppercase leading-[0.9]">{{ blog_info.title_part1 }} <br><span class="text-brand">{{ blog_info.title_part2 }}</span></p>
+                <p class="text-5xl font-extrabold tracking-tight text-slate-900 sm:text-7xl font-display uppercase leading-[0.9]">{{ blog_info.title_part1 }} <br><span class="highlight-marker text-slate-900" style="padding: 0 0.1em;">{{ blog_info.title_part2 }}</span></p>
             </div>
             <a href="{{ blog_info.view_all_link | relative_url }}" class="hidden md:flex items-center gap-2 text-[10px] font-black text-slate-900 hover:text-brand transition-colors uppercase tracking-[0.3em]">
                 {{ blog_info.view_all_text }} 

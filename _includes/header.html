@@ -1,114 +1,104 @@
-<header class="fixed top-0 z-50 w-full transition-all duration-300 flex items-center" 
-        :class="{ 'bg-linear-to-r from-white/80 via-white/60 to-brand/20 backdrop-blur-xl border-b border-white/30 h-24 shadow-sm text-slate-900': scrolled, 'bg-linear-to-r from-white/60 via-white/40 to-brand/15 backdrop-blur-xl border-b border-white/10 h-28 text-slate-900': !scrolled }"
-        x-data="{ scrolled: false, mobileMenuOpen: false }" 
-        @scroll.window="scrolled = (window.pageYOffset > 20)">
-    <nav class="mx-auto w-full flex max-w-7xl items-center justify-between px-6 lg:px-8" aria-label="Global">
-        <div class="flex lg:flex-1">
-            <a href="{{ "/" | relative_url }}" class="-m-1.5 p-1.5 flex items-center gap-2">
-                <img class="h-10 w-auto" src="{{ "/assets/logo/Logo black wide.svg" | relative_url }}" alt="{{ site.title }}">
+<header class="main-header" 
+        :class="{ 'scrolled': scrolled }"
+        x-data="{ scrolled: false }" 
+        @scroll.window="scrolled = (window.pageYOffset > 50)">
+    <div class="nav-container">
+        <!-- Logo (single image for both states) -->
+        <div class="nav-logo">
+            <a href="{{ "/" | relative_url }}" class="nav-logo-link">
+                <img src="{{ "/assets/logo/Logo black wide.svg" | relative_url }}" alt="{{ site.title }}" class="site-logo site-logo-default">
+                <img src="{{ "/assets/logo/Logo white wide.svg" | relative_url }}" alt="{{ site.title }}" class="site-logo site-logo-sticky" aria-hidden="true">
             </a>
         </div>
         
-        <!-- Desktop Nav -->
-        <div class="hidden lg:flex lg:items-center lg:gap-x-10">
-            {% for item in site.data.navigation %}
-                {% if item.dropdown %}
-                    <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
-                        <button type="button" class="flex items-center gap-x-1 text-xs font-bold uppercase tracking-[0.2em] transition-colors py-2" :class="{ 'text-brand': open, 'text-inherit opacity-80 hover:opacity-100 hover:text-brand': !open }">
-                            {{ item.title }}
-                            <svg class="h-4 w-4 flex-none opacity-50" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" :class="{ 'rotate-180': open }">
-                                <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
-                            </svg>
-                        </button>
-
-                        <div x-show="open" 
-                            x-transition:enter="transition ease-out duration-200"
-                            x-transition:enter-start="opacity-0 translate-y-1"
-                            x-transition:enter-end="opacity-100 translate-y-0"
-                            x-transition:leave="transition ease-in duration-150"
-                            x-transition:leave-start="opacity-100 translate-y-0"
-                            x-transition:leave-end="opacity-0 translate-y-1"
-                            class="absolute -left-8 top-full z-10 mt-1 w-56 overflow-hidden rounded-2xl bg-white border border-slate-100 shadow-xl ring-1 ring-slate-900/5 focus:outline-none"
-                            @click.away="open = false"
-                            style="display: none;">
-                            <div class="p-2">
+        <!-- Desktop Navigation -->
+        <nav class="nav-links-wrapper">
+            <ul class="nav-list">
+                {% for item in site.data.navigation %}
+                    {% if item.dropdown %}
+                        <li class="nav-item dropdown" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+                            <button class="nav-link dropdown-trigger">
+                                {{ item.title }}
+                                <svg class="dropdown-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <div class="dropdown-menu">
                                 {% for subitem in item.dropdown %}
-                                <div class="group relative flex items-center gap-x-6 rounded-xl p-3 text-sm leading-6 hover:bg-slate-50">
-                                    <div class="flex-auto">
-                                        <a href="{{ subitem.url | relative_url }}" class="block font-semibold text-slate-700 group-hover:text-brand transition-colors">
-                                            {{ subitem.title }}
-                                            <span class="absolute inset-0"></span>
-                                        </a>
-                                    </div>
-                                </div>
+                                    <a href="{{ subitem.url | relative_url }}" class="dropdown-item">{{ subitem.title }}</a>
                                 {% endfor %}
                             </div>
-                        </div>
-                    </div>
-                {% else %}
-                    <a href="{{ item.url | relative_url }}" class="text-xs font-bold uppercase tracking-[0.2em] opacity-80 hover:opacity-100 text-inherit hover:text-brand transition-colors py-2">{{ item.title }}</a>
-                {% endif %}
-            {% endfor %}
-        </div>
+                        </li>
+                    {% else %}
+                        <li class="nav-item">
+                            <a href="{{ item.url | relative_url }}" class="nav-link">{{ item.title }}</a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </nav>
 
         <!-- Mobile Menu Toggle -->
-        <div class="flex lg:hidden">
-            <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-inherit" @click="mobileMenuOpen = true">
-                <span class="sr-only">Open main menu</span>
-                <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                </svg>
-            </button>
-        </div>
-    </nav>
+        <button class="mobile-toggle" :class="{ 'open': mobileMenuOpen }" @click="mobileMenuOpen = !mobileMenuOpen" aria-label="Toggle menu">
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+            <span class="burger-line"></span>
+        </button>
+    </div>
 
-    <!-- Mobile Menu -->
-    <div class="lg:hidden" x-show="mobileMenuOpen" 
-        x-transition:enter="transition duration-300 ease-out" 
-        x-transition:enter-start="opacity-0" 
-        x-transition:enter-end="opacity-100" 
-        x-transition:leave="transition duration-200 ease-in" 
-        x-transition:leave-start="opacity-100" 
-        x-transition:leave-end="opacity-0" 
-        style="display: none;">
-        <div class="fixed inset-0 z-50 bg-slate-900/60 backdrop-blur-sm" @click="mobileMenuOpen = false"></div>
-        <div class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-slate-900/10 border-l border-slate-200 shadow-2xl">
-            <div class="flex items-center justify-between">
-                <a href="{{ "/" | relative_url }}" class="-m-1.5 p-1.5">
-                    <img class="h-8 w-auto" src="{{ "/assets/logo/Logo black wide.svg" | relative_url }}" alt="{{ site.title }}">
-                </a>
-                <button type="button" class="-m-2.5 rounded-md p-2.5 text-slate-700" @click="mobileMenuOpen = false">
-                    <span class="sr-only">Close menu</span>
-                    <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                    </svg>
-                </button>
-            </div>
-            <div class="mt-6 flow-root">
-                <div class="-my-6 divide-y divide-slate-100">
-                    <div class="space-y-4 py-8 text-slate-900">
+    <!-- Mobile Navigation Overlay -->
+    <template x-teleport="body">
+        <div>
+            <!-- Backdrop -->
+            <div class="mobile-nav-backdrop" x-show="mobileMenuOpen" x-transition.opacity @click="mobileMenuOpen = false"></div>
+            
+            <!-- Sidebar -->
+            <div class="mobile-nav-sidebar" :class="{ 'open': mobileMenuOpen }">
+                <div class="mobile-nav-header">
+                    <img src="{{ "/assets/logo/Logo black wide.svg" | relative_url }}" alt="{{ site.title }}" class="h-8 w-auto">
+                    <button class="mobile-nav-close" @click="mobileMenuOpen = false" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+
+                <nav class="mobile-nav-content">
+                    <ul class="mobile-nav-list">
                         {% for item in site.data.navigation %}
-                            {% if item.dropdown %}
-                                <div x-data="{ expanded: false }">
-                                    <button @click="expanded = !expanded" class="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-bold uppercase tracking-widest text-slate-900 hover:bg-slate-50 transition-colors">
+                            <li class="mobile-nav-item" x-data="{ subOpen: false }">
+                                {% if item.dropdown %}
+                                    <button class="mobile-nav-link w-full flex items-center justify-between" @click="subOpen = !subOpen">
                                         {{ item.title }}
-                                        <svg class="h-5 w-5 flex-none" :class="{ 'rotate-180': expanded }" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+                                        <svg class="w-4 h-4 transition-transform duration-300" :class="{ 'rotate-180': subOpen }" viewBox="0 0 20 20" fill="currentColor">
                                             <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
                                         </svg>
                                     </button>
-                                    <div x-show="expanded" class="mt-2 space-y-2 pl-6" style="display: none;">
+                                    <ul class="mobile-sub-list" x-show="subOpen" x-collapse>
                                         {% for subitem in item.dropdown %}
-                                            <a href="{{ subitem.url | relative_url }}" class="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold text-slate-600 hover:text-brand">{{ subitem.title }}</a>
+                                            <li>
+                                                <a href="{{ subitem.url | relative_url }}" class="mobile-sub-link" @click="mobileMenuOpen = false">
+                                                    {{ subitem.title }}
+                                                </a>
+                                            </li>
                                         {% endfor %}
-                                    </div>
-                                </div>
-                            {% else %}
-                                <a href="{{ item.url | relative_url }}" class="-mx-3 block rounded-lg px-3 py-2 text-base font-bold uppercase tracking-widest text-slate-900 hover:bg-slate-50">{{ item.title }}</a>
-                            {% endif %}
+                                    </ul>
+                                {% else %}
+                                    <a href="{{ item.url | relative_url }}" class="mobile-nav-link" @click="mobileMenuOpen = false">
+                                        {{ item.title }}
+                                    </a>
+                                {% endif %}
+                            </li>
                         {% endfor %}
-                    </div>
+                    </ul>
+                </nav>
+
+                <div class="mobile-nav-footer">
+                    <a href="/contact/" class="btn btn-primary w-full" @click="mobileMenuOpen = false">Start Your Project</a>
                 </div>
             </div>
         </div>
-    </div>
+    </template>
 </header>
+

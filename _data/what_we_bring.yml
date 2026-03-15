@@ -1,5 +1,5 @@
 badge: "What We Bring"
-title: "Innovation & <br><span class=\"text-brand\">Impact</span>"
+title: "Innovation & <br><span class=\"highlight-marker text-slate-900\" style=\"padding: 0 0.1em;\">Impact</span>"
 description: "We bring deep technical expertise and a proven methodology to de-risk your product development. We don't just solve engineering challenges; we build elegant, scalable systems designed to accelerate your market entry and ensure long-term success."
 image: "/assets/images/marketing folder/marcusengineering9.webp"
 image_alt: "Engineering Innovation"

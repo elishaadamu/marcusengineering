@@ -9,7 +9,8 @@
         <rect width="100%" height="100%" fill="url(#dot-grid)" />
     </svg>
     <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
-        <div class="xl:grid xl:grid-cols-3 xl:gap-24">
+        <div class="grid grid-cols-1 gap-12 xl:grid-cols-3 xl:gap-24">
+            <!-- Brand Column -->
             <div class="space-y-8">
                 <img class="h-10 w-auto" src="{{ "/assets/logo/Logo white wide.svg" | relative_url }}" alt="{{ site.title }}">
                 <p class="text-sm leading-7 max-w-sm text-slate-400">
@@ -19,31 +20,30 @@
                     {% for link in site.data.social %}
                         <a href="{{ link.url }}" class="text-slate-500 hover:text-white transition-colors" title="{{ link.name }}">
                             <span class="sr-only">{{ link.name }}</span>
-                            <!-- Replace with actual SVG icons or specific font-icons as needed -->
                             <span class="text-xs font-black uppercase tracking-[0.2em]">{{ link.name }}</span>
                         </a>
                     {% endfor %}
                 </div>
             </div>
-            <div class="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
-                <div class="md:grid md:grid-cols-2 md:gap-8">
-                    <div>
-                        <h3 class="text-xs font-black leading-6 text-white uppercase tracking-[0.3em]">Services</h3>
-                        <ul role="list" class="mt-8 space-y-4">
-                            <li><a href="/expertise/" class="text-sm leading-6 hover:text-white transition-colors">Our Expertise</a></li>
-                            <li><a href="/applications/" class="text-sm leading-6 hover:text-white transition-colors">Applications</a></li>
-                            <li><a href="/industries/" class="text-sm leading-6 hover:text-white transition-colors">Industries</a></li>
-                        </ul>
-                    </div>
-                    <div class="mt-10 md:mt-0">
-                        <h3 class="text-xs font-black leading-6 text-white uppercase tracking-[0.3em]">Company</h3>
-                        <ul role="list" class="mt-8 space-y-4">
-                            <li><a href="/about/" class="text-sm leading-6 hover:text-white transition-colors">About Us</a></li>
-                            <li><a href="/blog/" class="text-sm leading-6 hover:text-white transition-colors">Engineering Blog</a></li>
-                            <li><a href="/contact/" class="text-sm leading-6 hover:text-white transition-colors">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
+
+            <!-- Services Column -->
+            <div>
+                <h3 class="text-xs font-black leading-6 text-white uppercase tracking-[0.3em]">Services</h3>
+                <ul role="list" class="mt-8 space-y-4">
+                    <li><a href="/expertise/" class="text-sm leading-6 hover:text-white transition-colors">Our Expertise</a></li>
+                    <li><a href="/applications/" class="text-sm leading-6 hover:text-white transition-colors">Applications</a></li>
+                    <li><a href="/industries/" class="text-sm leading-6 hover:text-white transition-colors">Industries</a></li>
+                </ul>
+            </div>
+
+            <!-- Company Column -->
+            <div>
+                <h3 class="text-xs font-black leading-6 text-white uppercase tracking-[0.3em]">Company</h3>
+                <ul role="list" class="mt-8 space-y-4">
+                    <li><a href="/about/" class="text-sm leading-6 hover:text-white transition-colors">About Us</a></li>
+                    <li><a href="/blog/" class="text-sm leading-6 hover:text-white transition-colors">Engineering Blog</a></li>
+                    <li><a href="/contact/" class="text-sm leading-6 hover:text-white transition-colors">Contact</a></li>
+                </ul>
             </div>
         </div>
         <div class="mt-24 border-t border-slate-800 pt-12 flex flex-col items-center justify-between gap-6 md:flex-row">

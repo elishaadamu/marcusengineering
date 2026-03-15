@@ -1,0 +1,171 @@
+<canvas id="mouse-effect-canvas" class="fixed inset-0 z-[50] pointer-events-none w-full h-full"></canvas>
+
+<script>
+(function() {
+    const canvas = document.getElementById('mouse-effect-canvas');
+    if (!canvas) return;
+    const ctx = canvas.getContext('2d');
+
+    let particles = [];
+    let ripples = [];
+    let mouse = { x: -1000, y: -1000, radius: 250 }; 
+    let targetMouse = { x: -1000, y: -1000 };
+    
+    // Get brand color or default
+    const brandColor = getComputedStyle(document.documentElement).getPropertyValue('--brand-primary').trim() || '#49a942';
+
+    class Particle {
+        constructor(x, y) {
+            this.x = x;
+            this.y = y;
+            this.baseX = x;
+            this.baseY = y;
+            this.size = 1.2;
+            this.ease = 0.04; // Slower, silkier return
+            this.friction = 0.94; // Less resistance for more fluid feel
+            this.vx = 0;
+            this.vy = 0;
+            this.color = brandColor;
+            this.baseOpacity = Math.random() * 0.15 + 0.1;
+        }
+
+        draw() {
+            let dx = mouse.x - this.x;
+            let dy = mouse.y - this.y;
+            let distance = Math.sqrt(dx * dx + dy * dy);
+            
+            let opacity = this.baseOpacity;
+            let size = this.size;
+
+            if (distance < mouse.radius) {
+                let ratio = (mouse.radius - distance) / mouse.radius;
+                // Use a smoothstep-like curve for glow
+                let glow = ratio * ratio * (3 - 2 * ratio);
+                opacity = this.baseOpacity + (glow * 0.7);
+                size = this.size + (glow * 3);
+            }
+            
+            ctx.fillStyle = this.color;
+            ctx.globalAlpha = opacity;
+            ctx.beginPath();
+            ctx.arc(this.x, this.y, size, 0, Math.PI * 2);
+            ctx.fill();
+        }
+
+        update() {
+            let dx = mouse.x - this.x;
+            let dy = mouse.y - this.y;
+            let distance = Math.sqrt(dx * dx + dy * dy);
+
+            if (distance < mouse.radius) {
+                let force = (mouse.radius - distance) / mouse.radius;
+                let angle = Math.atan2(dy, dx);
+                // Stronger but smoother push
+                let pushFactor = force * force * 12; 
+                this.vx -= Math.cos(angle) * pushFactor;
+                this.vy -= Math.sin(angle) * pushFactor;
+            }
+
+            // Return to original position with soft easing
+            this.vx += (this.baseX - this.x) * this.ease;
+            this.vy += (this.baseY - this.y) * this.ease;
+
+            this.vx *= this.friction;
+            this.vy *= this.friction;
+
+            this.x += this.vx;
+            this.y += this.vy;
+
+            // Ripple interaction
+            ripples.forEach(ripple => {
+                let rdx = ripple.x - this.x;
+                let rdy = ripple.y - this.y;
+                let rDist = Math.sqrt(rdx * rdx + rdy * rdy);
+                if (rDist < ripple.radius && rDist > ripple.radius - 40) {
+                    let angle = Math.atan2(rdy, rdx);
+                    let rForce = (1 - ripple.radius / 1200) * 15;
+                    this.vx -= Math.cos(angle) * rForce;
+                    this.vy -= Math.sin(angle) * rForce;
+                }
+            });
+        }
+    }
+
+    function init() {
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        particles = [];
+        const spacing = window.innerWidth < 768 ? 42 : 38; 
+        const rows = Math.ceil(canvas.height / spacing) + 1;
+        const cols = Math.ceil(canvas.width / spacing) + 1;
+        
+        for (let i = 0; i < rows; i++) {
+            for (let j = 0; j < cols; j++) {
+                particles.push(new Particle(j * spacing, i * spacing));
+            }
+        }
+    }
+
+    function animate() {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        
+        // Smoothly interpolate mouse position (LERP)
+        mouse.x += (targetMouse.x - mouse.x) * 0.15;
+        mouse.y += (targetMouse.y - mouse.y) * 0.15;
+
+        // Update ripples
+        ripples = ripples.filter(r => r.radius < 1200);
+        ripples.forEach(r => {
+            r.radius += 18;
+            ctx.strokeStyle = brandColor;
+            ctx.globalAlpha = (1200 - r.radius) / 1200 * 0.3;
+            ctx.lineWidth = 2;
+            ctx.beginPath();
+            ctx.arc(r.x, r.y, r.radius, 0, Math.PI * 2);
+            ctx.stroke();
+        });
+
+        particles.forEach(p => {
+            p.update();
+            p.draw();
+        });
+        
+        requestAnimationFrame(animate);
+    }
+
+    const triggerRipple = (x, y) => {
+        ripples.push({ x: x, y: y, radius: 0 });
+    };
+
+    window.addEventListener('mousemove', e => {
+        targetMouse.x = e.clientX;
+        targetMouse.y = e.clientY;
+        // If first move, snap mouse to avoid starting from -1000
+        if (mouse.x < 0) {
+            mouse.x = targetMouse.x;
+            mouse.y = targetMouse.y;
+        }
+    });
+
+    window.addEventListener('mousedown', e => {
+        triggerRipple(e.clientX, e.clientY);
+    });
+
+    window.addEventListener('resize', () => {
+        init();
+    });
+    
+    window.addEventListener('touchmove', e => {
+        if (e.touches.length > 0) {
+            mouse.x = e.touches[0].clientX;
+            mouse.y = e.touches[0].clientY;
+        }
+    });
+
+    init();
+    animate();
+    
+    // Initial "Activate" burst
+    setTimeout(() => triggerRipple(window.innerWidth / 2, window.innerHeight / 2), 400);
+})();
+</script>
