@@ -3,7 +3,6 @@ layout: post
 title: "Part 2 – Low Power Design Battery Limitations"
 date: 2023-09-07 15:36:38 
 categories: ['Electronics', 'Engineering', 'Low Power Design Series']
-permalink: /part-2-low-power-design-battery-limitations/
 thumbnail: "/assets/images/thumbnails/2-bat-940x656.webp"
 author: kyle-cerniglia
 ---

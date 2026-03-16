@@ -3,7 +3,6 @@ layout: post
 title: "Pitchfest Judging"
 date: 2016-05-10 15:10:16 
 categories: ['Business', 'Community Engagement', 'Uncategorized']
-permalink: /pitchfest-judging/
 thumbnail: "/assets/images/thumbnails/Innovate-ua-4-940x627.webp"
 author: misa-gonzales
 ---

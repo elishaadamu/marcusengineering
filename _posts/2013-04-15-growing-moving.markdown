@@ -3,7 +3,6 @@ layout: post
 title: "Growing & Moving"
 date: 2013-04-15 09:13:55 
 categories: ['Business']
-permalink: /growing-moving/
 thumbnail: "/assets/images/thumbnails/address.webp"
 author: tam-nguyen
 ---

@@ -3,7 +3,6 @@ layout: post
 title: "Planting STEM Interest in Local Middle School"
 date: 2014-02-01 18:07:59 
 categories: ['Biotechnology', 'Community Engagement', 'Education', 'Engineering']
-permalink: /planting-stem-interest-in-local-middle-school/
 thumbnail: "/assets/images/thumbnails/st-cyril-banner-crop-294x300.webp"
 author: jared-erman
 ---

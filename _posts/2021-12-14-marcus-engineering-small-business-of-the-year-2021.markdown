@@ -3,7 +3,6 @@ layout: post
 title: "Marcus Engineering Small Business of the Year 2021"
 date: 2021-12-14 09:34:19 
 categories: ['Uncategorized']
-permalink: /marcus-engineering-small-business-of-the-year-2021/
 thumbnail: "/assets/images/thumbnails/award-image-generated.webp"
 author: dana-gunn
 ---

@@ -3,7 +3,6 @@ layout: post
 title: "Culture is King!!!"
 date: 2018-04-27 13:01:13 
 categories: ['Business', 'Engineering', 'Thought Leadership']
-permalink: /culture-is-king/
 thumbnail: "/assets/images/thumbnails/Capture.webp"
 author: patrick-marcus
 ---

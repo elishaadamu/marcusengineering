@@ -3,7 +3,6 @@ layout: post
 title: "Marcus Engineering Intern Receives National Recognition"
 date: 2014-01-06 09:59:36 
 categories: ['Business', 'Engineering']
-permalink: /marcus-engineering-intern-receives-national-recognition/
 thumbnail: "/assets/images/thumbnails/IMG_8516_resize-300x200.webp"
 author: patrick-marcus
 ---

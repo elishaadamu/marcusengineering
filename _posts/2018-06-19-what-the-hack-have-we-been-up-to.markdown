@@ -3,7 +3,6 @@ layout: post
 title: "What the HACK have we been up to??"
 date: 2018-06-19 16:45:30 
 categories: ['Community Engagement', 'Education', 'Engineering']
-permalink: /what-the-hack-have-we-been-up-to/
 thumbnail: "/assets/images/thumbnails/code-820275_1920-940x627.webp"
 author: erin-cary
 ---

@@ -3,7 +3,6 @@ layout: post
 title: "For Sale: Great Ideas $1, Execution Priceless!"
 date: 2012-11-08 03:54:36 
 categories: ['Business']
-permalink: /for-sale-great-ideas-1-execution-priceless/
 thumbnail: "/assets/images/thumbnails/01-GreatIdeas_full-300x300.webp"
 author: patrick-marcus
 ---

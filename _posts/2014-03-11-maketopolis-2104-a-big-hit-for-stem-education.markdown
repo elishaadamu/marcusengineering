@@ -3,7 +3,6 @@ layout: post
 title: "Maketopolis 2014 a Big Hit for Tucson STEM Education"
 date: 2014-03-11 08:19:59 
 categories: ['Community Engagement', 'Education', 'Engineering']
-permalink: /maketopolis-2104-a-big-hit-for-stem-education/
 thumbnail: "/assets/images/thumbnails/Raytheon.webp"
 ---
 

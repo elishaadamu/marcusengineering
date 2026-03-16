@@ -3,7 +3,6 @@ layout: post
 title: "IdeaFunding Improves Tucson Ventures"
 date: 2013-11-05 18:07:01 
 categories: ['Business', 'Community Engagement', 'Education']
-permalink: /ideafunding-improves-tucson-ventures/
 thumbnail: "/assets/images/thumbnails/ideafunding-logo.webp"
 author: jared-erman
 ---

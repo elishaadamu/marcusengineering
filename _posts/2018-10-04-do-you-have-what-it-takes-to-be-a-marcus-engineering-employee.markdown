@@ -3,7 +3,6 @@ layout: post
 title: "Do you have what it takes to be a Marcus Engineering Employee?"
 date: 2018-10-04 13:52:35 
 categories: ['Uncategorized']
-permalink: /do-you-have-what-it-takes-to-be-a-marcus-engineering-employee/
 thumbnail: "/assets/images/thumbnails/IMG_3542-940x712.webp"
 author: james-rowley
 ---

@@ -3,7 +3,6 @@ layout: post
 title: "Dumpster Diving"
 date: 2014-03-21 11:15:30 
 categories: ['Uncategorized']
-permalink: /dumpster-diving/
 thumbnail: "/assets/images/thumbnails/IMG_20140320_155758_resize.webp"
 author: patrick-marcus
 ---

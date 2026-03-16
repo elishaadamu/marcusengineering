@@ -3,7 +3,6 @@ layout: post
 title: "UofA Engineers Foster Mentorship Pipeline"
 date: 2021-11-24 09:38:33 
 categories: ['Business', 'Education', 'Engineering']
-permalink: /uofa-engineers-foster-mentorship-pipeline/
 thumbnail: "/assets/images/thumbnails/20211105_Group-picture-2.webp"
 author: dana-gunn
 ---

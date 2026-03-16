@@ -3,7 +3,6 @@ layout: post
 title: "Eller College Alumni Profile"
 date: 2011-11-12 13:55:16 
 categories: ['Business']
-permalink: /eller-college-alumni-profile/
 # thumbnail: "/assets/images/thumbnails/.webp"
 ---
 

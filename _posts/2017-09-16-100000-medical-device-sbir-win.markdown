@@ -3,7 +3,6 @@ layout: post
 title: "$100,000 Medical Device SBIR Win!"
 date: 2017-09-16 17:05:53 
 categories: ['Business', 'Entrepreneurship']
-permalink: /100000-medical-device-sbir-win/
 thumbnail: "/assets/images/thumbnails/fingerprint-1.webp"
 author: patrick-marcus
 ---

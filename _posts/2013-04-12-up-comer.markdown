@@ -3,7 +3,6 @@ layout: post
 title: "Up & Comer"
 date: 2013-04-12 09:23:31 
 categories: ['Business', 'Community Engagement']
-permalink: /up-comer/
 # thumbnail: "/assets/images/thumbnails/.webp"
 ---
 

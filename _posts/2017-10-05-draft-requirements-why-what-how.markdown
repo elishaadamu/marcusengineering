@@ -3,7 +3,6 @@ layout: post
 title: "Requirements Why? What? How?"
 date: 2017-10-05 10:52:17 
 categories: ['Community Engagement', 'Electronics', 'Engineering', 'Entrepreneurship', 'Uncategorized']
-permalink: /draft-requirements-why-what-how/
 thumbnail: "/assets/images/thumbnails/business-cat-300x200.webp"
 ---
 

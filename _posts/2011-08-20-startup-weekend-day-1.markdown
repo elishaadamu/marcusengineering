@@ -3,7 +3,6 @@ layout: post
 title: "Startup Weekend: Day 1"
 date: 2011-08-20 08:21:54 
 categories: ['Uncategorized']
-permalink: /startup-weekend-day-1/
 # thumbnail: "/assets/images/thumbnails/.webp"
 author: patrick-marcus
 ---

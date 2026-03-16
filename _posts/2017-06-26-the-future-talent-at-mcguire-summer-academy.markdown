@@ -3,7 +3,6 @@ layout: post
 title: "The Future Talent at McGuire Summer Academy"
 date: 2017-06-26 12:30:02 
 categories: ['Business', 'Community Engagement', 'Education', 'Entrepreneurship']
-permalink: /the-future-talent-at-mcguire-summer-academy/
 thumbnail: "/assets/images/thumbnails/team-300x196.webp"
 ---
 

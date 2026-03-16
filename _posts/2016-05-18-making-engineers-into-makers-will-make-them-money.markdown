@@ -3,7 +3,6 @@ layout: post
 title: "Making Engineers into Makers, will Make them Money!"
 date: 2016-05-18 11:36:23 
 categories: ['Community Engagement', 'Education', 'Engineering']
-permalink: /making-engineers-into-makers-will-make-them-money/
 thumbnail: "/assets/images/thumbnails/rsz_3img_4571-940x427.webp"
 author: misa-gonzales
 ---

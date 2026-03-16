@@ -3,7 +3,6 @@ layout: post
 title: "$300k Up for Grabs at Venture Madness 2017"
 date: 2017-03-12 15:01:22 
 categories: ['Business', 'Community Engagement', 'Entrepreneurship']
-permalink: /300k-up-for-grabs-at-venture-madness-2017/
 thumbnail: "/assets/images/thumbnails/Venture-Madness-Panel-edited-2-300x124.webp"
 author: lindsay-miller
 ---

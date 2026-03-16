@@ -3,7 +3,6 @@ layout: post
 title: "Startup Weekend: Creating an Entrepreneurial Community"
 date: 2011-08-18 12:14:00 
 categories: ['Uncategorized']
-permalink: /startup-weekend-creating-an-entrepreneurial-community/
 thumbnail: "/assets/images/thumbnails/Startup-Weekend-Image.webp"
 author: patrick-marcus
 ---

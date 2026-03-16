@@ -3,7 +3,6 @@ layout: post
 title: "Year-end Awards Highlight Marcus Leadership in Community"
 date: 2015-02-08 17:57:38 
 categories: ['Business', 'Community Engagement', 'Education']
-permalink: /year-end-awards-highlight-marcus-leadership-in-community/
 thumbnail: "/assets/images/thumbnails/breakfast_20141107_050.webp"
 author: misa-gonzales
 ---

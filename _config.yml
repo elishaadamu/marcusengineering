@@ -36,16 +36,18 @@ brand_color: "#49A942" # Pantone 7738
 
 # Build settings
 # theme: minima # Disabled to use custom Tailwind design
-permalink: /:title/
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-seo-tag
-  - jekyll-paginate-v2
+permalink: /:category/:title/
+autopages:
+  enabled: true
+  categories:
+    layouts:
+      - category.html
+    title: ':cat - Engineering Insights'
+    permalink: '/category/:cat/'
 
 pagination:
   enabled: true
-  per_page: 9
+  per_page: 8
   permalink: '/page/:num/'
   title: ':title - page :num of :max'
   limit: 0

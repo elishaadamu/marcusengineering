@@ -1,0 +1,73 @@
+---
+layout: default
+---
+
+<section class="relative pt-20 flex items-center min-h-[40vh] overflow-hidden bg-slate-900 border-b border-brand/20">
+    <!-- Background Elements -->
+    <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-[2px]"></div>
+        <div class="absolute inset-0 bg-linear-to-b from-transparent to-slate-900"></div>
+        <!-- Decorative Grid -->
+        <div class="absolute inset-0 opacity-10" style="background-image: radial-gradient(#49A942 0.5px, transparent 0.5px); background-size: 24px 24px;"></div>
+    </div>
+
+    <div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 w-full text-center">
+        <h2 class="text-xs font-black leading-7 text-brand uppercase tracking-[0.5em] mb-4">Category Archive</h2>
+        <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-7xl font-display uppercase leading-none mb-6">
+            {{ page.autopage.display_name }}
+        </h1>
+        <div class="h-1.5 w-24 bg-brand mx-auto mb-8"></div>
+        <p class="text-xl leading-8 text-slate-300 font-medium max-w-2xl mx-auto drop-shadow-sm">
+            Exploring technical excellence and innovations in <span class="text-brand">{{ page.autopage.display_name }}</span>.
+        </p>
+    </div>
+</section>
+
+<section class="py-24 bg-transparent min-h-screen">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+            {% for post in paginator.posts %}
+                {% include post-card.html post=post %}
+            {% endfor %}
+        </div>
+
+        {% if paginator.posts.size == 0 %}
+            <div class="text-center py-20">
+                <p class="text-slate-400 font-display uppercase tracking-widest text-sm">No posts found in this category.</p>
+            </div>
+        {% endif %}
+
+        <!-- Pagination -->
+        {% if paginator.total_pages > 1 %}
+        <nav class="blog-pagination mt-24" aria-label="Pagination">
+            <div class="pagination-container justify-center">
+                {% if paginator.previous_page %}
+                    <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-btn">
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.25-4a.75.75 0 010-1.08l4.25-4a.75.75 0 011.06.02z" clip-rule="evenodd" /></svg>
+                    </a>
+                {% endif %}
+
+                {% for trail in paginator.page_trail %}
+                    <a href="{{ trail.path | relative_url }}" class="pagination-number {% if paginator.page == trail.num %}active{% endif %}">
+                        {{ trail.num }}
+                    </a>
+                {% endfor %}
+
+                {% if paginator.next_page %}
+                    <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-btn">
+                        <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.25 4a.75.75 0 010 1.08l-4.25 4a.75.75 0 01-1.06-.02z" clip-rule="evenodd" /></svg>
+                    </a>
+                {% endif %}
+            </div>
+        </nav>
+        {% endif %}
+
+        <div class="mt-20 text-center">
+            <a href="{{ '/blog/' | relative_url }}" class="inline-flex items-center gap-2 text-xs font-black text-slate-400 hover:text-brand uppercase tracking-[0.3em] transition-colors">
+                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+                Back to All Insights
+            </a>
+        </div>
+    </div>
+</section>

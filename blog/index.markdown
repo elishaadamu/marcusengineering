@@ -113,10 +113,10 @@ pagination:
                             <div class="flex flex-wrap gap-2">
                                 {% assign categories = site.categories | sort %}
                                 {% for category in categories %}
-                                    <button @click="view = 'topic'; $nextTick(() => { document.getElementById('topic-{{ category[0] | slugify }}').scrollIntoView({ behavior: 'smooth' }) })" 
+                                    <a href="{{ '/category/' | append: (category[0] | slugify) | append: '/' | relative_url }}" 
                                             class="px-4 py-2 bg-slate-50 hover:bg-brand hover:text-white rounded-lg text-[10px] font-bold text-slate-600 transition-all uppercase tracking-wider">
                                         {{ category[0] }}
-                                    </button>
+                                    </a>
                                 {% endfor %}
                             </div>
                         </div>
@@ -224,6 +224,7 @@ pagination:
                                                 {% for tag in post.tags %}
                                                     <span class="meta-pill">{{ tag }}</span>
                                                 {% endfor %}
+                                                <a href="{{ '/category/' | append: (category[0] | slugify) | append: '/' | relative_url }}" class="ml-auto text-[10px] font-black text-brand uppercase tracking-widest hover:underline">View All {{ category[0] }}</a>
                                             </div>
                                         </div>
                                     </div>

@@ -3,7 +3,6 @@ layout: post
 title: "Dr. Marcus Receives Catapult Award for Ecosystem Impact"
 date: 2014-04-17 08:57:09 
 categories: ['Business', 'Community Engagement', 'Education']
-permalink: /dr-marcus-receives-catapult-award-for-ecosystem-impact/
 thumbnail: "/assets/images/thumbnails/IMG_3042-cropped-300x266.webp"
 author: jared-erman
 ---

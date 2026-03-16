@@ -3,7 +3,6 @@ layout: post
 title: "High School Students Design Real Circuits Thanks to Marcus Engineering Internship Programs"
 date: 2018-07-25 15:37:17 
 categories: ['Community Engagement', 'Education', 'Electronics']
-permalink: /high-school-students-design-real-circuits-thanks-to-marcus-engineering-internship-programs/
 thumbnail: "/assets/images/thumbnails/IMG_3283-940x627.webp"
 author: erin-cary
 ---

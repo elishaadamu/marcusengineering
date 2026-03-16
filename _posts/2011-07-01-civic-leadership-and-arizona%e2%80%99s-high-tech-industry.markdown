@@ -3,7 +3,6 @@ layout: post
 title: "Civic leadership and Arizona’s high-tech industry"
 date: 2011-07-01 21:06:41 
 categories: ['Business', 'Community Engagement']
-permalink: /civic-leadership-and-arizona%e2%80%99s-high-tech-industry/
 thumbnail: "/assets/images/thumbnails/patrick-marcus.webp"
 ---
 

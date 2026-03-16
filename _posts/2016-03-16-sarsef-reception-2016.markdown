@@ -3,7 +3,6 @@ layout: post
 title: "SARSEF Reception 2016"
 date: 2016-03-16 15:05:19 
 categories: ['Community Engagement', 'Education', 'Uncategorized']
-permalink: /sarsef-reception-2016/
 thumbnail: "/assets/images/thumbnails/sarsef-2016-reception-940x529.webp"
 author: misa-gonzales
 ---

@@ -3,7 +3,6 @@ layout: post
 title: "University of Arizona - Advocate for Education "
 date: 2013-04-18 09:29:03 
 categories: ['Community Engagement', 'Education']
-permalink: /university-of-arizona-advocate-for-education/
 thumbnail: "/assets/images/thumbnails/honors_collegeb00762.webp"
 author: tam-nguyen
 ---

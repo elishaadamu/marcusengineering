@@ -3,7 +3,6 @@ layout: post
 title: "Arizona Showcases Itself as a Resilient Fast Growing Tech Hub"
 date: 2021-10-28 17:26:39 
 categories: ['Business', 'Community Engagement', 'Entrepreneurship']
-permalink: /arizona-showcases-itself-as-a-resilient-fast-growing-tech-hub/
 thumbnail: "/assets/images/thumbnails/2021_GCOI_Recognition_of_elected_officials_1500x-940x705.webp"
 author: dana-gunn
 ---

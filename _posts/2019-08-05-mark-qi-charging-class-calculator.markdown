@@ -3,7 +3,6 @@ layout: post
 title: "Mark's Qi Charging Class and Calculator"
 date: 2019-08-05 10:04:53 
 categories: ['Education', 'Electronics', 'Engineering']
-permalink: /mark-qi-charging-class-calculator/
 thumbnail: "/assets/images/thumbnails/qi_coupling-940x452.webp"
 author: james-rowley
 ---

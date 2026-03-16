@@ -3,7 +3,6 @@ layout: post
 title: "Drive Determines Opportunity"
 date: 2022-05-10 11:58:14 
 categories: ['Community Engagement', 'Education']
-permalink: /drive-determines-opportunity/
 # thumbnail: "/assets/images/thumbnails/.webp"
 author: dana-gunn
 ---

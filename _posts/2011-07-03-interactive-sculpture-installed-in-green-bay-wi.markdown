@@ -3,7 +3,6 @@ layout: post
 title: "Interactive Sculpture Installed in Green Bay, WI"
 date: 2011-07-03 17:48:41 
 categories: ['Community Engagement']
-permalink: /interactive-sculpture-installed-in-green-bay-wi/
 thumbnail: "/assets/images/thumbnails/bilde.webp"
 author: patrick-marcus
 ---

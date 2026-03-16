@@ -3,7 +3,6 @@ layout: post
 title: "TENWEST IdeaFunding Making an Impact"
 date: 2023-03-09 18:04:22 
 categories: ['Business', 'Community Engagement', 'Education', 'Entrepreneurship']
-permalink: /tenwest-ideafunding-making-an-impact/
 thumbnail: "/assets/images/thumbnails/20221103_130337.webp"
 author: dana-gunn
 ---

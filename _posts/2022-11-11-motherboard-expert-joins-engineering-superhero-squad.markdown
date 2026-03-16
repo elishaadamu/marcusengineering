@@ -3,7 +3,6 @@ layout: post
 title: "Motherboard Expert Joins Engineering Superhero Squad"
 date: 2022-11-11 15:51:39 
 categories: ['Business', 'Engineering', 'Uncategorized']
-permalink: /motherboard-expert-joins-engineering-superhero-squad/
 thumbnail: "/assets/images/thumbnails/IMG_9938-2-scaled-e1668206029243-940x806.webp"
 author: dana-gunn
 ---

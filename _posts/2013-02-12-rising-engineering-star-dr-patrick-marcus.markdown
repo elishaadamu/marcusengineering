@@ -3,7 +3,6 @@ layout: post
 title: "Rising Engineering Star: Dr. Patrick Marcus"
 date: 2013-02-12 10:51:13 
 categories: ['Business', 'Community Engagement']
-permalink: /rising-engineering-star-dr-patrick-marcus/
 thumbnail: "/assets/images/thumbnails/Article1.webp"
 author: tam-nguyen
 ---

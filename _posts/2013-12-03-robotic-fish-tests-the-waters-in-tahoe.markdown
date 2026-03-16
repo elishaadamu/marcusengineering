@@ -3,7 +3,6 @@ layout: post
 title: "Robotic Fish Tests the Waters in Tahoe"
 date: 2013-12-03 18:05:41 
 categories: ['Community Engagement', 'Education', 'Electronics', 'Industrial Controls and Automation']
-permalink: /robotic-fish-tests-the-waters-in-tahoe/
 thumbnail: "/assets/images/thumbnails/GB_4325.webp"
 author: jared-erman
 ---

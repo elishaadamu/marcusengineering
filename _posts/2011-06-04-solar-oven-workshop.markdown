@@ -4,7 +4,6 @@ title: "Solar Oven Workshop"
 date: 2011-06-04 19:10:57 
 categories: ['Community Engagement']
 tags: ['education', 'solar']
-permalink: /solar-oven-workshop/
 thumbnail: "/assets/images/thumbnails/P1010011-1024x768.webp"
 author: patrick-marcus
 ---
