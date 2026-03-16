@@ -12,13 +12,13 @@ layout: default
     </div>
 
     <div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 w-full text-center">
-        <h2 class="text-xs font-black leading-7 text-brand uppercase tracking-[0.5em] mb-4">Category Archive</h2>
+        <h2 class="text-xs font-black leading-7 text-brand uppercase tracking-[0.5em] mb-4">Tag Archive</h2>
         <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-7xl font-display uppercase leading-none mb-6">
             {{ page.autopage.display_name }}
         </h1>
         <div class="h-1.5 w-24 bg-brand mx-auto mb-8"></div>
         <p class="text-xl leading-8 text-slate-300 font-medium max-w-2xl mx-auto drop-shadow-sm">
-            Exploring technical excellence and innovations in <span class="text-brand">{{ page.autopage.display_name }}</span>.
+            Exploring technical excellence and innovations tagged with <span class="text-brand">{{ page.autopage.display_name }}</span>.
         </p>
     </div>
 </section>
@@ -26,7 +26,7 @@ layout: default
 <section class="py-24 bg-transparent min-h-screen">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
 
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
             {% for post in paginator.posts %}
                 {% include post-card.html post=post %}
             {% endfor %}
@@ -34,7 +34,7 @@ layout: default
 
         {% if paginator.posts.size == 0 %}
             <div class="text-center py-20">
-                <p class="text-slate-400 font-display uppercase tracking-widest text-sm">No posts found in this category.</p>
+                <p class="text-slate-400 font-display uppercase tracking-widest text-sm">No posts found with this tag.</p>
             </div>
         {% endif %}
 

@@ -36,14 +36,26 @@ brand_color: "#49A942" # Pantone 7738
 
 # Build settings
 # theme: minima # Disabled to use custom Tailwind design
-permalink: /:category/:title/
+# Permalink handled by _plugins/first_category_permalink.rb to use only first category
+# permalink: /:categories/:title/
 autopages:
   enabled: true
   categories:
+    slugify:
+      mode: 'pretty'
+      case: true
     layouts:
       - category.html
     title: ':cat - Engineering Insights'
     permalink: '/category/:cat/'
+  tags:
+    slugify:
+      mode: 'pretty'
+      case: true
+    layouts:
+      - autopage_tags.html
+    title: '#:tag - Engineering Insights'
+    permalink: '/tag/:tag/'
 
 pagination:
   enabled: true
