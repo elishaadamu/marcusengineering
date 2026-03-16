@@ -4,7 +4,8 @@ title: "Mark's Qi Charging Class and Calculator"
 date: 2019-08-05 10:04:53 
 categories: ['Education', 'Electronics', 'Engineering']
 permalink: /mark-qi-charging-class-calculator/
-thumbnail: ""
+thumbnail: "/assets/images/thumbnails/qi_coupling-940x452.webp"
+author: james-rowley
 ---
 
 Mark Omo will be giving a presentation on Qi Wireless Charging at Microchip Technology's 2019 Worldwide MASTERs conference, along with Santosh Bhandarkar from Microchip. Their class is 23104 PC12: Fundamentals of Wireless Power, and if you'll be at MASTERs this year, you should check it out.

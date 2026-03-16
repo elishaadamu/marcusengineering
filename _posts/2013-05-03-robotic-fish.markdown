@@ -4,7 +4,8 @@ title: "Our Robotic Fish Wins Design Day"
 date: 2013-05-03 15:01:13 
 categories: ['Community Engagement', 'Education', 'Electronics']
 permalink: /robotic-fish/
-thumbnail: ""
+thumbnail: "/assets/images/thumbnails/GB_4325.webp"
+author: tam-nguyen
 ---
 
 Educational outreach is important to Marcus Engineering. As part of these efforts we often sponsor and mentor engineering design teams at the University of Arizona. Bright students with some veteran engineering direction produces magnificent commercializable products like the Robotic Fish.

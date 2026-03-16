@@ -4,7 +4,8 @@ title: "Dr. Marcus : Leader Under 40"
 date: 2011-12-27 08:50:21 
 categories: ['Business', 'Community Engagement', 'Electronics', 'Industrial Controls and Automation']
 permalink: /dr-marcus-leader-under-40/
-thumbnail: ""
+thumbnail: "/assets/images/thumbnails/RTEmagicC_ctl1110L40-13-PatrickMarcusWorkstation.jpg.webp"
+author: patrick-marcus
 ---
 
 &nbsp;

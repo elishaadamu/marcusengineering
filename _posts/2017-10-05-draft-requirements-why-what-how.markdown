@@ -4,7 +4,7 @@ title: "Requirements Why? What? How?"
 date: 2017-10-05 10:52:17 
 categories: ['Community Engagement', 'Electronics', 'Engineering', 'Entrepreneurship', 'Uncategorized']
 permalink: /draft-requirements-why-what-how/
-thumbnail: ""
+thumbnail: "/assets/images/thumbnails/business-cat-300x200.webp"
 ---
 
 There is often confusion among our customers regarding how to formulate a contract, a statement of work and an engagement for design services.  The confusion often lies in 3 simple question “Why? What? and How?”

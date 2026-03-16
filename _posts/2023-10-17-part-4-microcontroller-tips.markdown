@@ -4,7 +4,8 @@ title: "Part 4 - Microcontroller Tips"
 date: 2023-10-17 14:20:36 
 categories: ['Business', 'Electronics', 'Low Power Design Series']
 permalink: /part-4-microcontroller-tips/
-thumbnail: "/assets/images/posts/image-2-550x313.webp"
+thumbnail: "/assets/images/thumbnails/part4.webp"
+author: kyle-cerniglia
 ---
 
 <!-- wp:heading -->

@@ -4,12 +4,10 @@ title: "TENWEST IdeaFunding Making an Impact"
 date: 2023-03-09 18:04:22 
 categories: ['Business', 'Community Engagement', 'Education', 'Entrepreneurship']
 permalink: /tenwest-ideafunding-making-an-impact/
-thumbnail: ""
+thumbnail: "/assets/images/thumbnails/20221103_130337.webp"
+author: dana-gunn
 ---
 
-<!-- wp:image {"id":6427,"sizeSlug":"large","linkDestination":"none","className":"is-style-default"} -->
-<figure class="wp-block-image size-large is-style-default"><img src="/assets/images/posts/20221103_093022-1.webp" alt="" class="wp-image-6427"/></figure>
-<!-- /wp:image -->
 
 <!-- wp:paragraph -->
 <p>The <a href="https://www.tenwest.com/">TENWEST Impact Festival</a> is one of Arizona’s leading innovation conferences. <a href="https://www.startuptucson.com/">Startup Tucson </a>celebrated its 25th anniversary of TENWEST’s most popular event, the IdeaFunding Pitch Competition this last October. Established and led by Startup Tucson, and with new co-lead University of <a href="https://www.uaci.com/">Arizona Center for Innovation</a> (UACI), the TENWEST Impact Festival is a multi-day professional conference of local, regional, and national attendees who gather together to focus on solutions for driving social, environmental, and economic impact.</p>

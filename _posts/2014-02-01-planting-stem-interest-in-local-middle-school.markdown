@@ -4,7 +4,8 @@ title: "Planting STEM Interest in Local Middle School"
 date: 2014-02-01 18:07:59 
 categories: ['Biotechnology', 'Community Engagement', 'Education', 'Engineering']
 permalink: /planting-stem-interest-in-local-middle-school/
-thumbnail: ""
+thumbnail: "/assets/images/thumbnails/st-cyril-banner-crop-294x300.webp"
+author: jared-erman
 ---
 
 Marcus Engineering is committed to helping Tucson’s youth become passionate about the future, wherever it may lead them. On October 29, 2013, Marcus Engineering CEO Dr. Patrick Marcus and embedded systems engineer Chas Leichner visited St. Cyril School to speak with middle-school students about engineering and biotechnology.

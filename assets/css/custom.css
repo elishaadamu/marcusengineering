@@ -206,6 +206,12 @@
     height: 70px;
 }
 
+@media (max-width: 640px) {
+    .nav-container {
+        padding: 0 1rem;
+    }
+}
+
 .main-header.scrolled .nav-container {
     height: 55px; /* Slightly shorter on scroll */
 }
@@ -239,7 +245,7 @@
 
 @media (max-width: 640px) {
     .site-logo {
-        height: 28px; /* Mobile size */
+        height: 22px; /* Reduced for mobile to fit toggle */
     }
 }
 
@@ -256,7 +262,6 @@
 }
 .main-header.scrolled .site-logo-sticky {
     display: inline-block;
-    height: 36px;
 }
 
 .nav-links-wrapper {
@@ -1258,3 +1263,276 @@
 }
 
 [x-cloak] { display: none !important; }
+
+/* Image Alignment classes for Blog Posts */
+.alignleft,
+.prose .alignleft,
+.prose figure.alignleft,
+.prose .wp-block-image.alignleft {
+    float: left;
+    margin: 0.5rem 2rem 1.5rem 0 !important;
+    max-width: 50%;
+}
+
+.alignright,
+.prose .alignright,
+.prose figure.alignright,
+.prose .wp-block-image.alignright {
+    float: right;
+    margin: 0.5rem 0 1.5rem 2rem !important;
+    max-width: 50%
+}
+
+.aligncenter,
+.prose .aligncenter,
+.prose figure.aligncenter,
+.prose .wp-block-image.aligncenter {
+    display: block;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    float: none !important;
+    clear: both;
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;
+}
+
+/* Ensure images don't exceed container width */
+.prose img {
+    height: auto;
+}
+
+/* Clearfix for post content to prevent layout collapse with floated images */
+.prose::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive adjustments for mobile screens */
+@media (max-width: 640px) {
+    .alignleft, .alignright,
+    .prose .alignleft, .prose .alignright,
+    .prose figure.alignleft, .prose figure.alignright,
+    .prose .wp-block-image.alignleft, .prose .wp-block-image.alignright {
+        float: none !important;
+        display: block !important;
+        margin-left: auto !important;
+        margin-right: auto !important;
+        max-width: 100% !important;
+        margin-top: 1.5rem !important;
+        margin-bottom: 1.5rem !important;
+    }
+}
+
+/* Authors Page Styles - Superb Redesign */
+.authors-page-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10rem 2rem 8rem;
+    position: relative;
+    z-index: 10;
+}
+
+/* Background Grid & Gradient for Authors Page */
+.authors-page-bg {
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    background-color: #fcfcfd;
+    background-image: 
+        linear-gradient(rgba(15, 23, 42, 0.03) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(15, 23, 42, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
+}
+
+.authors-page-bg::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 50% 0%, rgba(73, 169, 66, 0.05), transparent 70%);
+}
+
+.authors-page-header {
+    text-align: center;
+    margin-bottom: 6rem;
+}
+
+.authors-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem 3rem;
+}
+
+.author-card {
+    display: flex;
+    gap: 2.5rem;
+    align-items: flex-start;
+    padding: 2.5rem;
+    background: #ffffff;
+    border-radius: 2rem;
+    border: 1px solid rgba(226, 232, 240, 0.6);
+    box-shadow: 0 10px 40px -10px rgba(0,0,0,0.03);
+    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    position: relative;
+    overflow: hidden;
+    scroll-margin-top: 140px;
+}
+
+.author-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 25px 60px -15px rgba(15, 23, 42, 0.08);
+    border-color: rgba(73, 169, 66, 0.2);
+}
+
+.author-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: var(--brand-primary);
+    transform: scaleY(0);
+    transition: transform 0.4s ease;
+    transform-origin: bottom;
+}
+
+.author-card:hover::before {
+    transform: scaleY(1);
+}
+
+.author-image-wrapper {
+    flex-shrink: 0;
+}
+
+.author-image-box {
+    width: 140px;
+    height: 160px;
+    padding: 8px;
+    background: #fff;
+    border: 1px solid #f1f5f9;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    border-radius: 1rem;
+    transition: transform 0.4s ease;
+}
+
+.author-card:hover .author-image-box {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+.author-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem;
+}
+
+.author-info {
+    flex: 1;
+}
+
+.author-name-title {
+    font-size: 1.5rem;
+    color: #0f172a;
+    margin-bottom: 0.75rem;
+    font-weight: 800;
+    font-display: uppercase;
+    letter-spacing: -0.01em;
+}
+
+.author-name-title .highlight-name {
+    background: linear-gradient(120deg, #33a1de, #33a1de);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.author-description {
+    font-size: 0.95rem;
+    line-height: 1.7;
+    color: #475569;
+    margin-bottom: 1.5rem;
+    font-weight: 500;
+}
+
+.author-social .linkedin-link svg,
+.author-social .twitter-link svg {
+    transition: all 0.3s ease;
+    border: 1px solid #f1f5f9;
+    background: #fff;
+    color: #64748b;
+}
+
+.author-social a:hover svg {
+    border-color: #33a1de;
+    color: #33a1de;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(51, 161, 222, 0.15);
+}
+
+/* Author Details under Blog Post Redesign */
+.post-author-details {
+    margin-top: 6rem;
+    padding: 4rem;
+    background: #fff;
+    border-radius: 3rem;
+    display: flex;
+    gap: 4rem;
+    border: 1px solid #f1f5f9;
+    box-shadow: 0 30px 60px -15px rgba(0,0,0,0.03);
+    position: relative;
+}
+
+.post-author-details::after {
+    content: '';
+    position: absolute;
+    top: 2rem;
+    right: 3rem;
+    width: 80px;
+    height: 80px;
+    background: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.017 21L14.017 18C14.017 16.8954 13.1216 16 12.017 16V16C10.9124 16 10.017 16.8954 10.017 18L10.017 21' stroke='%2349A942' stroke-width='1.5'/%3E%3C/svg%3E") no-repeat;
+    opacity: 0.05;
+}
+
+.post-author-details .author-image-box {
+    width: 140px;
+    height: 160px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.author-card.featured {
+    max-width: 900px;
+    margin: 0 auto;
+    border-color: rgba(73, 169, 66, 0.3);
+    background: linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%);
+}
+
+.author-card.featured .author-image-box {
+    width: 180px;
+    height: 200px;
+    border-color: var(--brand-primary);
+}
+
+@media (max-width: 1024px) {
+    .authors-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .authors-page-container {
+        padding-top: 6rem;
+    }
+    
+    .author-card, .post-author-details {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2.5rem 1.5rem;
+    }
+    
+    .post-author-details {
+        gap: 2rem;
+    }
+}

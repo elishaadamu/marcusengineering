@@ -1,0 +1,72 @@
+- id: patrick-marcus
+  name: Patrick Marcus
+  image: /assets/images/authors/patrick-marcus.webp
+  description: "Dr. Patrick Marcus is the President of Marcus Engineering, LLC and a principal of Apparently Connected, LLC. Dr. Marcus has extensive background in electronics design, industrial automation, design for manufacturing. Dr. Marcus has founded and run several successful companies in technology and high reliability industrial manufacturing."
+  linkedin: "https://redirect.viglink.com/?format=go&jsonp=vglnk_177367131472110&key=0d3176c012db018d69225ad1c36210fa&libId=mmta3g6g0102jozu000ULpulhiel1&subId=c7f9b33efafa443e8dca09b89ef84169&cuid=c7f9b33efafa443e8dca09b89ef84169&loc=https%3A%2F%2Fwww.marcusengineering.com%2Fauthor%2Fadmin%2F&v=1&out=http%3A%2F%2Fwww.linkedin.com%2Fprofile%2Fview%3Fid%3D59032810%26trk%3Dtab_pro&ref=https%3A%2F%2Fwww.marcusengineering.com%2Fblog%2Fpage%2F6%2F&title=Patrick%20Marcus%20%7C%20Marcus%20Engineering%2C%20LLC&txt="
+  twitter: "#"
+
+- id: misa-gonzales
+  name: Misa Gonzales
+  image: /assets/images/authors/placeholder.webp
+  description: ""
+  linkedin: "#"
+
+- id: mary-davis
+  name: Mary Davis
+  image: /assets/images/authors/Mary-Davis.jpg
+  description: ""
+  linkedin: "#"
+
+- id: jared-erman
+  name: Jared Erman
+  image: /assets/images/authors/placeholder.webp
+  description: "Jared Erman is a senior at the University of Arizona studying marketing, entrepreneurship, and communications."
+  linkedin: "#"
+
+- id: kyle-cerniglia
+  name: Kyle Cerniglia
+  image: /assets/images/authors/placeholder.webp
+  description: ""
+  linkedin: "#"
+
+- id: dana-gunn
+  name: Dana Gunn
+  image: /assets/images/authors/placeholder.webp
+  description: ""
+  linkedin: "#"
+
+- id: edwin-hopper
+  name: Edwin Hopper
+  image: /assets/images/authors/placeholder.webp
+  description: ""
+  linkedin: "#"
+
+- id: james-rowley
+  name: James Rowley
+  image: /assets/images/authors/James-Rowley.jpg
+  description: ""
+  linkedin: "#"
+
+- id: erin-cary
+  name: Erin Cary
+  image: /assets/images/authors/placeholder.webp
+  description: ""
+  linkedin: "#"
+
+- id: elainna-ford
+  name: Elainna Ford
+  image: /assets/images/authors/placeholder.webp
+  description: ""
+  linkedin: "#"
+
+- id: lindsay-miller
+  name: Lindsay Miller
+  image: /assets/images/authors/placeholder.webp
+  description: ""
+  linkedin: "#"
+
+- id: tam-nguyen
+  name: Tam Nguyen
+  image: /assets/images/authors/Tam-Nguyen.jpg
+  description: "Tam Nguyen is an intern at Marcus Engineering. She is currently a student at the University of Arizona studying bio medical engineering, graduating in May 2014."
+  linkedin: "#"

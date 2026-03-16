@@ -4,7 +4,8 @@ title: "SARSEF Reception 2016"
 date: 2016-03-16 15:05:19 
 categories: ['Community Engagement', 'Education', 'Uncategorized']
 permalink: /sarsef-reception-2016/
-thumbnail: ""
+thumbnail: "/assets/images/thumbnails/sarsef-2016-reception-940x529.webp"
+author: misa-gonzales
 ---
 
 <span style="font-weight: 400;">It was a warm Spring evening in the southern Arizona desert. Hundreds of students were full of excitement, and hope. They had become scientists, engineers, and inventors. These students were pushed to learn, experiment, play, and all of this was in part because of <a href="https://sarsef.org/">Southern Arizona Research, Science and Engineering Foundation (SARSEF)</a> and its partners. Established in 1955, SARSEF brings together community leaders in the science and engineering fields to teach and encourage 75,000 students each year. </span>

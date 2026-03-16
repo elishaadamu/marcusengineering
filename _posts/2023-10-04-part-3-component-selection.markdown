@@ -4,7 +4,8 @@ title: "Part 3 - Component Selection"
 date: 2023-10-04 15:37:32 
 categories: ['Business', 'Electronics', 'Low Power Design Series', 'Uncategorized']
 permalink: /part-3-component-selection/
-thumbnail: "/assets/images/posts/image-1.webp"
+thumbnail: "/assets/images/thumbnails/PCB-Small-940x708.webp"
+author: kyle-cerniglia
 ---
 
 <!-- wp:heading -->

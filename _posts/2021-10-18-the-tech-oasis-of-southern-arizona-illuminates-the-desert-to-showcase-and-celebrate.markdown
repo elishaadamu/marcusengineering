@@ -4,7 +4,8 @@ title: "The Tech Oasis of Southern Arizona Illuminates the Desert to Showcase an
 date: 2021-10-18 15:29:46 
 categories: ['Business', 'Community Engagement']
 permalink: /the-tech-oasis-of-southern-arizona-illuminates-the-desert-to-showcase-and-celebrate/
-thumbnail: ""
+thumbnail: "/assets/images/thumbnails/2021-tech-and-business-expo-winners-940x627.webp"
+author: dana-gunn
 ---
 
 <!-- wp:separator -->

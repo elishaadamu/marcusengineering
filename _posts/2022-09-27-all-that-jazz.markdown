@@ -4,7 +4,8 @@ title: "All That Jazz!"
 date: 2022-09-27 10:51:47 
 categories: ['Business', 'Community Engagement', 'Engineering', 'Thought Leadership']
 permalink: /all-that-jazz/
-thumbnail: ""
+thumbnail: "/assets/images/thumbnails/20220925_131153-940x450.webp"
+author: dana-gunn
 ---
 
 <!-- wp:heading -->

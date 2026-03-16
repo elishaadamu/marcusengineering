@@ -3,7 +3,7 @@
     {% assign card_image = post.thumbnail | default: post.image %}
     {% if card_image and card_image != "" %}
     <div class="aspect-video relative overflow-hidden bg-slate-50">
-        <img src="{{ card_image | relative_url }}" alt="{{ post.title }}" class="w-full h-full object-contain transition-transform duration-1000 group-hover:scale-105">
+        <img src="{{ card_image | relative_url }}" alt="{{ post.title }}" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
     </div>
     {% else %}
     <div class="aspect-video relative overflow-hidden bg-slate-100 flex items-center justify-center p-6">
@@ -29,11 +29,23 @@
             {{ post.excerpt | strip_html | truncate: 150 }}
         </p>
 
-        <div class="mt-auto pt-6 border-t border-slate-50 h-10 flex items-center">
-            <div class="text-[10px] font-black text-brand uppercase tracking-widest flex items-center gap-2 group-hover:gap-3 transition-all">
+        <div class="mt-auto pt-6 border-t border-slate-50 flex items-center justify-between">
+            {% if post.author %}
+                {% assign author_data = site.data.authors | where: "id", post.author | first %}
+                {% if author_data %}
+                    <a href="{{ '/author/admin/#' | append: author_data.id | relative_url }}" class="flex items-center gap-2 group/author active:scale-95 transition-transform" onclick="event.stopPropagation();">
+                        <div class="h-6 w-6 rounded-full overflow-hidden border border-slate-100">
+                             <img src="{{ author_data.image | relative_url }}" alt="{{ author_data.name }}" class="w-full h-full object-cover">
+                        </div>
+                        <span class="text-[9px] font-black text-slate-400 uppercase tracking-widest hover:text-brand transition-colors">{{ author_data.name }}</span>
+                    </a>
+                {% endif %}
+            {% endif %}
+            <div class="text-[10px] font-black text-brand uppercase tracking-widest flex items-center gap-2 group-hover:gap-3 transition-all ml-auto">
                 Read Insights 
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
             </div>
         </div>
+
     </div>
 </div>

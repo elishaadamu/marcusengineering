@@ -4,7 +4,8 @@ title: "Part 1 - Marcus Engineering Designs Sensor With 20 Year Battery Life"
 date: 2023-08-16 17:17:22 
 categories: ['Electronics', 'Engineering', 'Low Power Design Series']
 permalink: /part-1-marcus-engineering-designs-sensor-with-20-year-battery-life/
-thumbnail: ""
+thumbnail: "/assets/images/thumbnails/Gen1.1_1.webp"
+author: kyle-cerniglia
 ---
 
 <!-- wp:heading -->

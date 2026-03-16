@@ -4,7 +4,8 @@ title: "What the HACK have we been up to??"
 date: 2018-06-19 16:45:30 
 categories: ['Community Engagement', 'Education', 'Engineering']
 permalink: /what-the-hack-have-we-been-up-to/
-thumbnail: ""
+thumbnail: "/assets/images/thumbnails/code-820275_1920-940x627.webp"
+author: erin-cary
 ---
 
 Earlier this year, <a href="http://www.marcusengineering.com/the-team-2/">Dr. Patrick Marcus</a> was invited to be the keynote speaker at IBM’s internal Hackathon here in Tucson. <a href="https://hackathon.guide/">Hackathons</a> are a place where people from all types of technical backgrounds have the opportunity to come together and solve a problem. These enthusiastic engineers show us time and time again that the bar can always be raised higher. For this reason, Hackathons attract top talent from our community, this is the very same talent that will inevitably advance our society to the next level.

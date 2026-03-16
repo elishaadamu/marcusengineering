@@ -4,7 +4,8 @@ title: "IdeaFunding Improves Tucson Ventures"
 date: 2013-11-05 18:07:01 
 categories: ['Business', 'Community Engagement', 'Education']
 permalink: /ideafunding-improves-tucson-ventures/
-thumbnail: ""
+thumbnail: "/assets/images/thumbnails/ideafunding-logo.webp"
+author: jared-erman
 ---
 
 <a href="/assets/images/posts/IdeaFunding-1.webp"><img class="size-medium wp-image-4282 " src="/assets/images/posts/IdeaFunding-1-300x193.webp" alt="Team SpeakEsy from the McGuire Program presents its venture concept during the Rocket Pitch competition" width="300" height="193" /></a> Team SpeakEsy from the McGuire Program presents its venture concept during the Rocket Pitch competition.

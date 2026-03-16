@@ -4,7 +4,7 @@ title: "Up & Comer"
 date: 2013-04-12 09:23:31 
 categories: ['Business', 'Community Engagement']
 permalink: /up-comer/
-thumbnail: ""
+# thumbnail: "/assets/images/thumbnails/.webp"
 ---
 
 <a href="http://www.linkedin.com/profile/view?id=59032810&amp;authType=NAME_SEARCH&amp;authToken=VAJB&amp;locale=en_US&amp;srchid=db47a869-384b-4a80-9f41-7abbf956a535-0&amp;srchindex=1&amp;srchtotal=676&amp;goback=.fps_PBCK_patrick+marcus_*1_*1_*1_*1_*1_*1_*2_*1_Y_*1_*1_*1_false_1_R_*1_*51_*1_*51_true_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2_*2&amp;pvs=ps&amp;trk=pp_profile_name_link">Dr. Patrick Marcus</a> is a recipient of an Up &amp; Comers award from <em>Inside Tucson Business</em>. Each year the award goes out to candidates who are <a href="http://www.insidetucsonbusiness.com/news/search-is-on-for-up-comers-honorees/article_6cd97d4e-60cc-11e2-b878-0019bb2963f4.html">nominated </a>by readers of <em>Inside Tucson Business</em>. Candidates were nominated for making a difference for the better in the community. Those nominated are destined to make even bigger contributions over the next years. Dr. Marcus was nominated for his successful biotech company, <a href="http://www.marcusengineering.com/">Marcus Engineering</a> , which is encouraging Tucson to thrive as future <a href="http://azstarnet.com/business/local/tucson-a-budding-biotech-hub/article_1c605572-5654-511d-b4bd-be33224f385f.html">biotech hub</a>.

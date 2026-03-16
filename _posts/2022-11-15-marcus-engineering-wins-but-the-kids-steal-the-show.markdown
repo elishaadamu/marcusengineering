@@ -4,7 +4,8 @@ title: "Marcus Engineering Wins but the Kids Steal the Show!"
 date: 2022-11-15 15:41:13 
 categories: ['Business', 'Community Engagement', 'Education', 'Engineering', 'Entrepreneurship']
 permalink: /marcus-engineering-wins-but-the-kids-steal-the-show/
-thumbnail: ""
+thumbnail: "/assets/images/thumbnails/Ed-Denison-Award-Circuit-Board-Image-940x705.webp"
+author: dana-gunn
 ---
 
 <!-- wp:paragraph -->

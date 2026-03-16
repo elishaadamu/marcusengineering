@@ -4,7 +4,8 @@ title: "For Sale: Great Ideas $1, Execution Priceless!"
 date: 2012-11-08 03:54:36 
 categories: ['Business']
 permalink: /for-sale-great-ideas-1-execution-priceless/
-thumbnail: ""
+thumbnail: "/assets/images/thumbnails/01-GreatIdeas_full-300x300.webp"
+author: patrick-marcus
 ---
 
 <a href="http://metapreneurship.net/ideas-worthless-priceless-or-12-for-a-dime/" target="_blank"><img class="alignleft" src="/assets/images/posts/01-GreatIdeas_full-300x300.webp" alt="" width="180" height="180" />"Ideas: Worthless? Priceless? or 12 for a Dime?"</a>

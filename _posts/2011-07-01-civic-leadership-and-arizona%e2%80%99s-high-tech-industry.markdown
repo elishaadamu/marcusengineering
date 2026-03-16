@@ -4,10 +4,8 @@ title: "Civic leadership and Arizona’s high-tech industry"
 date: 2011-07-01 21:06:41 
 categories: ['Business', 'Community Engagement']
 permalink: /civic-leadership-and-arizona%e2%80%99s-high-tech-industry/
-thumbnail: ""
+thumbnail: "/assets/images/thumbnails/patrick-marcus.webp"
 ---
-
-<img class="pretty alignleft" title="Dr. Patrick Marcus" alt="" src="http://azcivicleadership.files.wordpress.com/2011/06/patrick-marcus.jpg?w=300&amp;h=450" width="180" height="270" />
 
 <a title="Arizona Center for Civic Leadership" href="http://azcivicleadership.org" target="_blank">From Arizona Center for Civic Leadership</a>:
 

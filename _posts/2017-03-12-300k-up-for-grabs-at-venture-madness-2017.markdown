@@ -4,7 +4,8 @@ title: "$300k Up for Grabs at Venture Madness 2017"
 date: 2017-03-12 15:01:22 
 categories: ['Business', 'Community Engagement', 'Entrepreneurship']
 permalink: /300k-up-for-grabs-at-venture-madness-2017/
-thumbnail: ""
+thumbnail: "/assets/images/thumbnails/Venture-Madness-Panel-edited-2-300x124.webp"
+author: lindsay-miller
 ---
 
 <img class=" wp-image-5123 alignleft" src="/assets/images/posts/Anicell-2-VM-208x300.webp" alt="" width="212" height="306" />Investment capital, brilliant ideas, and hungry entrepreneurs were the main dish at Venture Madness this weekend.  <a href="http://investsouthwest.org/">Invest Southwest</a> hosted the top 16 of 64 promising startups at their annual Venture Madness bracket challenge in Scottsdale, Arizona, to compete in the pitch competition portion of the head-to-head battle. These companies were competing for a share of a $300,000 investment pool, as well as a $20,000 pool of competition prize money for the top 4 places.

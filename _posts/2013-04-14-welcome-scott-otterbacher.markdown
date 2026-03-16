@@ -4,7 +4,8 @@ title: "Welcome Scott Otterbacher"
 date: 2013-04-14 13:49:03 
 categories: ['Business', 'Electronics']
 permalink: /welcome-scott-otterbacher/
-thumbnail: ""
+# thumbnail: "/assets/images/thumbnails/.webp"
+author: tam-nguyen
 ---
 
 <b>Welcome Scott Otterbacher</b>

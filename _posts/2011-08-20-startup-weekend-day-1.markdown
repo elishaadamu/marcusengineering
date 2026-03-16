@@ -4,7 +4,8 @@ title: "Startup Weekend: Day 1"
 date: 2011-08-20 08:21:54 
 categories: ['Uncategorized']
 permalink: /startup-weekend-day-1/
-thumbnail: ""
+# thumbnail: "/assets/images/thumbnails/.webp"
+author: patrick-marcus
 ---
 
 Right up front I want to apologize for poor grammar syntax etc. in this article, but the schedule is tight and we have a lot of work to accomplish in the next two days.  I wanted to be sure to share something about the first day of Startup Weekend Tucson

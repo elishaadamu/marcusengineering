@@ -4,7 +4,8 @@ title: "High School Students Design Real Circuits Thanks to Marcus Engineering I
 date: 2018-07-25 15:37:17 
 categories: ['Community Engagement', 'Education', 'Electronics']
 permalink: /high-school-students-design-real-circuits-thanks-to-marcus-engineering-internship-programs/
-thumbnail: ""
+thumbnail: "/assets/images/thumbnails/IMG_3283-940x627.webp"
+author: erin-cary
 ---
 
 Who would think high school students could join the workforce as engineers at such a young age.  Marcus Engineering has a vision of building Arizona’s technology ecosystem through their innovative internship programs focusing younger and younger every year.  “Technology is becoming more and more competitive.  If we want to stay on top we have to give the best real world opportunities to our high school and college students” said Dr. Marcus, president of Marcus Engineering.  Don’t take it from us however. <strong> Continue reading for a first hand account from one of Marcus Engineering’s top notch BASIS interns Karla Wang as she tells her internship story:</strong>

@@ -5,7 +5,8 @@ date: 2011-06-02 23:08:35
 categories: ['Community Engagement']
 tags: ['education', 'solar']
 permalink: /solar-oven-design/
-thumbnail: ""
+thumbnail: "/assets/images/thumbnails/IMG_1228_resize.webp"
+author: patrick-marcus
 ---
 
 <h3>Introduction</h3>

@@ -4,7 +4,8 @@ title: "Growing & Moving"
 date: 2013-04-15 09:13:55 
 categories: ['Business']
 permalink: /growing-moving/
-thumbnail: ""
+thumbnail: "/assets/images/thumbnails/address.webp"
+author: tam-nguyen
 ---
 
 Expansion is a significant growing pain but also an indicator of success for a small technology company.  After taking on many new projects and hiring top notch team members, we soon realized that one of the downsides of our success and the rapid growth of our engineering team was outgrowing our small office and laboratory.

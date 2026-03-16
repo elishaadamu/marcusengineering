@@ -4,7 +4,7 @@ title: "Eller College Alumni Profile"
 date: 2011-11-12 13:55:16 
 categories: ['Business']
 permalink: /eller-college-alumni-profile/
-thumbnail: ""
+# thumbnail: "/assets/images/thumbnails/.webp"
 ---
 
 An article I recently wrote for the Eller College Alumni Blog:
