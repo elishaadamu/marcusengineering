@@ -240,7 +240,7 @@
 }
 
 .main-header.scrolled .nav-container {
-    height: 55px; /* Slightly shorter on scroll */
+    height: 70px; /* Keep same height as default for consistent logo size */
 }
 
 .nav-logo {
@@ -257,22 +257,25 @@
     transform: scale(1.02);
 }
 
-.site-logo {
-    height: 38px; /* Slightly smaller default */
+.site-logo,
+.main-header.scrolled .site-logo {
+    height: 54px; /* Default height */
     width: auto;
     transition: opacity 0.25s ease, height 0.25s ease;
     display: inline-block;
 }
 
 @media (max-width: 1200px) {
-    .site-logo {
-        height: 32px;
+    .site-logo,
+    .main-header.scrolled .site-logo {
+        height: 50px; /* Increased from 46px */
     }
 }
 
 @media (max-width: 640px) {
-    .site-logo {
-        height: 22px; /* Reduced for mobile to fit toggle */
+    .site-logo,
+    .main-header.scrolled .site-logo {
+        height: 52px; /* Increased from 50px/54px conflict */
     }
 }
 
@@ -283,6 +286,8 @@
 .site-logo-default {
     display: inline-block;
 }
+
+/* Specificity unifiers handled above */
 
 .main-header.scrolled .site-logo-default {
     display: none;
@@ -1557,15 +1562,14 @@
 
 /* Author Details under Blog Post Redesign */
 .post-author-details {
-    margin-top: 6rem;
-    padding: 4rem;
-    background: #fff;
-    border-radius: 3rem;
+    padding: 3rem 0; /* Reduced padding and removed bg */
+    background: transparent; /* Removed bg */
     display: flex;
-    gap: 4rem;
-    border: 1px solid #f1f5f9;
-    box-shadow: 0 30px 60px -15px rgba(0,0,0,0.03);
+    gap: 3rem;
+    border-top: 1px solid #f1f5f9; /* Replaced full border with top-only divider */
     position: relative;
+    border-radius: 0; /* Removed large border radius */
+    box-shadow: none; /* Removed shadow */
 }
 
 .post-author-details::after {
@@ -1708,3 +1712,41 @@
 .btn-premium-solid:active {
     transform: translateY(-1px);
 }
+
+/* TOC Link Styles */
+.toc-link {
+    color: #94a3b8;
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+    font-size: 0.95rem;
+    padding-left: 1.25rem;
+}
+
+.toc-link.active {
+    color: var(--brand-primary);
+    border-left-color: var(--brand-primary);
+    transform: translateX(4px);
+    font-weight: 800;
+}
+
+.prose h1, .prose h2, .prose h3, .prose h4, .prose h5, .prose h6 {
+    font-family: var(--font-display);
+    text-transform: uppercase;
+    letter-spacing: -0.01em;
+    color: #0f172a;
+    font-weight: 800;
+    scroll-margin-top: 120px;
+}
+
+.prose h1 { font-size: 2.25rem; margin-top: 3rem; margin-bottom: 1.5rem; }
+.prose h2 { 
+    font-size: 1.75rem; 
+    margin-top: 2.5rem; 
+    margin-bottom: 1.25rem; 
+    border-left: 4px solid var(--brand-primary);
+    padding-left: 1.5rem;
+}
+.prose h3 { font-size: 1.35rem; margin-top: 2rem; margin-bottom: 1rem; color: #334155; }
+.prose h4 { font-size: 1.15rem; margin-top: 1.5rem; margin-bottom: 0.75rem; color: #475569; }
+.prose p { margin-bottom: 1.5rem; color: #475569; }
+

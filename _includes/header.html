@@ -6,8 +6,8 @@
         <!-- Logo (single image for both states) -->
         <div class="nav-logo">
             <a href="{{ "/" | relative_url }}" class="nav-logo-link">
-                <img src="{{ "/assets/logo/Logo black wide.svg" | relative_url }}" alt="{{ site.title }}" class="site-logo site-logo-default">
-                <img src="{{ "/assets/logo/Logo white wide.svg" | relative_url }}" alt="{{ site.title }}" class="site-logo site-logo-sticky" aria-hidden="true">
+                <img src="{{ "/assets/logo/Logo large.png" | relative_url }}" alt="{{ site.title }}" class="site-logo site-logo-default">
+                <img src="{{ "/assets/logo/Logo white large.png" | relative_url }}" alt="{{ site.title }}" class="site-logo site-logo-sticky" aria-hidden="true">
             </a>
         </div>
         
@@ -64,7 +64,7 @@
             <!-- Sidebar -->
             <div class="mobile-nav-sidebar" :class="{ 'open': mobileMenuOpen }">
                 <div class="mobile-nav-header">
-                    <img src="{{ "/assets/logo/Logo black wide.svg" | relative_url }}" alt="{{ site.title }}" class="h-8 w-auto">
+                    <img src="{{ "/assets/logo/Logo large.png" | relative_url }}" alt="{{ site.title }}" class="h-10 w-auto">
                     <button class="mobile-nav-close" @click="mobileMenuOpen = false" aria-label="Close menu">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="18" y1="6" x2="6" y2="18"></line>
