@@ -13,7 +13,7 @@
 
     <div class="p-8 flex flex-col flex-1">
         <div class="flex items-center gap-2 mb-4">
-            <span class="h-px w-8 bg-brand"></span>
+            <svg class="w-3.5 h-3.5 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002-2z" /></svg>
             <time datetime="{{ post.date | date_to_xmlschema }}" class="text-[10px] font-black text-slate-400 uppercase tracking-widest whitespace-nowrap">
                 {{ post.date | date: "%B %d, %Y" }}
             </time>
@@ -25,16 +25,27 @@
             </a>
         </h3>
 
-        <p class="text-sm leading-6 text-slate-500 line-clamp-3 mb-4 font-medium">
-            {{ post.excerpt | strip_html | truncate: 150 }}
+        {% assign excerpt_text = post.excerpt | strip_html | strip_newlines | strip %}
+        {% if excerpt_text.size < 50 %}
+            {% assign excerpt_text = post.content | strip_html | strip_newlines | strip | truncate: 150 %}
+        {% endif %}
+        <p class="text-sm leading-6 text-slate-500 line-clamp-3 mb-6 font-medium">
+            {{ excerpt_text | truncate: 150 }}
         </p>
 
         {% if post.categories and post.categories.size > 0 %}
-            {% assign first_category = post.categories[0] %}
-            {% assign cat_url = '/category/' | append: first_category | append: '/' %}
-            <a href="{{ cat_url | relative_url }}" class="inline-block text-[10px] font-black text-brand uppercase tracking-widest hover:underline mb-4" onclick="event.stopPropagation();">
-                {{ first_category }}
-            </a>
+            <div class="flex flex-wrap items-center gap-x-4 gap-y-2 mb-6">
+                <svg class="w-3.5 h-3.5 text-slate-300" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" /></svg>
+                <div class="flex flex-wrap gap-2">
+                    {% for category in post.categories %}
+                        {% assign cat_slug = category | slugify: 'pretty' %}
+                        {% assign cat_url = '/category/' | append: cat_slug | append: '/' %}
+                        <a href="{{ cat_url | relative_url }}" class="inline-block text-[10px] font-black text-brand uppercase tracking-widest border-b border-brand/20 hover:border-brand transition-all" onclick="event.stopPropagation();">
+                            {{ category }}
+                        </a>
+                    {% endfor %}
+                </div>
+            </div>
         {% endif %}
 
         <div class="mt-auto pt-6 border-t border-slate-50 flex items-center justify-between">
@@ -49,10 +60,10 @@
                     </a>
                 {% endif %}
             {% endif %}
-            <div class="text-[10px] font-black text-brand uppercase tracking-widest flex items-center gap-2 group-hover:gap-3 transition-all ml-auto">
-                Read Insights
-                <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg>
-            </div>
+            <a href="{{ post.url | relative_url }}" class="post-card-btn ml-auto inline-flex items-center gap-3" onclick="event.stopPropagation();">
+                <span class="text-[11px] font-black uppercase tracking-wider">Read Insights</span>
+                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            </a>
         </div>
 
     </div>

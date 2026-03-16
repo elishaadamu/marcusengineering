@@ -1,9 +1,9 @@
-- name: Twitter
-  url: https://twitter.com/jekyllrb
-  icon: twitter
-- name: GitHub
-  url: https://github.com/jekyll
-  icon: github
+- name: Facebook
+  url: http://www.facebook.com/pages/Marcus-Engineering-LLC/112273638864131
+  icon: facebook
 - name: LinkedIn
-  url: https://linkedin.com/company/marcus-engineering-llc
+  url: http://www.linkedin.com/company/2228035
   icon: linkedin
+- name: Twitter
+  url: http://www.twitter.com/marcusengr
+  icon: twitter

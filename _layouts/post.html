@@ -104,7 +104,10 @@ layout: default
         <!-- Meta Section (Categories & Tags at bottom) -->
         <div class="mt-24 py-12 border-t border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-8">
             <div class="flex flex-col gap-4">
-                <span class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Posted in Categories</span>
+                <div class="flex items-center gap-2">
+                    <svg class="w-4 h-4 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" /></svg>
+                    <span class="text-[10px] font-black text-slate-400 uppercase tracking-widest">Posted in Categories</span>
+                </div>
                 <div class="flex flex-wrap gap-2">
                     {% for category in page.categories %}
                     <a href="/blog/?category={{ category | slugify }}" class="px-5 py-2 rounded-2xl bg-slate-50 border border-slate-100 text-xs font-bold text-slate-600 hover:bg-brand hover:text-white hover:border-brand transition-all duration-300">
@@ -115,9 +118,9 @@ layout: default
             </div>
             
             <div class="flex gap-4">
-                <a href="/blog/" class="group flex items-center gap-3 px-6 py-3 rounded-2xl bg-slate-900 text-white text-[10px] font-black uppercase tracking-widest hover:bg-brand transition-all duration-300 shadow-xl shadow-slate-900/20">
-                    <svg class="w-4 h-4 transition-transform group-hover:-translate-x-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg> 
-                    Back to Blog
+                <a href="/blog/" class="btn-premium-solid">
+                    <svg class="w-4 h-4 back-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+                    Back to Blog Archive
                 </a>
             </div>
         </div>
