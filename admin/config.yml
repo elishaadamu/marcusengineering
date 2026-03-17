@@ -1,0 +1,79 @@
+backend:
+  name: git-gateway
+  branch: main # or master, depending on your default branch
+
+media_folder: "assets/images/posts"
+public_folder: "/assets/images/posts"
+
+collections:
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "_posts"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Categories", name: "categories", widget: "list"}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+      - {label: "Author ID", name: "author", widget: "string", hint: "Must match ID in authors list"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "authors"
+    label: "Author Profiles"
+    folder: "author"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "author"}
+      - {label: "Author ID", name: "author_id", widget: "string"}
+      - {label: "Description/Bio", name: "description", widget: "text"}
+      - {label: "Permalink", name: "permalink", widget: "string", hint: "e.g. /author/name/"}
+      - {label: "Body", name: "body", widget: "hidden", required: false}
+
+  - name: "data"
+    label: "Global Data"
+    files:
+      - name: "authors_list"
+        label: "Team Authors Details"
+        file: "_data/authors.yml"
+        fields:
+          - name: "authors"
+            label: "Authors"
+            widget: "list"
+            fields:
+              - {label: "ID", name: "id", widget: "string"}
+              - {label: "Name", name: "name", widget: "string"}
+              - {label: "Image", name: "image", widget: "image"}
+              - {label: "Bio", name: "description", widget: "text"}
+              - {label: "LinkedIn", name: "linkedin", widget: "string"}
+              - {label: "Twitter", name: "twitter", widget: "string", required: false}
+      - name: "navigation"
+        label: "Site Navigation"
+        file: "_data/navigation.yml"
+        fields:
+          - name: "items"
+            label: "Nav Menu"
+            widget: "list"
+            fields:
+                - {label: "Title", name: "title", widget: "string"}
+                - {label: "URL", name: "url", widget: "string"}
+                - label: "Dropdown"
+                  name: "dropdown"
+                  widget: "list"
+                  required: false
+                  fields:
+                    - {label: "Title", name: "title", widget: "string"}
+                    - {label: "URL", name: "url", widget: "string"}
+
+  - name: "pages"
+    label: "Main Pages"
+    files:
+      - label: "Home Page"
+        name: "home"
+        file: "index.markdown"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Body", name: "body", widget: "markdown"}

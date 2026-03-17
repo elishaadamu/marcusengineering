@@ -9,6 +9,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
+    <!-- Netlify Identity Widget for Decap CMS -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    
     <!-- Custom SEO Logic -->
     {% if page.layout == 'post' %}
       {% assign seo_title = page.title | append: " | Marcus Engineering" %}
@@ -138,6 +141,16 @@
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 10l7-7m0 0l7 7m-7-7v18" />
         </svg>
     </button>
-
+    <script>
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", (user) => {
+          if (!user) {
+            window.netlifyIdentity.on("login", () => {
+              document.location.href = "/admin/";
+            });
+          }
+        });
+      }
+    </script>
 </body>
 </html>

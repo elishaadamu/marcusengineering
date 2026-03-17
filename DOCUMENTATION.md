@@ -33,6 +33,17 @@ The site uses `jekyll-admin` to provide a GUI for managing content.
 - **Data Management**: Edit YAML files in `_data/` without opening a code editor.
 - **Ease of Use**: Manage images and static files through the browser.
 
+### 4. Production Editor (Decap CMS)
+For editing content in production without a code editor, the site uses **Decap CMS**.
+1. **Access**: `https://your-domain.com/admin/`
+2. **Requirements**: Your site must be hosted on Netlify with the following enabled in the Netlify Dashboard:
+   - **Identity**: Enable "Identity" in your site settings.
+   - **Git Gateway**: In "Identity" settings, scroll down to "Services" and enable "Git Gateway".
+3. **Features**:
+   - Secure login via Netlify Identity (or your GitHub account).
+   - Visual web-based editor for blog posts, authors, and data files.
+   - Direct commits to your repository without touch code.
+
 ---
 
 ## 📝 Content Management Guide
