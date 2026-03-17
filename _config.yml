@@ -92,3 +92,9 @@ exclude:
   - vendor/ruby/
   - package.json
   - package-lock.json
+
+collections:
+  team:
+    output: false
+    sort_by: order
+

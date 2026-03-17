@@ -1,0 +1,99 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<style>
+    .square-grid {
+        background-size: 40px 40px;
+        background-image: 
+            linear-gradient(to right, rgba(15, 23, 42, 0.04) 1px, transparent 1px),
+            linear-gradient(to bottom, rgba(15, 23, 42, 0.04) 1px, transparent 1px);
+        mask-image: linear-gradient(to bottom, black 50%, transparent);
+        -webkit-mask-image: linear-gradient(to bottom, black 50%, transparent);
+    }
+</style>
+
+<section class="py-32 bg-transparent relative overflow-hidden">
+    <!-- Grid Layer -->
+    <div class="absolute inset-0 square-grid opacity-60"></div>
+    
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+            <div>
+                <h2 class="text-base font-black leading-7 text-brand uppercase tracking-[0.3em] mb-4">Our History</h2>
+                <h1 class="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-7xl font-display uppercase leading-tight">
+                    About <span class="text-brand">Marcus</span> Engineering
+                </h1>
+
+                <p class="mt-8 text-xl leading-8 text-slate-600 font-medium">
+                    Founded in Tucson, Arizona, Marcus Engineering has grown into a leading product development firm. We specialize in high-reliability systems where precision is paramount.
+                </p>
+                <div class="mt-12 space-y-8">
+                    <div class="bg-white p-8 rounded-4xl border border-slate-100 border-l-4 border-l-brand shadow-xl shadow-slate-200/50">
+                        <h3 class="font-black text-slate-900 mb-3 uppercase tracking-widest text-sm">Our Mission</h3>
+                        <p class="text-slate-600 leading-relaxed font-medium">To provide world-class engineering services that bridge the gap between complex technical challenges and innovative market solutions.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="absolute -inset-4 bg-brand/10 blur-3xl rounded-full"></div>
+                <div class="relative aspect-square rounded-[3rem] bg-white flex items-center justify-center border border-slate-200 shadow-xl shadow-slate-200/50 overflow-hidden group">
+                     <img src="/assets/images/2017-04-13%2011.26.38.webp" alt="Engineering Team" class="w-full h-full object-cover transition-all duration-700">
+                </div>
+                <div class="absolute -bottom-10 -left-10 bg-brand p-10 rounded-[2.5rem] shadow-xl shadow-slate-200/50 text-white">
+                    <span class="text-6xl font-black block leading-none">10+</span>
+                    <span class="text-[10px] font-black uppercase tracking-[0.2em]">Years of Excellence</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="py-32 bg-slate-50 relative overflow-hidden">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+            <div class="relative order-2 lg:order-1">
+                 <img src="/assets/images/authors/patrick-marcus.webp" alt="Management Team" class="rounded-[3rem] shadow-2xl border border-slate-200 aspect-4/3 object-covertransition-all duration-700">
+
+                 <div class="absolute -bottom-6 -right-6 bg-white p-6 rounded-3xl shadow-xl border border-slate-100">
+                    <p class="text-xs font-black uppercase tracking-widest text-slate-400 mb-1">President</p>
+                    <p class="font-bold text-slate-900">Dr. Patrick Marcus</p>
+                 </div>
+            </div>
+            <div class="order-1 lg:order-2">
+                <h2 class="text-base font-black leading-7 text-brand uppercase tracking-[0.3em] mb-4">Leadership</h2>
+                <h2 class="text-4xl font-extrabold tracking-tight text-slate-900 sm:text-6xl font-display uppercase leading-tight">
+                    Our <span class="text-brand">Expert</span> Management Team
+                </h2>
+                <p class="mt-8 text-xl leading-8 text-slate-600 font-medium">
+                    Led by Dr. Patrick Marcus and Mark Omo, our engineering team is dedicated to solving the most complex technical challenges with precision and integrity.
+                </p>
+                <div class="mt-12">
+                    <a href="/the-team-2-2/" class="inline-flex items-center gap-3 px-8 py-4 bg-brand text-white font-black text-xs uppercase tracking-widest rounded-2xl hover:bg-brand/90 hover:-translate-y-1 transition-all shadow-xl shadow-brand/20">
+                        View Management Team
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="5" y1="12" x2="19" y2="12"></line>
+                            <polyline points="12 5 19 12 12 19"></polyline>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="py-32 bg-transparent relative overflow-hidden">
+    <div class="absolute top-0 left-0 w-full h-px bg-linear-to-r from-transparent via-slate-200 to-transparent"></div>
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-extrabold font-display uppercase tracking-tighter text-slate-900">Engineering is our <span class="text-brand">Passion</span></h2>
+        </div>
+        <div class="max-w-3xl mx-auto text-slate-600 leading-relaxed text-lg text-center font-medium">
+            <p class="mb-6">Our team consists of senior-level engineers with decades of experience in electrical, software, and mechanical engineering.</p>
+            <p>We work closely with our clients to ensure that every design is optimized for manufacturing, testing, and long-term reliability.</p>
+        </div>
+    </div>
+</section>
