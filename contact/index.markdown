@@ -33,7 +33,7 @@ description: Have a project in mind or need technical consultation? Reach out to
                         <div>
                             <h3 class="font-bold text-slate-900 uppercase tracking-widest text-sm mb-2">Phone</h3>
                             <a href="tel:+15203693051" class="inline-block hover:opacity-80 transition-opacity">
-                                <img src="/assets/images/phone-number.png" alt="Call Marcus Engineering at 520-369-3051" class="h-8 w-auto">
+                                <img src="/assets/images/phone-number.png" alt="Call Marcus Engineering at 520-369-3051" class="h-10 w-auto">
                             </a>
                         </div>
                     </div>
