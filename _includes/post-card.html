@@ -52,11 +52,11 @@
             {% if post.author %}
                 {% assign author_data = site.data.authors | where: "id", post.author | first %}
                 {% if author_data %}
-                    <a href="{{ '/author/admin/#' | append: author_data.id | relative_url }}" class="flex items-center gap-2 group/author active:scale-95 transition-transform" onclick="event.stopPropagation();">
+                    <a href="{{ '/author/' | append: author_data.id | relative_url }}" class="flex items-center gap-2 group/author active:scale-95 transition-transform" onclick="event.stopPropagation();">
                         <div class="h-6 w-6 rounded-full overflow-hidden border border-slate-100">
                              <img src="{{ author_data.image | relative_url }}" alt="{{ author_data.name }}" class="w-full h-full object-cover">
                         </div>
-                        <span class="text-[9px] font-black text-slate-400 uppercase tracking-widest hover:text-brand transition-colors">{{ author_data.name }}</span>
+                        <span class="text-[9px] font-black text-slate-400 uppercase tracking-widest group-hover/author:text-brand transition-colors">{{ author_data.name }}</span>
                     </a>
                 {% endif %}
             {% endif %}

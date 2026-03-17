@@ -16,4 +16,4 @@ According to Dr. Marcus, we can expect to see some truly innovative ideas from t
 
 Check out the video below to see last year's participants in the McGuire Summer Academy.
 
-https://youtu.be/3z9YmKzTdKA
+<iframe width="560" height="315" class="aligncenter" src="https://www.youtube.com/embed/3z9YmKzTdKA?si=_lJLx7F7LVdvjn_8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>

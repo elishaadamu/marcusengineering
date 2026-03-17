@@ -13,7 +13,10 @@ During the summer before my Junior year of High School, I embarked on a brand-ne
 
 &nbsp;
 
-<img class="size-medium wp-image-5690 alignright" src="/assets/images/posts/IMG_3028-300x200.webp" alt="" width="300" height="200" /> Karla perfecting her soldering skills.
+<figure class="alignright">
+    <img src="/assets/images/posts/IMG_3028-300x200.webp" alt="Karla soldering" class="wp-image-5690" width="300" height="200" />
+    <figcaption>Karla perfecting her soldering skills.</figcaption>
+</figure>
 <p style="text-align: left;">As soon as I arrived at Marcus Engineering and was assigned my first project, I was overwhelmed to say the least. The project was to design and build a USB to Serial Adapter, one capable of being plugged into any computer without installing other drivers. It also had to be able to support both 3.3 and 5 volts. Being a new intern still in high school, I had only brought with me a basic knowledge of circuits from the AP Physics courses taught at BASIS Tucson North.</p>
 &nbsp;
 
@@ -25,7 +28,10 @@ Starting this project from scratch, I quickly discovered the importance of resea
 
 &nbsp;
 
-<img class="size-medium wp-image-5692 alignleft" src="/assets/images/posts/IMG_2691-300x200.webp" alt="" width="300" height="200" /> Kempton teaching Karla how to use Altium.
+<figure class="alignleft">
+    <img src="/assets/images/posts/IMG_2691-300x200.webp" alt="Intern training" class="wp-image-5692 " width="300" height="200" />
+    <figcaption>Kempton teaching Karla how to use Altium.</figcaption>
+</figure>
 
 Along the way, I also acquired experience in dealing with customers. For this project,  <a href="http://www.marcusengineering.com/the-team-2/">Dr. Marcus</a> and the engineering team acted as the customer with whom I worked closely. This gave me a great opportunity to practice communicating with a customer by creating detailed chip comparison charts for their reference and understanding what the final product would like through their perspective.
 
@@ -37,4 +43,7 @@ My favorite part, and one of the most integral parts of the project, was designi
 
 At the end of this project, I had learned so much more within the span of 3 weeks than I had ever imagined possible. I was able to get of sense of what it’s really like to work as an Engineer in the industry. Equipped with the valuable skills of conducting research and project management from BASIS Tucson North and with the guided help of my new colleagues, I was able to succeed. This goes to show that it doesn’t matter how little experience you think have, there will always plenty be of ways to grow and expand your knowledge at a company like Marcus Engineering.
 
-<img class="aligncenter wp-image-5691 size-large" src="/assets/images/posts/IMG_2997-550x367.webp" alt="" width="550" height="367" /> Karla's completed USB to Serial Adapter hardware.
+<figure class="aligncenter" style="max-width: 550px;">
+    <img src="/assets/images/posts/IMG_2997-550x367.webp" alt="Karla's completed hardware" class="wp-image-5691 size-large" width="550" height="367" />
+    <figcaption>Karla's completed USB to Serial Adapter hardware.</figcaption>
+</figure>

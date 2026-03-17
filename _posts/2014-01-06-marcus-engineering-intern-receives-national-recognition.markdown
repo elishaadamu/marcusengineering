@@ -7,9 +7,15 @@ thumbnail: "/assets/images/thumbnails/IMG_8516_resize-300x200.webp"
 author: patrick-marcus
 ---
 
-<img class="alignright" src="/assets/images/posts/Robbie11-411x550.webp" alt="Robbie Laity" width="247" height="330" />Marcus Engineering takes pride in hiring and training the most talented engineers and it's getting noticed. On January 6th 2014, Robbie Laity, a recent graduate in Electrical Engineer from The University of Arizona and a veteran intern at <a href="http://www.marcusengineering.com/">Marcus Engineering</a>, was recognized by <a href="http://www.designnews.com/">Design News Magazine</a>, (a national industry resource for engineering news), as one of our nations <a href="http://www.designnews.com/author.asp?section_id=1386&amp;f_src=designnews_sitedefault&amp;doc_id=270762&amp;image_number=2">Rising Engineering Stars</a>. "We're so proud to have Robbie as part of the team.  He's a brilliant and generous engineer." said Marcus Engineering President Dr. Patrick Marcus "Recognition like this proves that we doing the right things as a community to grow and maintain top talent."
-<br><br><br><br><br>
-<div></div>
+<figure class="alignright">
+    <img src="/assets/images/posts/Robbie11-411x550.webp" alt="Robbie Laity" width="247" height="330" />
+    <figcaption>Robbie Laity, Design News Rising Engineering Star</figcaption>
+</figure>
+
+Marcus Engineering takes pride in hiring and training the most talented engineers and it's getting noticed. On January 6th 2014, Robbie Laity, a recent graduate in Electrical Engineer from The University of Arizona and a veteran intern at <a href="http://www.marcusengineering.com/">Marcus Engineering</a>, was recognized by <a href="http://www.designnews.com/">Design News Magazine</a>, (a national industry resource for engineering news), as one of our nations <a href="http://www.designnews.com/author.asp?section_id=1386&amp;f_src=designnews_sitedefault&amp;doc_id=270762&amp;image_number=2">Rising Engineering Stars</a>. "We're so proud to have Robbie as part of the team.  He's a brilliant and generous engineer." said Marcus Engineering President Dr. Patrick Marcus "Recognition like this proves that we doing the right things as a community to grow and maintain top talent."
+
+---
+
 <h2>Design News Rising Engineering Star Finalists</h2>
 <div><span style="font-size: 1.5em;">Electrical Engineer, University of Arizona</span></div>
 <div align="center">

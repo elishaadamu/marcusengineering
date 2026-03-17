@@ -17,6 +17,18 @@ layout: none
   {% endif %}
 {% endfor %}
 
+{% for author in site.data.authors %}
+  {% capture item %}
+  {
+    "title": {{ author.name | jsonify }},
+    "url": {{ '/author/' | append: author.id | relative_url | jsonify }},
+    "type": "Author",
+    "content": {{ author.description | strip_html | strip_newlines | truncate: 160 | jsonify }}
+  }
+  {% endcapture %}
+  {% assign search_items = search_items | push: item %}
+{% endfor %}
+
 {% for post in site.posts %}
   {% capture item %}
   {

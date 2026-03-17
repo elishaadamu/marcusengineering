@@ -14,12 +14,24 @@ Solar is an industry near and dear to my heart, having worked for 10 years desig
 
 Okay, so let's go as far as to say that I know a little about solar.  That is an awfully far cry from being able to communicate the importance and value of solar today and in the future to a group of children where return on investment, increasing cost of gasoline, and, energy independence might be concepts simply out of their reach, not the mention the riot I would have on my hands if I tried to show them a dozen power point slides explaining Megawatt this, and dollar per watt that.
 
-We needed to have fun.  I needed to convey some basic solar concepts that would stick with the kids for years to come.  <span class="pullquote">Scarcity of fossil fuels, the abundance of solar energy, and the ease with which we can make it part of our lives were the concepts I wanted to convey.</span> If I could squeeze in a little bit of math: How many light bulbs per square foot?, What is a parabola and why does it make a great solar reflector?, I should be doing great!
+We needed to have fun.  I needed to convey some basic solar concepts that would stick with the kids for years to come:
+
+> Scarcity of fossil fuels, the abundance of solar energy, and the ease with which we can make it part of our lives were the concepts I wanted to convey.
+
+If I could squeeze in a little bit of math: How many light bulbs per square foot?, What is a parabola and why does it make a great solar reflector?, I should be doing great!
 
 Making solar ovens with the students would be a great hands on method for teaching, learning, and doing.  I knew how to make a solar oven but also realized that reinventing the wheel was silly and a few hours of google searching would probably turn up some good low cost designs that a 5th grader could get his or her head around in a few hours.  Surprisingly I didn't find what I was looking for.  I had hoped to find a cardboard and aluminum foil parabolic reflector design.  I found several simple semicircle designs and some more complex wooden parabolic designs.  Being a good engineer I DEMANDED perfection and elected to blend a few different designs into something that I felt would make a great hot dog cooker as well as a tremendous teaching tool.  The details of which can be found <a title="Solar Oven Design" href="http://www.marcusengineering.com/?p=3230" target="_blank">HERE</a>.
 <h3>The School</h3>
-On the day of the event I met Principal Maria Marin at the front office.  Maria had already prepared most of the cardboard and templates needed so that the solar ovens would go together quickly and easily for the students.  Maria and her team of teachers clearly put a lot of preparation into my visit.  I was astounded by the students excitement, enthusiasm and recognition as they walked by me into the multipurpose room.  I was honored to have students know my name and who I was before I had ever even seen them.  <span class="pullquote">If John B. Wright had a mission to demonstrate appreciation, and to, encourage thought leaders in the community to participate with their school time and time again they certainly accomplished their goal.</span>
-<h3><a href="/assets/images/posts/P1010002.webp" rel="lightbox"><img class="alignleft pretty" title="OLYMPUS DIGITAL CAMERA" alt="" src="/assets/images/posts/P1010002-300x224.webp" width="300" height="224" /></a></h3>
+On the day of the event I met Principal Maria Marin at the front office.  Maria had already prepared most of the cardboard and templates needed so that the solar ovens would go together quickly and easily for the students.  Maria and her team of teachers clearly put a lot of preparation into my visit.  I was astounded by the students excitement, enthusiasm and recognition as they walked by me into the multipurpose room.  I was honored to have students know my name and who I was before I had ever even seen them.
+
+> If John B. Wright had a mission to demonstrate appreciation, and to, encourage thought leaders in the community to participate with their school time and time again they certainly accomplished their goal.
+
+<figure class="alignleft">
+    <a href="/assets/images/posts/P1010002.webp">
+        <img src="/assets/images/posts/P1010002-300x224.webp" alt="Solar Workshop" width="300" height="224" />
+    </a>
+    
+</figure>
 Kathleen Perkins the Chair of the  Business Advisory Board for the <a title="Bio5 University of Arizona" href="http://bio5.arizona.edu" target="_blank">Bio5 Institute</a> at the University of Arizona helped to organize the workshop and was instrumental in connecting me with John B. Wright Elementary.  Kathleen has organized several events in a series of science workshops for the school.  Kathleen, also a member of the Southern Arizona Leadership Council (<a title="SALC" href="http://www.salc.org/" target="_blank">SALC</a>) is a strong advocate of education and involving scientists with public policy and the community.
 
 I was also delighted to see Dr. John Pedicone, Tucson Unified School District (<a title="TUSD Homepage" href="http://www.tusd.k12.az.us" target="_blank">TUSD</a>)  Superintendent, Dr. Maria Menconi, TUSD Deputy Superintendent,  and Dr. Jim Gentile, CEO and President of <a title="Research Corporation" href="http://www.rescorp.org/" target="_blank">Research Corporation for Scientific Advancement</a> who were kind enough to attend and give some words of encouragement to the students before the workshop.
@@ -28,7 +40,12 @@ I am glad that Kathleen, John and Jim got a chance to see the attentive enthusia
 <h3>The Build</h3>
 The process of building the ovens went great.  Some time was spent explaining the principles behind the ovens operation.  The importance of the parabolic shape, the finish of the tin foil, and the location of the ovens focal point were expressed in a way the kids could wrap their heads around.  There is a lot to be said for the attentiveness of a hungry 5th grader.  Maria's team helped a lot in guiding the 65 children through the process of building their own ovens.
 
-<a href="/assets/images/posts/P1010016.webp" rel="lightbox"><img class="size-medium wp-image-3190 pretty alignright" title="Solar Workshop 2" alt="" src="/assets/images/posts/P1010016-300x224.webp" width="300" height="224" /></a>
+<figure class="alignright">
+    <a href="/assets/images/posts/P1010016.webp">
+        <img src="/assets/images/posts/P1010016-300x224.webp" alt="Solar Workshop Build" width="300" height="224" />
+    </a>
+    
+</figure>
 
 Sadly though when we finally went out to the playground to cook the sky was grey.  It turned out we had picked the one afternoon in May without consistent clear sky.  I was disappointed but the grey sky certainly didn't dissuade the fabulous kids from asking questions, experimenting and, in some cases, finding clever ways to eat their hot dogs without removing them from their ovens.  It is truly a funny sight to see a pair of shoulders running around with a solar oven in place of a head while listening to a muffled "It tastes cold!"
 
@@ -36,8 +53,12 @@ Ultimately I think the children had a great time, and most of them didn't even m
 
 On the way out of the school toward the end of the day I saw something that warmed my heart.  I saw a young scientist to be standing in the hall way speaking in an authoritative tone to her mother how her solar oven worked and how she made it.   I couldn't be more satisfied than knowing I was able to share some knowledge and experience in a way that the children of John B Wright Elementary took home with them and shared with their families.
 
-<span class="pullquote">John, Maria, the parents and the teachers should all be very proud of having created and nurtured an environment where every child felt encouraged, safe, and loved enough to focus on what is most important at that age: learning and having fun.</span>
+> John, Maria, the parents and the teachers should all be very proud of having created and nurtured an environment where every child felt encouraged, safe, and loved enough to focus on what is most important at that age: learning and having fun.
 
 Hopefully I will be back soon showing the kids how to make a robot, biofuel, or some other creation that will spark their dreams.
 
-<a href="/assets/images/posts/2011-05-10-14.49.29-1024x768.webp" rel="lightbox"><img class="size-large wp-image-3211 pretty alignleft" title="Solar Workshop 4" alt="" src="/assets/images/posts/2011-05-10-14.49.29-1024x768.webp" width="550" height="412" /></a>
+<figure class="aligncenter">
+    <a href="/assets/images/posts/2011-05-10-14.49.29-1024x768.webp">
+        <img class="size-large" src="/assets/images/posts/2011-05-10-14.49.29-1024x768.webp" alt="Finished Solar Ovens" width="550" height="412" />
+    </a>
+</figure>

@@ -4,7 +4,7 @@ title: "Marcus Engineering Small Business of the Year 2021"
 date: 2021-12-14 09:34:19 
 categories: ['Uncategorized']
 thumbnail: "/assets/images/thumbnails/award-image-generated.webp"
-author: dana-gunn
+author: patrick-marcus
 ---
 
 <!-- wp:paragraph -->

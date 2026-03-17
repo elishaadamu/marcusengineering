@@ -701,7 +701,6 @@
     }
     :where(figcaption):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
       color: var(--tw-prose-captions);
-      font-size: 0.875em;
       line-height: 1.4285714;
       margin-top: 0.8571429em;
     }
@@ -1014,7 +1013,7 @@
       margin-bottom: 0;
     }
     :where(figcaption):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
-      font-size: 0.8888889em;
+     
       line-height: 1.5;
       margin-top: 1em;
     }
@@ -3346,7 +3345,6 @@
         margin-bottom: 0;
       }
       :where(figcaption):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
-        font-size: 0.9em;
         line-height: 1.5555556;
         margin-top: 1em;
       }
