@@ -1,3 +1,9 @@
+---
+layout: default
+title: Project Documentation | Engineering Support
+permalink: /documentation/
+---
+
 # Marcus Engineering Project Documentation
 
 ## 🚀 Overview
@@ -43,6 +49,9 @@ For editing content in production without a code editor, the site uses **Decap C
    - Secure login via Netlify Identity (or your GitHub account).
    - Visual web-based editor for blog posts, authors, and data files.
    - Direct commits to your repository without touch code.
+4. **Local Development**: To test this CMS on `localhost`:
+   - Run `npx decap-cms-proxy-server` in a separate terminal.
+   - Access `http://localhost:4000/admin/`.
 
 ---
 

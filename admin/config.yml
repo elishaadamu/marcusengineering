@@ -1,6 +1,7 @@
 backend:
   name: git-gateway
-  branch: main # or master, depending on your default branch
+  branch: main
+local_backend: true
 
 media_folder: "assets/images/posts"
 public_folder: "/assets/images/posts"
@@ -9,6 +10,8 @@ collections:
   - name: "posts"
     label: "Blog Posts"
     folder: "_posts"
+    extension: "markdown"
+    format: "frontmatter"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
@@ -23,6 +26,8 @@ collections:
   - name: "authors"
     label: "Author Profiles"
     folder: "author"
+    extension: "markdown"
+    format: "frontmatter"
     create: true
     slug: "{{slug}}"
     fields:
@@ -38,6 +43,7 @@ collections:
       - name: "authors_list"
         label: "Team Authors Details"
         file: "_data/authors.yml"
+        format: "yaml"
         fields:
           - name: "authors"
             label: "Authors"
@@ -52,6 +58,7 @@ collections:
       - name: "navigation"
         label: "Site Navigation"
         file: "_data/navigation.yml"
+        format: "yaml"
         fields:
           - name: "items"
             label: "Nav Menu"
@@ -70,6 +77,13 @@ collections:
   - name: "pages"
     label: "Main Pages"
     files:
+      - label: "Project Documentation"
+        name: "documentation"
+        file: "DOCUMENTATION.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Permalink", name: "permalink", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
       - label: "Home Page"
         name: "home"
         file: "index.markdown"
