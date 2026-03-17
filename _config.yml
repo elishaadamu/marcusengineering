@@ -18,7 +18,7 @@ description: >-
   Marcus Engineering is a premier engineering design firm specializing in electrical engineering, 
   electronics, instrumentation, industrial automation, and embedded systems design.
 baseurl: ""
-url: "https://www.marcusengineering.com"
+url: "https://marcusengineering.netlify.app"
 logo: "/assets/logo/Logo large.png"
 image: "/assets/logo/Logo large.png"
 
@@ -35,6 +35,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
   - jekyll-paginate-v2
+  - jekyll-admin
 
 
 # Design tokens (reference)
@@ -97,4 +98,13 @@ collections:
   team:
     output: false
     sort_by: order
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: ""
+      thumbnail: ""
+      categories: []
 
