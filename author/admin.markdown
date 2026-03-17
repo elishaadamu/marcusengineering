@@ -1,6 +1,7 @@
 ---
 layout: default
-title: Authors
+title: Authors | Engineering Minds at Marcus Engineering
+description: Meet the engineering experts and visionaries behind Marcus Engineering's technical insights and industrial innovations.
 permalink: /author/admin/
 ---
 

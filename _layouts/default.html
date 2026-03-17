@@ -9,8 +9,49 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     
-    <!-- SEO Tag -->
-    {% seo %}
+    <!-- Custom SEO Logic -->
+    {% if page.layout == 'post' %}
+      {% assign seo_title = page.title | append: " | Marcus Engineering" %}
+      {% assign seo_description = content | strip_html | truncatewords: 45 | strip_newlines | strip | escape %}
+      {% assign seo_image = page.thumbnail | default: site.image %}
+    {% else %}
+      {% assign seo_title = page.title | default: site.title %}
+      {% assign seo_description = page.description | default: site.description %}
+      {% assign seo_image = page.image | default: site.image %}
+    {% endif %}
+
+    <title>{{ seo_title }}</title>
+    <meta name="description" content="{{ seo_description }}">
+    <link rel="canonical" href="{{ page.url | absolute_url }}">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta property="og:title" content="{{ seo_title }}">
+    <meta property="og:description" content="{{ seo_description }}">
+    <meta property="og:url" content="{{ page.url | absolute_url }}">
+    <meta property="og:image" content="{{ site.url }}{{ seo_image | relative_url }}">
+    <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ seo_title }}">
+    <meta name="twitter:description" content="{{ seo_description }}">
+    <meta name="twitter:image" content="{{ site.url }}{{ seo_image | relative_url }}">
+    
+    {% if page.layout == 'post' %}
+    <meta property="article:published_time" content="{{ page.date | date_to_xmlschema }}">
+    {% endif %}
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "{% if page.layout == 'post' %}BlogPosting{% else %}WebPage{% endif %}",
+      "headline": {{ seo_title | jsonify }},
+      "description": {{ seo_description | jsonify }},
+      "image": "{{ site.url }}{{ seo_image | relative_url }}",
+      "url": "{{ page.url | absolute_url }}"
+    }
+    </script>
     
     <!-- Tailwind CSS -->
     <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
