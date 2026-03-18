@@ -1,6 +1,8 @@
 ---
 layout: author
 author_id: lindsay-miller
-description: Engineering contributor at Marcus Engineering.
+title: Lindsay Miller
+image: /assets/images/authors/placeholder.webp
+linkedin: "#"
 permalink: /author/lindsay-miller/
 ---

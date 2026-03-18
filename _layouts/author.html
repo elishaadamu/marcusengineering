@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% assign author_id = page.author_id %}
-{% assign author = site.data.authors | where: "id", author_id | first %}
+{% assign author = page %}
 
 <section class="relative py-32 flex items-center min-h-[50vh] overflow-hidden bg-slate-900 border-b border-brand/20">
     <!-- Background Elements -->
@@ -19,18 +19,18 @@ layout: default
     <div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 w-full">
         <div class="flex flex-col md:flex-row items-center gap-12">
             <div class="w-48 h-48 rounded-4xl overflow-hidden border-4 border-brand/30 shadow-2xl shadow-brand/20 shrink-0">
-                <img src="{{ author.image | relative_url }}" alt="{{ author.name }}" class="w-full h-full object-cover">
+                <img src="{{ author.image | relative_url }}" alt="{{ author.title }}" class="w-full h-full object-cover">
             </div>
             <div class="text-center md:text-left">
                 <h2 class="text-sm font-black leading-7 text-brand uppercase tracking-[0.5em] mb-4">Insights by</h2>
                 <h1 class="text-5xl font-extrabold tracking-tight text-white sm:text-7xl font-display uppercase leading-none mb-6">
-                    {{ author.name }}
+                    {{ author.title }}
                 </h1>
                 <div class="h-1.5 w-24 bg-brand mb-8 mx-auto md:mx-0"></div>
-                {% if author.description %}
-                <p class="text-xl leading-8 text-slate-300 font-medium max-w-2xl drop-shadow-sm">
-                    {{ author.description }}
-                </p>
+                {% if content != "" %}
+                <div class="text-xl leading-8 text-white font-medium max-w-2xl drop-shadow-sm prose prose-invert prose-p:text-slate-100">
+                    {{ content }}
+                </div>
                 {% endif %}
             </div>
         </div>

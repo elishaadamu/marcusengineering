@@ -109,22 +109,22 @@ layout: default
 
             <!-- Author Details Section -->
             {% if page.author %}
-                {% assign author_data = site.data.authors | where: "id", page.author | first %}
+                {% assign author_data = site.pages | where: "layout", "author" | where: "author_id", page.author | first %}
                 {% if author_data %}
                 <div class="post-author-details mt-2">
                     <div class="author-image-wrapper">
                         <div class="author-image-box">
-                            <img src="{{ author_data.image | relative_url }}" alt="{{ author_data.name }}">
+                            <img src="{{ author_data.image | relative_url }}" alt="{{ author_data.title }}">
                         </div>
                     </div>
                     <div class="author-info">
                         <h2 class="author-name-title">About 
-                            <a href="{{ '/author/' | append: author_data.id | relative_url }}" class="highlight-name hover:text-brand transition-colors">
-                                {{ author_data.name }}
+                            <a href="{{ author_data.permalink | relative_url }}" class="highlight-name hover:text-brand transition-colors">
+                                {{ author_data.title }}
                             </a>
                         </h2>
-                        {% if author_data.description != "" %}
-                        <p class="author-description">{{ author_data.description }}</p>
+                        {% if author_data.content != "" %}
+                        <div class="author-description">{{ author_data.content | markdownify }}</div>
                         {% endif %}
                         <div class="author-social flex gap-4">
                             {% if author_data.linkedin and author_data.linkedin != "" and author_data.linkedin != "#" %}

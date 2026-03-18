@@ -20,23 +20,24 @@ permalink: /author/admin/
     </div>
 
     <!-- Featured Leader Section -->
-    {% assign president = site.data.authors | where: "id", "patrick-marcus" | first %}
+    {% assign all_authors = site.pages | where: "layout", "author" %}
+    {% assign president = all_authors | where: "author_id", "patrick-marcus" | first %}
     {% if president %}
     <div class="featured-leader-section mb-20">
-        <a href="{{ '/author/' | append: president.id | relative_url }}" class="author-card featured group transition-all duration-500 hover:border-brand/40 hover:shadow-2xl hover:shadow-brand/5" id="{{ president.id }}">
+        <a href="{{ president.permalink | relative_url }}" class="author-card featured group transition-all duration-500 hover:border-brand/40 hover:shadow-2xl hover:shadow-brand/5" id="{{ president.author_id }}">
             <div class="author-image-wrapper">
                 <div class="author-image-box">
-                    <img src="{{ president.image | relative_url }}" alt="{{ president.name }}">
+                    <img src="{{ president.image | relative_url }}" alt="{{ president.title }}">
                 </div>
             </div>
             <div class="author-info">
                 <div class="flex items-center gap-4 mb-2">
                     <span class="px-3 py-1 bg-brand text-white text-[9px] font-black uppercase tracking-widest rounded-md">President</span>
                 </div>
-                <h2 class="author-name-title group-hover:text-brand transition-colors">About <span class="highlight-name">{{ president.name }}</span></h2>
-                <div class="author-description">
-                    {% if president.description != "" %}
-                    <p>{{ president.description }}</p>
+                <h2 class="author-name-title group-hover:text-brand transition-colors">About <span class="highlight-name">{{ president.title }}</span></h2>
+                <div class="author-description line-clamp-3">
+                    {% if president.content != "" %}
+                    {{ president.content | markdownify }}
                     {% else %}
                     <p class="italic opacity-60">Team member profile pending...</p>
                     {% endif %}
@@ -52,7 +53,7 @@ permalink: /author/admin/
                     </div>
 
                     <span class="inline-flex items-center gap-3 text-xs font-black uppercase tracking-[0.2em] text-brand group-hover:translate-x-3 transition-transform">
-                        View Patrick's Articles
+                        View Profile Articles
                         <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M13 7l5 5m0 0l-5 5m5-5H6" /></svg>
                     </span>
                 </div>
@@ -63,19 +64,19 @@ permalink: /author/admin/
 
     <!-- Others Section -->
     <div class="authors-grid">
-        {% assign others = site.data.authors | where_exp: "item", "item.id != 'patrick-marcus'" %}
+        {% assign others = all_authors | where_exp: "item", "item.author_id != 'patrick-marcus'" %}
         {% for author in others %}
-        <a href="{{ '/author/' | append: author.id | relative_url }}" class="author-card group transition-all duration-500 hover:border-brand/40 hover:shadow-2xl hover:shadow-brand/5" id="{{ author.id }}">
+        <a href="{{ author.permalink | relative_url }}" class="author-card group transition-all duration-500 hover:border-brand/40 hover:shadow-2xl hover:shadow-brand/5" id="{{ author.author_id }}">
             <div class="author-image-wrapper">
                 <div class="author-image-box">
-                    <img src="{{ author.image | relative_url }}" alt="{{ author.name }}">
+                    <img src="{{ author.image | relative_url }}" alt="{{ author.title }}">
                 </div>
             </div>
             <div class="author-info">
-                <h2 class="author-name-title group-hover:text-brand transition-colors">About <span class="highlight-name">{{ author.name }}</span></h2>
-                <div class="author-description">
-                    {% if author.description != "" %}
-                    <p>{{ author.description }}</p>
+                <h2 class="author-name-title group-hover:text-brand transition-colors">About <span class="highlight-name">{{ author.title }}</span></h2>
+                <div class="author-description line-clamp-3">
+                    {% if author.content != "" %}
+                    {{ author.content | markdownify | truncatewords: 30 }}
                     {% else %}
                     <p class="italic opacity-60">Team member profile pending...</p>
                     {% endif %}

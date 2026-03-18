@@ -1,6 +1,8 @@
 ---
 layout: author
 author_id: james-rowley
-description: Engineering contributor at Marcus Engineering.
+title: James Rowley
+image: /assets/images/authors/James-Rowley.jpg
+linkedin: "#"
 permalink: /author/james-rowley/
 ---

@@ -1,6 +1,8 @@
 ---
 layout: author
 author_id: misa-gonzales
-description: Engineering contributor at Marcus Engineering.
+title: Misa Gonzales
+image: /assets/images/authors/placeholder.webp
+linkedin: "#"
 permalink: /author/misa-gonzales/
 ---

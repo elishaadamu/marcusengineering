@@ -17,13 +17,14 @@ layout: none
   {% endif %}
 {% endfor %}
 
-{% for author in site.data.authors %}
+{% assign authors = site.pages | where: "layout", "author" %}
+{% for author in authors %}
   {% capture item %}
   {
-    "title": {{ author.name | jsonify }},
-    "url": {{ '/author/' | append: author.id | relative_url | jsonify }},
+    "title": {{ author.title | jsonify }},
+    "url": {{ author.permalink | relative_url | jsonify }},
     "type": "Author",
-    "content": {{ author.description | strip_html | strip_newlines | truncate: 160 | jsonify }}
+    "content": {{ author.content | strip_html | strip_newlines | truncate: 160 | jsonify }}
   }
   {% endcapture %}
   {% assign search_items = search_items | push: item %}
