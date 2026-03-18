@@ -1,0 +1,12 @@
+---
+layout: post
+title: Untitled
+date: 2026-03-17T23:24:00.000+01:00
+categories:
+  - electronics
+thumbnail: /assets/images/posts/1842a-300x169.webp
+author: patrick-marcus
+---
+# Hello world
+
+ccxkjvxckvjcvj
