@@ -32,29 +32,17 @@ collections:
     slug: "{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "author"}
-      - {label: "Author ID", name: "author_id", widget: "string"}
-      - {label: "Description/Bio", name: "description", widget: "text"}
-      - {label: "Permalink", name: "permalink", widget: "string", hint: "e.g. /author/name/"}
-      - {label: "Body", name: "body", widget: "hidden", required: false}
+      - {label: "Author ID", name: "author_id", widget: "string", hint: "Must be unique, e.g. first-last"}
+      - {label: "Full Name", name: "title", widget: "string"}
+      - {label: "Profile Image", name: "image", widget: "image", default: "/assets/images/authors/placeholder.webp"}
+      - {label: "LinkedIn URL", name: "linkedin", widget: "string", required: false}
+      - {label: "Twitter URL", name: "twitter", widget: "string", required: false}
+      - {label: "Permalink", name: "permalink", widget: "string", hint: "Format: /author/name/"}
+      - {label: "Bio/Description", name: "body", widget: "markdown"}
 
   - name: "data"
     label: "Global Data"
     files:
-      - name: "authors_list"
-        label: "Team Authors Details"
-        file: "_data/authors.yml"
-        format: "yaml"
-        fields:
-          - name: "authors"
-            label: "Authors"
-            widget: "list"
-            fields:
-              - {label: "ID", name: "id", widget: "string"}
-              - {label: "Name", name: "name", widget: "string"}
-              - {label: "Image", name: "image", widget: "image"}
-              - {label: "Bio", name: "description", widget: "text"}
-              - {label: "LinkedIn", name: "linkedin", widget: "string"}
-              - {label: "Twitter", name: "twitter", widget: "string", required: false}
       - name: "navigation"
         label: "Site Navigation"
         file: "_data/navigation.yml"
