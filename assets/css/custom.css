@@ -818,9 +818,27 @@
     color: #fff;
     text-transform: uppercase;
     letter-spacing: -0.02em;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0rem;
     animation: slideInUp 1s ease-out 0.2s forwards;
     opacity: 0;
+    min-height: 4.5em; /* Reserve space for 3 lines + gaps */
+    display: flex;
+    flex-direction: column;
+    gap: 0.1em;
+}
+
+@media (max-width: 1023px) {
+    .hero-title {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1024px) {
+    .hero-title {
+        align-items: flex-start;
+        text-align: left;
+    }
 }
 
 .hero-description {
@@ -958,6 +976,16 @@
     50% {
         opacity: 0.5;
     }
+}
+
+
+/* Typing Cursor Animation */
+@keyframes cursor-blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+}
+.animate-cursor-blink {
+    animation: cursor-blink 1.2s step-end infinite;
 }
 
 /* Mobile Responsive */
@@ -1800,3 +1828,22 @@
     color: #64748b !important;
     font-weight: 500 !important;
 }
+
+/* --- Scroll Reveal Animation --- */
+.reveal {
+    opacity: 0 !important;
+    transform: translateY(40px) scale(0.98);
+    transition: opacity 1.2s cubic-bezier(0.16, 1, 0.3, 1), 
+                transform 1.2s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    will-change: transform, opacity;
+}
+
+.reveal.active {
+    opacity: 1 !important;
+    transform: translateY(0) scale(1) !important;
+}
+
+/* Staggered Delay Utilities */
+.reveal.delay-100 { transition-delay: 100ms !important; }
+.reveal.delay-200 { transition-delay: 200ms !important; }
+.reveal.delay-300 { transition-delay: 300ms !important; }

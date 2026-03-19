@@ -68,7 +68,11 @@ layout: default
                         </div>
                     </div>
                     
-                    <button type="submit" class="w-full rounded-full bg-brand px-10 py-5 text-center text-sm font-black text-white shadow-lg shadow-brand/30 hover:bg-brand-light transition-all uppercase tracking-[0.2em] hover:scale-[1.02] active:scale-[0.98]">Send Message</button>
+                    <div class="flex justify-start">
+                        <div class="g-recaptcha" data-sitekey="{{ site.recaptcha_site_key }}"></div>
+                    </div>
+                    
+                    <button type="submit" class="w-full rounded-xl bg-brand px-10 py-5 text-center text-sm font-black text-white shadow-lg shadow-brand/30 hover:bg-brand-light transition-all uppercase tracking-[0.2em] hover:scale-[1.02] active:scale-[0.98]">Send Message</button>
                 </form>
             </div>
 

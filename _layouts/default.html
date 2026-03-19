@@ -68,6 +68,10 @@
     
     {% include favicons.html %}
     
+    {% if page.layout == 'contact' %}
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    {% endif %}
+    
     {% feed_meta %}
 </head>
 <body class="bg-transparent text-slate-900 font-sans selection:bg-brand/20 selection:text-brand flex flex-col min-h-screen overflow-x-hidden {% if page.layout == 'home' %}is-home{% endif %}" x-data="{ mobileMenuOpen: false, searchOpen: false }">
@@ -151,6 +155,24 @@
           }
         });
       }
+    </script>
+    
+    <!-- --- Scroll Reveal Activation --- -->
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const observerOptions = {
+            threshold: 0.12,
+            rootMargin: '0px 0px -80px 0px'
+        };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+    });
     </script>
 </body>
 </html>
