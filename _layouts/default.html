@@ -69,7 +69,7 @@
     {% include favicons.html %}
     
     {% if page.layout == 'contact' %}
-    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://www.google.com/recaptcha/api.js?render={{ site.recaptcha_site_key }}"></script>
     {% endif %}
     
     {% feed_meta %}
