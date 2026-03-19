@@ -1,0 +1,35 @@
+- name: "Jeff Sales"
+  position: "Executive Director, Southern Arizona | Arizona Technology Council"
+  content: "I have worked with Marcus Engineering as both a supplier and a technology association representative for six years. Throughout that time, Marcus Engineering has distinguished itself as a client-focused leader in new product development. Marcus Engineering serves the region as an exemplary and reliable engineering services provider. It’s management also leads initiatives in education and networking which benefit the larger tech community."
+  stars: 3
+  image: "assets/images/testimonials/AzTechCouncil-newest.jpg"
+
+- name: "Eric Ruben"
+  position: "Lasertel"
+  content: "Marcus Engineering has been a great partner for Lasertel for many years. Patrick and his team offer an amazing breadth and depth of knowledge, which they always seem willing to share. I have had the privilege for working personally with Patrick on a number of development efforts of different sizes. His thoughtful approach to engineering and his attention to detail have made him an invaluable resources for me and my team as we work toward the best engineering solutions. With Marcus Engineering it feels more like a partnership, rather than merely a customer-supplier relationship, which makes all the difference."
+  stars: 5
+  image: "assets/images/testimonials/lasertel-newest.png"
+
+- name: "Hector Moreno"
+  position: "Microchip 2017"
+  content: "Man oh man, microchip was an absolute blast! I feel like neo in the matrix being plugged in for the first time. (Can't say I quite know kung foo yet though). Some of the classes I took that were at a more intro level for me were awesome and filled in a lot of gaps in my learning and answered a LOT of questions. And the classes that were way over my head were great too because they gave me a perspective and a better awareness for how deep the rabbit hole goes. I can't thank you enough, Patrick. That was a really incredible experience, and I plan to keep building on it. I really loved the culture of the company too and how nice all the teachers were."
+  stars: 5
+  image: "assets/images/testimonials/microchip-newest.png"
+
+- name: "Eric Hegstrom"
+  position: "ScatterMaster"
+  content: "We contracted Marcus Engineering to help us bring a new optical surface metrology to market. The engineers and technicians at Marcus were key partners in designing the electronics and taking over small run production of our complicated system. They were very responsive to our every need."
+  stars: 5
+  image: "assets/images/testimonials/scattermaster-newest.png"
+
+- name: "Rick Myers"
+  position: "CEO Tempronics"
+  content: "We had a need for something that has never been done. A unique and complex system to test our products physical, electrical and thermal capabilities. Marcus Engineering understood our requirements, worked closely with us on the details, and designed and built an efficient and robust manufacturing test device to meet our needs. Robust because it has the hardware and software design that is ruggedized and maintainable in a manufacturing environment. Efficient because it quickly establishes the quality of the tested product, identifies issues and directs the appropriate rework. Marcus Engineering is a great partner to have on our team."
+  stars: 5
+  image: "assets/images/testimonials/Tempronics_Logo.jpg"
+
+- name: "John Mongelli"
+  position: "Ruda Cardinal"
+  content: "Ruda Cardinal has relied on Marcus Engineering for years, they’re an outstanding firm who’s expertise in custom electronics and software is unequivocal. Without a doubt, they’re the first group I call because I can depend on their quality of work and timely delivery."
+  stars: 5
+  image: "assets/images/testimonials/RudaCardinal.png"

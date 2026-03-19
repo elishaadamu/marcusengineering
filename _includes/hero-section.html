@@ -1,11 +1,22 @@
 {% assign hero = site.data.hero %}
 <section class="hero-section">
-    <!-- Video Background -->
-    <div class="hero-video-bg">
-        <video autoplay muted loop playsinline poster="{{ hero.video_poster | relative_url }}">
-            <source src="{{ hero.video_webm | relative_url }}" type="video/webm">
-            <source src="{{ hero.video_mp4 | relative_url }}" type="video/mp4">
+    <!-- Video Background with Multi-Video Rotation -->
+    <div class="hero-video-bg bg-slate-900" x-data="heroVideos()" x-init="init()">
+        {% for video in hero.videos %}
+        <video 
+            x-ref="video{{ forloop.index0 }}"
+            {% if forloop.first %}autoplay{% endif %}
+            muted 
+            playsinline 
+            loop
+            preload="auto"
+            class="absolute inset-0 w-full h-full object-cover transition-opacity duration-2000"
+            :class="currentVideo === {{ forloop.index0 }} ? 'opacity-100 z-10' : 'opacity-0 z-0 pointer-events-none'"
+            :style="currentVideo === {{ forloop.index0 }} ? 'visibility: visible' : 'visibility: hidden'"
+        >
+            <source src="{{ video.src | relative_url }}" type="{{ video.type }}">
         </video>
+        {% endfor %}
     </div>
     
     <!-- Gradient Overlay -->
@@ -23,40 +34,8 @@
             
             <!-- Main Heading with Writing Animation -->
             <h1 class="hero-title" 
-                x-data="{ 
-                    text1: 'Intelligent',
-                    text2: 'Hardware',
-                    text3: 'Systems.',
-                    display1: '',
-                    display2: '',
-                    display3: '',
-                    activeLine: 1,
-                    async type() {
-                        // Type Line 1
-                        this.activeLine = 1;
-                        for (let i = 0; i <= this.text1.length; i++) {
-                            this.display1 = this.text1.substring(0, i);
-                            await new Promise(r => setTimeout(r, 120));
-                        }
-                        await new Promise(r => setTimeout(r, 800));
-                        
-                        // Type Line 2
-                        this.activeLine = 2;
-                        for (let i = 0; i <= this.text2.length; i++) {
-                            this.display2 = this.text2.substring(0, i);
-                            await new Promise(r => setTimeout(r, 140));
-                        }
-                        await new Promise(r => setTimeout(r, 1000));
-
-                        // Type Line 3
-                        this.activeLine = 3;
-                        for (let i = 0; i <= this.text3.length; i++) {
-                            this.display3 = this.text3.substring(0, i);
-                            await new Promise(r => setTimeout(r, 160));
-                        }
-                    }
-                }" 
-                x-init="setTimeout(() => type(), 1500)">
+                x-data="typingEffect()"
+                x-init="init()">
                 
                 <span class="block min-h-[1.12em]">
                     <span x-text="display1"></span>
@@ -95,15 +74,107 @@
         </div>
     </div>
 </section>
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-    var vid = document.querySelector('.hero-video-bg video');
-    if (!vid) return;
-    vid.loop = true;
-    vid.addEventListener('ended', function() {
-        vid.currentTime = 0;
-        vid.play();
-    });
-});
-</script>
 
+<script>
+function typingEffect() {
+    return {
+        text1: 'ELECTRONICS',
+        text2: 'DESIGNS',
+        text3: 'INTEGRATIONS',
+        display1: '',
+        display2: '',
+        display3: '',
+        activeLine: 1,
+        
+        init() {
+            setTimeout(() => this.type(), 1500);
+        },
+        
+        async type() {
+            // Type Line 1
+            this.activeLine = 1;
+            for (let i = 0; i <= this.text1.length; i++) {
+                this.display1 = this.text1.substring(0, i);
+                await new Promise(r => setTimeout(r, 120));
+            }
+            await new Promise(r => setTimeout(r, 800));
+            
+            // Type Line 2
+            this.activeLine = 2;
+            for (let i = 0; i <= this.text2.length; i++) {
+                this.display2 = this.text2.substring(0, i);
+                await new Promise(r => setTimeout(r, 140));
+            }
+            await new Promise(r => setTimeout(r, 1000));
+
+            // Type Line 3
+            this.activeLine = 3;
+            for (let i = 0; i <= this.text3.length; i++) {
+                this.display3 = this.text3.substring(0, i);
+                await new Promise(r => setTimeout(r, 160));
+            }
+        }
+    };
+}
+
+function heroVideos() {
+    return {
+        currentVideo: 0,
+        totalVideos: parseInt('{{ hero.videos | size | default: 0 }}'),
+        interval: null,
+        
+        init() {
+            // Start playing the first video
+            const firstVid = this.$refs.video0;
+            if (firstVid) {
+                firstVid.play().catch(e => {});
+            }
+            
+            // Rotate videos every 8 seconds
+            this.interval = setInterval(() => {
+                this.nextVideo();
+            }, 8000);
+            
+            // Handle visibility changes
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const vid = this.$refs['video' + this.currentVideo];
+                        if (vid && vid.paused) {
+                            vid.play().catch(e => {});
+                        }
+                    }
+                });
+            }, { threshold: 0.1 });
+            
+            observer.observe(this.$el);
+            
+            document.addEventListener('visibilitychange', () => {
+                if (!document.hidden) {
+                    const vid = this.$refs['video' + this.currentVideo];
+                    if (vid && vid.paused) {
+                        vid.play().catch(e => {});
+                    }
+                }
+            });
+        },
+        
+        nextVideo() {
+            const oldVid = this.$refs['video' + this.currentVideo];
+            this.currentVideo = (this.currentVideo + 1) % this.totalVideos;
+            
+            const newVid = this.$refs['video' + this.currentVideo];
+            if (newVid) {
+                newVid.currentTime = 0;
+                newVid.play().catch(e => {});
+            }
+            
+            setTimeout(() => {
+                if (oldVid) {
+                    oldVid.pause();
+                }
+            }, 2500);
+        }
+    };
+}
+</script>

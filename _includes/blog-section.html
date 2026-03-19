@@ -1,39 +1,32 @@
 {% assign blog_info = site.data.blog_section %}
+{% assign patrick_posts = site.posts | where: "author", "patrick-marcus" %}
+
 <section class="py-16 bg-transparent border-t border-slate-200 relative overflow-hidden">
-    <!-- Organic Curved Blobs
-    <div class="blob-container">
-        <div class="blob-shape blob-1"></div>
-        <div class="blob-shape blob-3"></div>
-    </div> -->
     <!-- Square Grid Background -->
     <div class="absolute inset-0 bg-square-grid pointer-events-none"></div>
     <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
-        <div class="flex items-end justify-between mb-20">
+        <div class="flex items-center justify-between mb-20">
             <div class="max-w-2xl">
                 <div class="inline-flex items-center gap-3 px-0 mb-8">
                     <div class="h-px w-8 bg-brand"></div>
-                    <span class="text-[10px] font-black uppercase tracking-[0.4em] text-brand">{{ blog_info.badge }}</span>
+                    <span class="text-[10px] font-black uppercase tracking-[0.4em] text-brand">Featured Insights</span>
                 </div>
-                <p class="text-5xl font-extrabold tracking-tight text-slate-900 sm:text-7xl font-display uppercase leading-[0.9]">{{ blog_info.title_part1 }} <br><span class="highlight-marker text-slate-900" style="padding: 0 0.1em;">{{ blog_info.title_part2 }}</span></p>
+                <p class="text-5xl font-extrabold tracking-tight text-slate-900 sm:text-7xl font-display uppercase leading-[0.9]">Blogs by <br><span class="highlight-marker text-slate-900" style="padding: 0 0.1em;">Patrick Marcus</span></p>
             </div>
-            <a href="{{ blog_info.view_all_link | relative_url }}" class="hidden md:flex items-center gap-2 text-[10px] font-black text-slate-900 hover:text-brand transition-colors uppercase tracking-[0.3em]">
-                {{ blog_info.view_all_text }} 
-                <svg class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" /></svg>
+            <a href="{{ '/blog' | relative_url }}" class="btn-premium-solid group">
+                <span>{{ blog_info.view_all_text }}</span>
+                <svg class="h-5 w-5 ml-2 transition-transform duration-300 group-hover:translate-x-1" viewBox="0 0 20 20" fill="currentColor">
+                    <path fill-rule="evenodd" d="M3 10a.75.75 0 01.75-.75h10.638L10.23 5.29a.75.75 0 111.04-1.08l5.5 5.25a.75.75 0 010 1.08l-5.5 5.25a.75.75 0 11-1.04-1.08l4.158-3.96H3.75A.75.75 0 013 10z" clip-rule="evenodd" />
+                </svg>
             </a>
         </div>
         
         <ul class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
-            {% for post in site.posts limit:blog_info.post_limit %}
+            {% for post in patrick_posts limit: 3 %}
                 <li class="relative">
                     {% include post-card.html post=post %}
                 </li>
             {% endfor %}
         </ul>
-        
-        <div class="mt-16 text-center md:hidden">
-            <a href="{{ blog_info.view_all_link | relative_url }}" class="btn-premium-solid">
-                {{ blog_info.view_all_text }}
-            </a>
-        </div>
     </div>
 </section>

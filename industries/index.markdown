@@ -1,31 +1,12 @@
 ---
-layout: default
+layout: listing-grid
 title: Industries Served | Marcus Engineering Design Expertise
+nav_key: Industries
+badge: Specialized Engineering
+title_main: Industries We
+title_highlight: Serve
 description: Marcus Engineering provides specialized engineering for Medical Devices, Aerospace, Defense, Energy, Solar, and Industrial Automation.
+icons: "M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z|M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z|M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z|M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z|M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
 ---
 
-<section class="py-32 bg-transparent">
-    <div class="mx-auto max-w-7xl px-6 lg:px-8">
-        <div class="mx-auto max-w-2xl lg:text-center mb-24">
-            <h2 class="text-base font-black leading-7 text-brand uppercase tracking-[0.3em] mb-4">Specialized Engineering</h2>
-            <p class="mt-2 text-4xl font-extrabold tracking-tight text-slate-900 sm:text-7xl font-display uppercase leading-none">Industries We <span class="text-brand">Serve</span></p>
-            <p class="mt-8 text-xl leading-8 text-slate-600 font-medium">
-                We bring deep technical expertise to complex industries, ensuring compliance, reliability, and innovation in every project.
-            </p>
-        </div>
-        
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {% assign industry_nav = site.data.navigation | where: "title", "Industries" | first %}
-            {% for item in industry_nav.dropdown %}
-            <a href="{{ item.url | relative_url }}" class="group relative flex flex-col items-start bg-white p-10 rounded-[2.5rem] border border-slate-200 hover:border-brand/40 hover:shadow-[0_0_50px_-12px_rgba(255,207,0,0.2)] transition-all duration-500">
-                <div class="h-14 w-14 rounded-2xl bg-brand/10 text-brand flex items-center justify-center mb-10 group-hover:bg-brand group-hover:text-white transition-all duration-500 border border-brand/20">
-                    <svg class="h-7 w-7" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
-                </div>
-                <h3 class="text-2xl font-bold text-slate-900 group-hover:text-brand transition-colors font-display uppercase tracking-tighter mb-4 leading-tight">{{ item.title }}</h3>
-                <p class="text-slate-500 leading-relaxed mb-10 font-medium">Engineering specialized and high-reliability solutions for the leading {{ item.title }} sector.</p>
-                <span class="mt-auto text-[10px] font-black text-brand uppercase tracking-[0.2em] flex items-center gap-3 transition-all group-hover:gap-5">Explore Sector <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" /></svg></span>
-            </a>
-            {% endfor %}
-        </div>
-    </div>
-</section>
+We bring deep technical expertise to complex industries, ensuring compliance, reliability, and innovation in every project.

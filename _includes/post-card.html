@@ -60,9 +60,9 @@
                     </a>
                 {% endif %}
             {% endif %}
-            <a href="{{ post.url | relative_url }}" class="post-card-btn ml-auto inline-flex items-center gap-3" onclick="event.stopPropagation();">
-                <span class="text-[11px] font-black uppercase tracking-wider">Read Insights</span>
-                <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+            <a href="{{ post.url | relative_url }}" class="post-card-btn ml-auto inline-flex items-center justify-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-2.5 group/btn active:scale-95 transition-all" onclick="event.stopPropagation();">
+                <span class="text-[9px] sm:text-[11px] font-black uppercase tracking-wider">Read Insights</span>
+                <svg class="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
             </a>
         </div>
 

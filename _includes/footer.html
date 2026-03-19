@@ -12,7 +12,9 @@
         <div class="grid grid-cols-1 gap-12 xl:grid-cols-3 xl:gap-24">
             <!-- Brand Column -->
             <div class="space-y-8">
-                <img class="h-10 w-auto" src="{{ "/assets/logo/Logo white wide.svg" | relative_url }}" alt="{{ site.title }}">
+                <a href="{{ '/' | relative_url }}">
+                    <img class="h-10 w-auto" src="{{ "/assets/logo/Logo white wide.svg" | relative_url }}" alt="{{ site.title }}">
+                </a>
                 <p class="text-sm leading-7 max-w-sm text-slate-400">
                     {{ site.description }}
                 </p>
