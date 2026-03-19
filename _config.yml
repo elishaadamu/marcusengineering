@@ -21,7 +21,7 @@ baseurl: ""
 url: "https://marcusengineering.netlify.app"
 logo: "/assets/logo/Logo large.png"
 image: "/assets/logo/Logo large.png"
-recaptcha_site_key: "6LeHno0sAAAAADBB_4Fz-fO1cumUj_76GiZ6VpvG"
+recaptcha_site_key: "6LdO6I8sAAAAABdhhdolKjFdINZwfh7XhG4PKg0Z"
 
 social:
   type: Organization
