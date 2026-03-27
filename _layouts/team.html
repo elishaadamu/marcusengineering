@@ -69,7 +69,7 @@ x-cloak>
 <div class="relative group">
 <div class="absolute -inset-2 bg-brand/10 blur-xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
 <div class="relative aspect-square overflow-hidden rounded-3xl border-4 border-slate-50 shadow-md">
-<img src="{{ member.image }}" 
+<img src="{{ member.image | relative_url }}" 
 alt="{{ member.name }}" 
 class="w-full h-full object-cover transition-all duration-1000 scale-105 group-hover:scale-100">
 </div>
