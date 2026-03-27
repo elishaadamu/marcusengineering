@@ -13,7 +13,7 @@ capabilities:
   - FAA and EASA Compliance
 ---
 
-Marcus Engineering has deep experience in life and safety critical systems in Civil and Military flight applications, on both traditional and unmanned aircraft. Marcus Engineering, works with you to understand your product, from requirements to safety to relevant Technical Standard Orders (TSOs) for your product and develop a comprehensive validation and certification package.
+Marcus Engineering has deep experience in life and safety critical systems in Civil and Military flight applications, on both traditional and unmanned aircraft. Marcus Engineering, works with you to understand your product, from requirements to safety to relevant Technical Standard Orders (TSOs) for your product and develop a comprehensive validation and certification package
 
 Whether your product is an aircraft subsystem meeting a manufacture’s requirements or an item that requires a Technical Standard Order (TSO) Authorization, Marcus Engineering can help guide your product to successful deployment. Whether your product has Minor or Catastrophic failure outcomes, Marcus Engineering can Guide you through the design and certification processes for systems from DAL A (Development/Design Assurance Level) through DAL D.
 
