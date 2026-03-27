@@ -1,3 +1,4 @@
+# GitHub Actions deployment workflow for Marcus Engineering
 name: Deploy Jekyll site to Pages
 
 on:
@@ -37,7 +38,7 @@ jobs:
         uses: ruby/setup-ruby@v1
         with:
           ruby-version: '3.3'
-          bundle-cache: true
+          bundler-cache: true
 
       - name: Build with Jekyll
         run: bundle exec jekyll build
