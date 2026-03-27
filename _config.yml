@@ -18,7 +18,7 @@ description: >-
   Marcus Engineering is a premier engineering design firm specializing in electrical engineering, 
   electronics, instrumentation, industrial automation, and embedded systems design.
 baseurl: "/marcusengineering.com"
-url: "https://marcus-engineering.github.io"
+url: ""
 logo: "/assets/logo/Logo large.png"
 image: "/assets/logo/Logo large.png"
 recaptcha_site_key: "6LdO6I8sAAAAABdhhdolKjFdINZwfh7XhG4PKg0Z"
