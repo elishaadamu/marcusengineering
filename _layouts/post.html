@@ -1,0 +1,347 @@
+---
+layout: default
+---
+
+<article class="bg-transparent min-h-screen pb-24">
+    <!-- Hero Section -->
+    <div class="relative w-full overflow-hidden flex flex-col items-center justify-center pt-24 pb-16 px-6 lg:px-8">
+        <!-- Centered Thumbnail Image -->
+        <div class="relative z-10 w-full max-w-5xl flex flex-col items-center">
+            {% if page.thumbnail and page.thumbnail != "" %}
+            <div class="w-full md:w-[70%]  rounded-[1.5rem] overflow-hidden shadow-2xl shadow-slate-200 border border-slate-100  group">
+                <img src="{{ page.thumbnail | relative_url }}" alt="{{ page.title }}" class="w-full h-full object-contain transition-transform duration-1000 group-hover:scale-105">
+            </div>
+            {% endif %}
+
+            <!-- Title & Meta section -->
+            <div class="{% if page.thumbnail and page.thumbnail != "" %}mt-16{% else %}mt-8{% endif %} text-center max-w-4xl">
+                <div class="flex flex-col items-center gap-6">
+                    <div class="flex items-center gap-x-4">
+                        <div class="flex items-center gap-x-3 bg-slate-100/50 backdrop-blur-md rounded-full px-4 py-2 border border-slate-200/50">
+                            <time datetime="{{ page.date | date_to_xmlschema }}" class="text-slate-500 font-black uppercase tracking-[0.3em] text-[10px]">{{ page.date | date: "%B %-d, %Y" }}</time>
+                        </div>
+                        
+                        <!-- Social Share Links -->
+                        <div class="flex items-center gap-6">
+                            <!-- LinkedIn -->
+                            <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url | relative_url }}" target="_blank" class="text-slate-400 hover:text-[#0077B5] transition-all duration-300 hover:scale-110 flex items-center justify-center p-1" title="Share on LinkedIn">
+                                <svg class="w-6 h-6 block" fill="currentColor" viewBox="0 0 24 24" style="display: block; min-width: 24px; min-height: 24px;"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </a>
+                            <!-- X (Twitter) -->
+                            <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ site.url }}{{ page.url | relative_url }}" target="_blank" class="text-slate-400 hover:text-black transition-all duration-300 hover:scale-110 flex items-center justify-center p-1" title="Share on X">
+                                <svg class="w-6 h-6 block" fill="currentColor" viewBox="0 0 24 24" style="display: block; min-width: 24px; min-height: 24px;"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            </a>
+                            <!-- Facebook -->
+                            <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url | relative_url }}" target="_blank" class="text-slate-400 hover:text-[#1877F2] transition-all duration-300 hover:scale-110 flex items-center justify-center p-1" title="Share on Facebook">
+                                <svg class="w-6 h-6 block" fill="currentColor" viewBox="0 0 24 24" style="display: block; min-width: 24px; min-height: 24px;"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.248h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                            </a>
+                            <!-- Email -->
+                            <a href="mailto:?subject={{ page.title | url_encode }}&body=Check out this post: {{ site.url }}{{ page.url | relative_url }}" class="text-slate-400 hover:text-brand transition-all duration-300 hover:scale-110 flex items-center justify-center p-1" title="Share via Email">
+                                <svg class="w-6 h-6 block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" style="display: block; min-width: 24px; min-height: 24px;"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                            </a>
+                            <!-- More Share Trigger -->
+                            <button onclick="openShareModal()" class="text-slate-400 hover:text-orange-500 transition-all duration-300 hover:scale-110 focus:outline-none flex items-center justify-center p-1" title="More Sharing Options">
+                                <svg class="w-7 h-7 block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3" style="display: block; min-width: 28px; min-height: 28px;"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" /></svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <h1 class="text-3xl text-center font-extrabold tracking-tight text-slate-900 sm:text-5xl font-display uppercase leading-[1.1]">
+                        {{ page.title | escape }}
+                    </h1>
+
+                    {% if page.categories %}
+                    <div class="flex flex-wrap justify-center gap-3 mt-4">
+                        {% for category in page.categories %}
+                        <span class="rounded-full bg-brand/5 border border-brand/10 px-4 py-1.5 font-bold text-brand uppercase tracking-widest text-[9px]">
+                            {{ category }}
+                        </span>
+                        {% endfor %}
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        
+        <!-- Background decorative elements -->
+        <div class="absolute inset-0 -z-10 bg-slate-50/50">
+            <div class="absolute top-0 right-1/4 w-[600px] h-[600px] bg-brand/5 rounded-full blur-[120px]"></div>
+            <div class="absolute bottom-0 left-1/4 w-[500px] h-[500px] bg-slate-200/50 rounded-full blur-[120px]"></div>
+        </div>
+    </div>
+
+
+    <!-- Content Section -->
+    <div class="mx-auto max-w-4xl px-6 lg:px-8">
+        <!-- Main Blog Content Column -->
+        <div class="min-w-0">
+            <div id="blog-content" class="prose-container prose prose-lg lg:prose-xl max-w-none text-slate-600 leading-relaxed text-justify selection:bg-brand/10">
+                {{ content }}
+            </div>
+
+            <!-- Bottom Share Section -->
+            <div class="mt-2 py-2 border-y border-slate-100/60 flex flex-col items-center justify-center gap-4 mb-0">
+                <span class="text-[10px] font-black uppercase tracking-[0.4em] text-slate-400">Share this post</span>
+                <div class="flex items-center gap-10">
+                    <!-- LinkedIn -->
+                    <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url | relative_url }}" target="_blank" class="text-slate-400 hover:text-[#0077B5] transition-all duration-300 hover:scale-125 flex items-center justify-center" title="Share on LinkedIn">
+                        <svg class="w-7 h-7 block" fill="currentColor" viewBox="0 0 24 24" style="display: block; min-width: 28px; min-height: 28px;"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                    </a>
+                    <!-- X (Twitter) -->
+                    <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ site.url }}{{ page.url | relative_url }}" target="_blank" class="text-slate-400 hover:text-black transition-all duration-300 hover:scale-125 flex items-center justify-center" title="Share on X">
+                        <svg class="w-7 h-7 block" fill="currentColor" viewBox="0 0 24 24" style="display: block; min-width: 28px; min-height: 28px;"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url | relative_url }}" target="_blank" class="text-slate-400 hover:text-[#1877F2] transition-all duration-300 hover:scale-125 flex items-center justify-center" title="Share on Facebook">
+                        <svg class="w-7 h-7 block" fill="currentColor" viewBox="0 0 24 24" style="display: block; min-width: 28px; min-height: 28px;"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.248h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <!-- Email -->
+                    <a href="mailto:?subject={{ page.title | url_encode }}&body=Check out this post: {{ site.url }}{{ page.url | relative_url }}" class="text-slate-400 hover:text-brand transition-all duration-300 hover:scale-125 flex items-center justify-center" title="Share via Email">
+                        <svg class="w-7 h-7 block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" style="display: block; min-width: 28px; min-height: 28px;"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                    </a>
+                    <!-- More Share Trigger -->
+                    <button onclick="openShareModal()" class="text-slate-400 hover:text-orange-500 transition-all duration-300 hover:scale-125 focus:outline-none flex items-center justify-center" title="More Sharing Options">
+                        <svg class="w-8 h-8 block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3" style="display: block; min-width: 32px; min-height: 32px;"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" /></svg>
+                    </button>
+                </div>
+            </div>
+
+
+            <!-- Author Details Section -->
+            {% if page.author %}
+                {% assign author_data = site.pages | where: "layout", "author" | where: "author_id", page.author | first %}
+                {% if author_data %}
+                <div class="post-author-details mt-2">
+                    <div class="author-image-wrapper">
+                        <div class="author-image-box">
+                            <img src="{{ author_data.image | relative_url }}" alt="{{ author_data.title }}">
+                        </div>
+                    </div>
+                    <div class="author-info">
+                        <h2 class="author-name-title">About 
+                            <a href="{{ author_data.permalink | relative_url }}" class="highlight-name hover:text-brand transition-colors">
+                                {{ author_data.title }}
+                            </a>
+                        </h2>
+                        {% if author_data.content != "" %}
+                        <div class="author-description">{{ author_data.content | markdownify }}</div>
+                        {% endif %}
+                        <div class="author-social flex gap-4">
+                            {% if author_data.linkedin and author_data.linkedin != "" and author_data.linkedin != "#" %}
+                            <a href="{{ author_data.linkedin }}" class="linkedin-link text-slate-400 hover:text-brand transition-colors" title="LinkedIn Profile">
+                                <svg class="w-6 h-6 border rounded p-1" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            </a>
+                            {% endif %}
+                            {% if author_data.twitter and author_data.twitter != "" and author_data.twitter != "#" %}
+                            <a href="{{ author_data.twitter }}" class="twitter-link text-slate-400 hover:text-brand transition-colors" title="Twitter Profile">
+                                <svg class="w-6 h-6 border rounded p-1" fill="currentColor" viewBox="0 0 24 24"><path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/></svg>
+                            </a>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+            {% endif %}
+
+            <!-- Meta Section (Categories & Tags at bottom) -->
+            <div class=" py-6 border-t border-slate-100 flex flex-col md:flex-row md:items-center justify-between gap-6">
+                <div class="md:w-[70%] flex flex-col gap-3">
+                    <div class="flex items-center gap-2 text-slate-400">
+                        <svg class="w-4 h-4 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z" /></svg>
+                        <span class="text-[10px] font-black uppercase tracking-widest">Posted in Categories</span>
+                    </div>
+                    <div class="flex flex-wrap gap-2">
+                        {% for category in page.categories %}
+                        <a href="{{ "/blog/" | relative_url }}?category={{ category | slugify }}" class="px-3 py-1 rounded-lg bg-brand border border-slate-100 text-[10px] font-bold text-white hover:bg-brand-dark hover:text-white transition-all duration-300 uppercase tracking-wider">
+                            {{ category }}
+                        </a>
+                        {% endfor %}
+                    </div>
+                </div>
+                
+                <div class="md:w-[30%] flex md:justify-end gap-4">
+                    <a href="{{ "/blog/" | relative_url }}" class="btn-premium-ghost">
+                        <svg class="w-4 h-4 back-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+                        <span>Back to News</span>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Post Navigation -->
+            <div class="mt-12 mb-16 grid grid-cols-1 sm:grid-cols-2 gap-4 border-t border-slate-100 pt-12">
+                <!-- Newer Post (Previous in list) -->
+                <div class="flex-1">
+                    {% if page.next %}
+                    <a href="{{ page.next.url | relative_url }}" class="group flex flex-col h-full p-8 rounded-[2rem] bg-slate-50 hover:bg-white border border-transparent hover:border-brand/20 transition-all duration-500 shadow-sm hover:shadow-xl hover:shadow-brand/5">
+                        <span class="text-[9px] font-black uppercase tracking-[0.3em] text-slate-400 mb-3 group-hover:text-brand transition-colors">Previous Article</span>
+                        <h4 class="text-sm font-black text-slate-900 line-clamp-2 leading-snug uppercase tracking-tight font-display">{{ page.next.title }}</h4>
+                        <div class="mt-auto pt-6 flex items-center gap-2 text-brand font-black text-[9px] uppercase tracking-widest transition-transform group-hover:-translate-x-2">
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+                            Newer Insights
+                        </div>
+                    </a>
+                    {% endif %}
+                </div>
+
+                <!-- Older Post (Next in list) -->
+                <div class="flex-1">
+                    {% if page.previous %}
+                    <a href="{{ page.previous.url | relative_url }}" class="group flex flex-col items-end h-full p-8 rounded-[2rem] bg-slate-50 hover:bg-white border border-transparent hover:border-brand/20 transition-all duration-500 shadow-sm hover:shadow-xl hover:shadow-brand/5 text-right">
+                        <span class="text-[9px] font-black uppercase tracking-[0.3em] text-slate-400 mb-3 group-hover:text-brand transition-colors">Next Article</span>
+                        <h4 class="text-sm font-black text-slate-900 line-clamp-2 leading-snug uppercase tracking-tight font-display">{{ page.previous.title }}</h4>
+                        <div class="mt-auto pt-6 flex items-center gap-2 text-brand font-black text-[9px] uppercase tracking-widest transition-transform group-hover:translate-x-2">
+                            Older Insights
+                            <svg class="w-3.5 h-3.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M14 5l7 7-7 7M3 12h18" /></svg>
+                        </div>
+                    </a>
+                    {% endif %}
+                </div>
+            </div>
+
+            <!-- More Blogs Section -->
+            <div class="mt-10 border-t border-slate-50">
+                <div class="flex items-center gap-6 mb-8">
+                    <h2 class="text-xl font-extrabold text-slate-900 font-display uppercase tracking-tight whitespace-nowrap">More <span class="text-brand">Insights</span></h2>
+                    <div class="h-px w-full bg-slate-50"></div>
+                </div>
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                    {% assign related_posts = "" | split: "" %}
+                    {% for post in site.posts %}
+                        {% if post.url != page.url %}
+                            {% assign common_cat = false %}
+                            {% for cat in post.categories %}
+                                {% if page.categories contains cat %}
+                                    {% assign common_cat = true %}
+                                {% endif %}
+                            {% endfor %}
+                            {% if common_cat %}
+                                {% assign related_posts = related_posts | push: post %}
+                            {% endif %}
+                        {% endif %}
+                        {% if related_posts.size >= 2 %}{% break %}{% endif %}
+                    {% endfor %}
+
+                    {% assign final_posts = related_posts %}
+                    {% if final_posts.size < 2 %}
+                        {% assign fallback_posts = site.posts | where_exp: "item", "item.url != page.url" %}
+                        {% for post in fallback_posts %}
+                            {% unless final_posts contains post %}
+                                {% assign final_posts = final_posts | push: post %}
+                            {% endunless %}
+                            {% if final_posts.size >= 2 %}{% break %}{% endif %}
+                        {% endfor %}
+                    {% endif %}
+
+                    {% for post in final_posts %}
+                        {% include post-card.html post=post %}
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</article>
+
+<!-- Share Modal -->
+<div id="shareModal" class="fixed inset-0 z-[2000] hidden items-center justify-center p-4 sm:p-6">
+    <!-- Backdrop with blur effect -->
+    <div class="absolute inset-0 bg-slate-900/60 backdrop-blur-sm transition-opacity" onclick="closeShareModal()"></div>
+    
+    <!-- Modal Content -->
+    <div class="relative w-full max-w-lg transform overflow-hidden rounded-[2.5rem] bg-white p-8 shadow-2xl transition-all sm:p-12 border border-slate-100">
+        <div class="flex items-center justify-between mb-10">
+            <h3 class="text-2xl font-display font-extrabold text-slate-900 uppercase tracking-tight">Share this <span class="text-brand">Insight</span></h3>
+            <button onclick="closeShareModal()" class="text-slate-400 hover:text-slate-600 transition-all duration-300 p-2 hover:bg-slate-50 rounded-full">
+                <svg class="w-6 h-6 block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" style="display: block;"><path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" /></svg>
+            </button>
+        </div>
+        
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-8 mb-10">
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url={{ site.url }}{{ page.url | relative_url }}" target="_blank" class="flex flex-col items-center gap-4 group">
+                <div class="w-16 h-16 rounded-[1.25rem] bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-[#0077B5] group-hover:text-white transition-all duration-500 shadow-xs border border-slate-100 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-[#0077B5]/20">
+                    <svg class="w-8 h-8 block" fill="currentColor" viewBox="0 0 24 24" style="display: block;"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                </div>
+                <span class="text-[10px] font-black text-slate-500 uppercase tracking-widest group-hover:text-slate-900 transition-colors">LinkedIn</span>
+            </a>
+            <!-- Twitter/X -->
+            <a href="https://twitter.com/intent/tweet?text={{ page.title | url_encode }}&url={{ site.url }}{{ page.url | relative_url }}" target="_blank" class="flex flex-col items-center gap-4 group">
+                <div class="w-16 h-16 rounded-[1.25rem] bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-black group-hover:text-white transition-all duration-500 shadow-xs border border-slate-100 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-black/20">
+                    <svg class="w-8 h-8 block" fill="currentColor" viewBox="0 0 24 24" style="display: block;"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </div>
+                <span class="text-[10px] font-black text-slate-500 uppercase tracking-widest group-hover:text-slate-900 transition-colors">X</span>
+            </a>
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{ page.url | relative_url }}" target="_blank" class="flex flex-col items-center gap-4 group">
+                <div class="w-16 h-16 rounded-[1.25rem] bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-[#1877F2] group-hover:text-white transition-all duration-500 shadow-xs border border-slate-100 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-[#1877F2]/20">
+                    <svg class="w-8 h-8 block" fill="currentColor" viewBox="0 0 24 24" style="display: block;"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.248h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </div>
+                <span class="text-[10px] font-black text-slate-500 uppercase tracking-widest group-hover:text-slate-900 transition-colors">Facebook</span>
+            </a>
+            <!-- Email -->
+            <a href="mailto:?subject={{ page.title | url_encode }}&body=Check out this post: {{ site.url }}{{ page.url | relative_url }}" class="flex flex-col items-center gap-4 group">
+                <div class="w-16 h-16 rounded-[1.25rem] bg-slate-50 flex items-center justify-center text-slate-400 group-hover:bg-brand group-hover:text-white transition-all duration-500 shadow-xs border border-slate-100 group-hover:scale-110 group-hover:shadow-lg group-hover:shadow-brand/20">
+                    <svg class="w-8 h-8 block" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5" style="display: block;"><path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
+                </div>
+                <span class="text-[10px] font-black text-slate-500 uppercase tracking-widest group-hover:text-slate-900 transition-colors">Email</span>
+            </a>
+        </div>
+
+        <!-- Shareaholic Link -->
+        <div class="mt-8 mb-10 text-center">
+            <a href="https://www.shareaholic.com/share?url={{ site.url }}{{ page.url | relative_url }}&title={{ page.title | url_encode }}" target="_blank" class="inline-flex items-center gap-3 bg-orange-50 text-orange-600 px-6 py-3 rounded-2xl text-[10px] font-black uppercase tracking-widest hover:bg-orange-100 transition-all border border-orange-100/50 shadow-sm">
+                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M12 5v.01M12 12v.01M12 19v.01M12 6a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2zm0 7a1 1 0 110-2 1 1 0 010 2z" /></svg>
+                <span>More Services via Shareaholic</span>
+            </a>
+        </div>
+        
+        <!-- Copy Link Section -->
+        <div class="pt-8 border-t border-slate-50">
+            <label class="block text-[10px] font-black text-slate-400 uppercase tracking-[0.3em] mb-4">Post Link</label>
+            <div class="relative flex items-center group">
+                <input type="text" id="shareInput" readonly value="{{ site.url }}{{ page.url | relative_url }}" class="w-full bg-slate-50 border border-slate-100 rounded-2xl px-5 py-4 text-xs text-slate-600 focus:outline-none pr-28 group-hover:bg-white group-hover:border-slate-200 transition-all font-medium">
+                <button onclick="copyShareLink(event)" class="absolute right-2 bg-slate-900 text-white px-6 py-2.5 rounded-xl text-[10px] font-bold uppercase tracking-widest hover:bg-brand transition-all active:scale-95 shadow-lg shadow-slate-900/10">Copy</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+function openShareModal() {
+    const modal = document.getElementById('shareModal');
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeShareModal() {
+    const modal = document.getElementById('shareModal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.body.style.overflow = '';
+}
+
+function copyShareLink(event) {
+    const input = document.getElementById('shareInput');
+    input.select();
+    input.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(input.value);
+    
+    const btn = event.currentTarget;
+    const originalText = btn.innerText;
+    btn.innerText = 'Copied!';
+    btn.classList.add('bg-brand');
+    btn.classList.remove('bg-slate-900');
+    
+    setTimeout(() => {
+        btn.innerText = originalText;
+        btn.classList.remove('bg-brand');
+        btn.classList.add('bg-slate-900');
+    }, 2000);
+}
+
+// Close on escape key
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') closeShareModal();
+});
+</script>
+

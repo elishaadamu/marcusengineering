@@ -1,0 +1,125 @@
+<section class="py-24 relative overflow-hidden bg-slate-900">
+    <!-- Background grid -->
+    <div class="absolute inset-0 bg-square-grid opacity-10 pointer-events-none"></div>
+    <!-- Decorative gradient orbs -->
+    <div class="absolute top-0 left-1/4 w-[500px] h-[500px] bg-brand/5 rounded-full blur-[140px] pointer-events-none"></div>
+    <div class="absolute bottom-0 right-0 w-[400px] h-[400px] bg-brand/5 rounded-full blur-[100px] pointer-events-none"></div>
+    
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 relative z-10">
+        <!-- Top Row: Badge + Headline -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-end mb-16">
+            <div>
+                <div class="inline-flex items-center gap-3 mb-8">
+                    <div class="h-px w-8 bg-brand"></div>
+                    <span class="text-[10px] font-black uppercase tracking-[0.4em] text-brand">Giving Back</span>
+                </div>
+                <h2 class="text-4xl font-extrabold tracking-tight text-white sm:text-6xl font-display uppercase leading-[0.9]">
+                    Civic <span class="highlight-marker text-white" style="padding: 0 0.1em;">Engagement</span>
+                </h2>
+            </div>
+            <div>
+                <p class="text-xl leading-relaxed text-slate-300 font-medium max-w-xl">
+                    Marcus Engineering is deeply dedicated to supporting our local community in Tucson and beyond. We believe in the power of public art and interactive education.
+                </p>
+            </div>
+        </div>
+        
+        <!-- Main Content Grid: 3 Columns -->
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            
+            <!-- Card 1: Solar Sculptures (Featured / Spans 2 cols on lg) -->
+            <div class="lg:col-span-2 group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-10 overflow-hidden hover:border-brand/30 transition-all duration-500">
+                <!-- Gradient accent top -->
+                <div class="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-brand/60 via-brand to-brand/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <!-- BG Sun watermark -->
+                <div class="absolute -bottom-8 -right-8 opacity-[0.03] group-hover:opacity-[0.06] transition-opacity pointer-events-none">
+                    <svg class="w-56 h-56 text-brand" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 5.106a.75.75 0 010 1.06l-1.591 1.592a.75.75 0 11-1.061-1.061l1.591-1.591a.75.75 0 011.061 0zM21.75 12a.75.75 0 01.75.75h-2.25a.75.75 0 010-1.5H22.5a.75.75 0 01.75.75zM18.894 18.894a.75.75 0 01-1.06 0l-1.591-1.591a.75.75 0 111.06-1.061l1.592 1.591a.75.75 0 010 1.061zM12 21.75a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V22.5a.75.75 0 01.75-.75zM5.106 18.894a.75.75 0 010-1.06l1.591-1.592a.75.75 0 111.061 1.061l-1.591 1.591a.75.75 0 01-1.061 0zM2.25 12a.75.75 0 01.75.75H5.25a.75.75 0 010 1.5H3a.75.75 0 01-.75-.75zM5.106 5.106a.75.75 0 011.06 0l1.592 1.591a.75.75 0 01-1.061 1.06l-1.591-1.591a.75.75 0 010-1.061z" /></svg>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-8 items-start">
+                    <div class="w-16 h-16 bg-brand/20 rounded-2xl flex items-center justify-center shrink-0 group-hover:bg-brand/30 transition-colors">
+                        <svg class="w-8 h-8 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" /></svg>
+                    </div>
+                    <div class="flex-1 relative z-10">
+                        <h4 class="text-2xl font-bold text-white mb-4 uppercase tracking-tight font-display">Solar Sculptures</h4>
+                        <p class="text-slate-400 leading-relaxed mb-8 max-w-lg">Interactive public art sculptures with a solar energy efficient theme that inspire community engagement. These installations combine cutting-edge engineering with artistic expression to educate and delight.</p>
+                        <a href="https://solarsculptures.com/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-6 py-3 bg-brand/10 border border-brand/20 text-brand text-xs font-black uppercase tracking-widest rounded-xl hover:bg-brand hover:text-white transition-all duration-300">
+                            Explore Public Art
+                            <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M17 8l4 4m0 0l-4 4m4-4H3" /></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2: Counter -->
+            <div class="group relative bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl overflow-hidden hover:border-brand/30 transition-all duration-500 flex flex-col items-center justify-center p-10 text-center"
+                 x-data="{ count: 0, target: 50, observed: false }" 
+                 x-init="
+                    const obs = new IntersectionObserver((entries) => {
+                        if (entries[0].isIntersecting && !observed) {
+                            observed = true;
+                            let start = 0;
+                            let duration = 2000;
+                            let stepTime = Math.abs(Math.floor(duration / target));
+                            let timer = setInterval(() => {
+                                start += 1;
+                                count = start;
+                                if (start == target) clearInterval(timer);
+                            }, stepTime);
+                        }
+                    });
+                    obs.observe($el);
+                 ">
+                <!-- Gradient accent top -->
+                <div class="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-brand/60 via-brand to-brand/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <!-- Sun watermark -->
+                <div class="absolute inset-0 flex items-center justify-center opacity-[0.03] group-hover:opacity-[0.05] transition-opacity pointer-events-none">
+                    <svg class="w-full h-full text-brand p-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 5.106a.75.75 0 010 1.06l-1.591 1.592a.75.75 0 11-1.061-1.061l1.591-1.591a.75.75 0 011.061 0zM21.75 12a.75.75 0 01.75.75h-2.25a.75.75 0 010-1.5H22.5a.75.75 0 01.75.75zM18.894 18.894a.75.75 0 01-1.06 0l-1.591-1.591a.75.75 0 111.06-1.061l1.592 1.591a.75.75 0 010 1.061zM12 21.75a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V22.5a.75.75 0 01.75-.75zM5.106 18.894a.75.75 0 010-1.06l1.591-1.592a.75.75 0 111.061 1.061l-1.591 1.591a.75.75 0 01-1.061 0zM2.25 12a.75.75 0 01.75.75H5.25a.75.75 0 010 1.5H3a.75.75 0 01-.75-.75zM5.106 5.106a.75.75 0 011.06 0l1.592 1.591a.75.75 0 01-1.061 1.06l-1.591-1.591a.75.75 0 010-1.061z" /></svg>
+                </div>
+                
+                <div class="w-14 h-14 bg-brand/20 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-brand/30 transition-colors">
+                    <svg class="w-7 h-7 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                </div>
+                <span class="text-[80px] sm:text-[100px] font-black text-brand leading-none relative z-10" x-text="count + '+'">0+</span>
+                <p class="text-white font-bold uppercase tracking-widest text-xs mt-4 relative z-10">Community Initiatives</p>
+            </div>
+
+            <!-- Bottom Row: Two smaller cards -->
+            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 overflow-hidden hover:border-brand/30 transition-all duration-500 relative">
+                <div class="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-brand/60 via-brand to-brand/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div class="absolute -bottom-4 -right-4 opacity-[0.03] group-hover:opacity-[0.06] transition-opacity pointer-events-none">
+                    <svg class="w-28 h-28 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="0.8"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                </div>
+                <div class="w-12 h-12 bg-brand/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand/30 transition-colors">
+                    <svg class="w-6 h-6 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" /></svg>
+                </div>
+                <h4 class="text-lg font-bold text-white mb-2 uppercase tracking-tight">STEM Education</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">Supporting local schools and universities with hands-on engineering workshops and mentorship programs.</p>
+            </div>
+
+            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 overflow-hidden hover:border-brand/30 transition-all duration-500 relative">
+                <div class="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-brand/60 via-brand to-brand/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div class="absolute -bottom-4 -right-4 opacity-[0.03] group-hover:opacity-[0.06] transition-opacity pointer-events-none">
+                    <svg class="w-28 h-28 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="0.8"><path stroke-linecap="round" stroke-linejoin="round" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
+                </div>
+                <div class="w-12 h-12 bg-brand/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand/30 transition-colors">
+                    <svg class="w-6 h-6 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" /></svg>
+                </div>
+                <h4 class="text-lg font-bold text-white mb-2 uppercase tracking-tight">Tech Community</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">Leading initiatives in networking and education that benefit the larger Arizona technology ecosystem.</p>
+            </div>
+
+            <div class="group bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 overflow-hidden hover:border-brand/30 transition-all duration-500 relative">
+                <div class="absolute top-0 left-0 right-0 h-1 bg-linear-to-r from-brand/60 via-brand to-brand/60 opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                <div class="absolute -bottom-4 -right-4 opacity-[0.03] group-hover:opacity-[0.06] transition-opacity pointer-events-none">
+                    <svg class="w-28 h-28 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="0.8"><path stroke-linecap="round" stroke-linejoin="round" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                </div>
+                <div class="w-12 h-12 bg-brand/20 rounded-xl flex items-center justify-center mb-6 group-hover:bg-brand/30 transition-colors">
+                    <svg class="w-6 h-6 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                </div>
+                <h4 class="text-lg font-bold text-white mb-2 uppercase tracking-tight">Renewable Energy</h4>
+                <p class="text-slate-400 text-sm leading-relaxed">Promoting clean and sustainable energy solutions through community-focused engineering projects.</p>
+            </div>
+        </div>
+    </div>
+</section>

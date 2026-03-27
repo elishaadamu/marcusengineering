@@ -1,0 +1,13 @@
+<div class="grid grid-cols-1 md:grid-cols-3 gap-16 md:gap-8 lg:gap-12">
+    {% for item in site.data.expertise %}
+    <div class="group relative flex flex-col bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-xl shadow-slate-200/50 transition-all duration-500 hover:-translate-y-2 hover:border-[#48A23F]/20">
+        <div class="aspect-4/3 relative overflow-hidden">
+            <img src="{{ item.image | relative_url }}" alt="{{ item.alt }}" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+        </div>
+        <div class="p-8 text-center">
+            <h3 class="text-3xl font-black text-slate-900 tracking-tight uppercase font-display leading-tight mb-4 group-hover:pantone-text transition-colors">{{ item.title }}</h3>
+            <p class="text-slate-500 font-medium leading-relaxed">{{ item.description }}</p>
+        </div>
+    </div>
+    {% endfor %}
+</div>

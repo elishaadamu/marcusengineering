@@ -1,0 +1,70 @@
+- title: Industries
+  url: /industries/
+  dropdown:
+    - title: Aerospace (v1.0)
+      url: /industries/aerospace-v1.0/
+    - title: Aerospace (v1.1)
+      url: /industries/aerospace-v1.1/
+    - title: Defensive Security (v1.0)
+      url: /industries/defensive-security-v1.0/
+    - title: Defensive Security (v1.1)
+      url: /industries/defensive-security-v1.1/
+    - title: Industrial Applications
+      url: /industries/industrial/
+    - title: Medical Device (v1.0)
+      url: /industries/medical-device-v1.0/
+    - title: Medical Device (v1.1)
+      url: /industries/medical-device-v1.1/
+    - title: Medical Device (v1.2)
+      url: /industries/medical-device-v1.2/
+    - title: Medical Device Design
+      url: /industries/medical/
+    - title: Mining
+      url: /industries/mining/
+- title: Applications
+  url: /applications/
+  dropdown:
+    - title: Automated Test & Manufacturing (v1.0)
+      url: /applications/automated-test-and-manufacturing-instrumentation-v1.0/
+    - title: Automated Test & Manufacturing (v1.1)
+      url: /applications/automated-test-and-manufacturing-instrumentation-v1.1/
+    - title: Battery Management Systems
+      url: /applications/battery-management-systems/
+    - title: Electro-Optical Systems
+      url: /applications/electro-optical-systems/
+    - title: Embedded Security
+      url: /applications/embedded-security/
+    - title: Laser & LED Drivers
+      url: /applications/laser-and-led-drivers/
+    - title: Sensor Systems
+      url: /applications/sensor-systems/
+    - title: Ultra Low Power Systems
+      url: /applications/ultra-low-power-systems/
+- title: Expertise
+  url: /expertise/
+  dropdown:
+    - title: Electrical Engineering & Embedded Systems
+      url: /expertise/electrical-engineering-and-embedded-systems/
+    - title: Embedded Security
+      url: /expertise/embedded-security/
+    - title: Internet of Things (IoT)
+      url: /expertise/internet-of-things/
+    - title: Regulatory Compliance
+      url: /expertise/regulatory-compliance/
+    - title: Software Application Development
+      url: /expertise/software-application-development/
+    - title: Test Equipment & Instrumentation
+      url: /expertise/test-equipment-and-instrumentation/
+    - title: RF Systems & Wireless Communications
+      url: /expertise/wireless/
+- title: About
+  url: /about/
+  dropdown:
+    - title: ABOUT
+      url: /about/
+    - title: MANAGEMENT TEAM
+      url: /the-team-2-2/
+- title: NEWS
+  url: /blog/
+- title: Contact
+  url: /contact-us/

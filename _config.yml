@@ -1,0 +1,112 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+title: Marcus Engineering
+email: info@marcusengineering.com
+description: >-
+  Marcus Engineering is a premier engineering design firm specializing in electrical engineering, 
+  electronics, instrumentation, industrial automation, and embedded systems design.
+baseurl: "/marcusengineering.com"
+url: "https://marcus-engineering.github.io"
+logo: "/assets/logo/Logo large.png"
+image: "/assets/logo/Logo large.png"
+recaptcha_site_key: "6LdO6I8sAAAAABdhhdolKjFdINZwfh7XhG4PKg0Z"
+
+social:
+  type: Organization
+  name: Marcus Engineering
+  links:
+    - http://www.facebook.com/pages/Marcus-Engineering-LLC/112273638864131
+    - http://www.linkedin.com/company/2228035
+    - http://www.twitter.com/marcusengr
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-paginate-v2
+  - jekyll-admin
+  - jekyll-redirect-from
+
+
+# Design tokens (reference)
+brand_color: "#49A942" # Pantone 7738
+
+# Build settings
+# theme: minima # Disabled to use custom Tailwind design
+# Permalink handled by _plugins/first_category_permalink.rb to use only first category
+# permalink: /:categories/:title/
+autopages:
+  enabled: true
+  categories:
+    slugify:
+      mode: 'pretty'
+      case: true
+    layouts:
+      - category.html
+    title: ':cat - Engineering Insights'
+    permalink: '/category/:cat/'
+  tags:
+    slugify:
+      mode: 'pretty'
+      case: true
+    layouts:
+      - autopage_tags.html
+    title: '#:tag - Engineering Insights'
+    permalink: '/tag/:tag/'
+
+pagination:
+  enabled: true
+  per_page: 8
+  permalink: '/page/:num/'
+  title: ':title - page :num of :max'
+  limit: 0
+  sort_field: 'date'
+  sort_reverse: true
+  trail:
+    before: 2
+    after: 2
+  sample: 0
+
+# Navigation definition is now in _data/navigation.yml
+
+# Exclude from processing.
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - package.json
+  - package-lock.json
+
+collections:
+  team:
+    output: false
+    sort_by: order
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+      author: ""
+      thumbnail: ""
+      categories: []
+

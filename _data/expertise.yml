@@ -1,0 +1,14 @@
+- title: "Electronic <br>Design"
+  image: "/assets/images/home_images/X2_LxAPFPsclg.webp"
+  description: "Advanced PCB layout and precision hardware architecture tailored for complex systems."
+  alt: "Electronic Design"
+
+- title: "Embedded <br>Intelligence"
+  image: "/assets/images/home_images/fingerprint2.webp"
+  description: "Mission-critical firmware and edge-AI integration for high-performance devices."
+  alt: "Embedded Systems"
+
+- title: "Product <br>Lifecycle"
+  image: "/assets/images/home_images/5th_grade_fab_lab_3.webp"
+  description: "Full-cycle development from rapid prototyping to global manufacturing scale."
+  alt: "Product Development"

@@ -1,0 +1,104 @@
+---
+layout: default
+---
+
+<section class="relative min-h-[60vh] flex items-center pt-24 overflow-hidden bg-slate-900 text-white">
+    <!-- Hero Background Image -->
+    {% if page.hero_image %}
+    <div class="absolute inset-0 z-0">
+        <img src="{{ page.hero_image | relative_url }}" alt="{{ page.title }}" class="w-full h-full object-cover opacity-40">
+        <div class="absolute inset-0 bg-gradient-to-br from-slate-900 via-slate-900/80 to-transparent"></div>
+    </div>
+    {% endif %}
+
+    <div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 w-full py-20">
+        <div class="max-w-3xl">
+            <h2 class="text-base font-black leading-7 text-brand-light uppercase tracking-[0.3em] mb-4">
+                {{ page.category | default: 'Expertise' }}
+            </h2>
+            <h1 class="text-4xl font-extrabold tracking-tight text-white sm:text-7xl font-display uppercase leading-tight">
+                {{ page.title }}
+            </h1>
+            {% if page.catchy_phrase %}
+            <p class="mt-8 text-xl text-slate-300 italic leading-relaxed font-medium max-w-2xl border-l-4 border-brand pl-6">
+                {{ page.catchy_phrase }}
+            </p>
+            {% endif %}
+        </div>
+    </div>
+</section>
+
+<section class="py-24 bg-transparent min-h-screen">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            {% if page.short_blurb %}
+            <p class="text-xl text-slate-600 italic leading-relaxed mb-16 font-medium text-center">
+                {{ page.short_blurb }}
+            </p>
+            {% endif %}
+            
+            {% if page.capabilities or page.advantage_quote %}
+            <div class="grid grid-cols-1 {% if page.capabilities and page.advantage_quote %}md:grid-cols-2{% endif %} gap-8 mb-24">
+                {% if page.capabilities %}
+                <div class="bg-white p-12 rounded-[3.5rem] border border-slate-100 shadow-2xl shadow-slate-200/60 relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-2 h-full bg-brand"></div>
+                    <div class="absolute -top-24 -right-24 w-64 h-64 bg-brand/5 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                    
+                    <h3 class="text-[11px] font-black text-slate-400 mb-10 uppercase tracking-[0.3em] flex items-center gap-3">
+                        <span class="w-8 h-px bg-slate-200"></span>
+                        Core Capabilities
+                    </h3>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                        {% for item in page.capabilities %}
+                        <div class="flex items-center gap-5 group/item transition-all hover:translate-x-1">
+                            <div class="shrink-0 h-10 w-10 rounded-2xl bg-brand/10 border border-brand/20 flex items-center justify-center text-brand transition-colors group-hover/item:bg-brand group-hover/item:text-white group-hover/item:shadow-lg group-hover/item:shadow-brand/30">
+                                <svg class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 13l4 4L19 7" />
+                                </svg>
+                            </div>
+                            <span class="text-slate-700 font-bold tracking-tight text-lg">{{ item }}</span>
+                        </div>
+                        {% endfor %}
+                    </div>
+                </div>
+                {% endif %}
+
+                {% if page.advantage_quote %}
+                <div class="bg-slate-50 p-12 rounded-[3.5rem] border border-slate-100 shadow-2xl shadow-slate-200/60 relative overflow-hidden group h-full">
+                    <div class="absolute -top-12 -right-12 w-48 h-48 bg-brand/10 rounded-full blur-3xl opacity-50 group-hover:opacity-100 transition-opacity duration-700"></div>
+                    
+                    <div class="mb-10 inline-flex items-center justify-center w-16 h-16 rounded-3xl bg-brand text-white shadow-xl shadow-brand/30 group-hover:scale-110 transition-transform duration-500">
+                        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
+                            <path d="M14.017 21L14.017 18C14.017 16.8954 13.1216 16 12.017 16H9.01704V14H12.017C14.2262 14 16.017 15.7909 16.017 18V21H14.017ZM8.01704 21V18C8.01704 15.7909 6.22618 14 4.01704 14H1.01704V16H4.01704C5.12161 16 6.01704 16.8954 6.01704 18V21H8.01704ZM21.017 14C22.1216 14 23.017 14.8954 23.017 16V21H21.017V18C21.017 16.8954 20.1216 16 19.017 16H16.017V14H19.017ZM17.017 11C18.6739 11 20.017 9.65685 20.017 8C20.017 6.34315 18.6739 5 17.017 5C15.3602 5 14.017 6.34315 14.017 8C14.017 9.65685 15.3602 11 17.017 11ZM7.01704 11C8.6739 11 10.017 9.65685 10.017 8C10.017 6.34315 8.6739 5 7.01704 5C5.36018 5 4.01704 6.34315 4.01704 8C4.01704 9.65685 5.36018 11 7.01704 11Z" />
+                        </svg>
+                    </div>
+
+                    <h3 class="text-[11px] font-black text-brand mb-6 uppercase tracking-[0.3em]">The Marcus Advantage</h3>
+                    <p class="text-slate-900 text-2xl font-bold leading-[1.4] tracking-tight relative z-10 font-display">
+                        "{{ page.advantage_quote }}"
+                    </p>
+                    <div class="mt-8 flex items-center gap-4">
+                        <div class="w-12 h-px bg-slate-300"></div>
+                        <p class="text-xs font-black text-slate-500 uppercase tracking-widest">{{ page.advantage_author | default: 'Engineering Director' }}</p>
+                    </div>
+                </div>
+                {% endif %}
+            </div>
+            {% endif %}
+
+            <div class="prose prose-slate max-w-none prose-lg prose-headings:font-display prose-headings:uppercase prose-headings:tracking-wider prose-h3:text-slate-900 prose-h3:font-extrabold prose-p:text-slate-600 prose-p:leading-relaxed">
+                <h2 class="text-4xl font-black text-slate-900 mb-10 pb-6 border-b border-slate-100 flex items-center gap-4">
+                    In-Depth Expertise
+                </h2>
+                {{ content }}
+            </div>
+
+            <div class="mt-24 text-center">
+                <a href="/contact-us/" class="inline-flex rounded-full bg-brand px-12 py-5 text-sm font-black text-white shadow-lg shadow-brand/30 hover:bg-brand-light transition-all uppercase tracking-widest hover:scale-105 active:scale-95">
+                    Discuss Your Project
+                </a>
+            </div>
+        </div>
+    </div>
+</section>

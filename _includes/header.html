@@ -1,0 +1,121 @@
+<header class="main-header" 
+        :class="{ 'scrolled': scrolled }"
+        x-data="{ scrolled: false }" 
+        @scroll.window="scrolled = (window.pageYOffset > 50)">
+    <div class="nav-container">
+        <!-- Logo (single image for both states) -->
+        <div class="nav-logo">
+            <a href="{{ "/" | relative_url }}" class="nav-logo-link">
+                <img src="{{ "/assets/logo/Logo large.png" | relative_url }}" alt="{{ site.title }}" class="site-logo site-logo-default">
+                <img src="{{ "/assets/logo/Logo white large.png" | relative_url }}" alt="{{ site.title }}" class="site-logo site-logo-sticky" aria-hidden="true">
+            </a>
+        </div>
+        
+        <!-- Desktop Navigation -->
+        <nav class="nav-links-wrapper">
+            <ul class="nav-list">
+                {% for item in site.data.navigation %}
+                    {% if item.dropdown %}
+                        {% assign is_active = false %}
+                        {% for sub in item.dropdown %}
+                            {% if page.url == sub.url %}{% assign is_active = true %}{% endif %}
+                        {% endfor %}
+                        <li class="nav-item dropdown" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
+                            <button class="nav-link dropdown-trigger {% if is_active %}active{% endif %}">
+                                {{ item.title }}
+                                <svg class="dropdown-icon" viewBox="0 0 20 20" fill="currentColor">
+                                    <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                                </svg>
+                            </button>
+                            <div class="dropdown-menu">
+                                {% for subitem in item.dropdown %}
+                                    <a href="{{ subitem.url | relative_url }}" class="dropdown-item {% if page.url == subitem.url %}active{% endif %}">{{ subitem.title }}</a>
+                                {% endfor %}
+                            </div>
+                        </li>
+                    {% else %}
+                        <li class="nav-item">
+                            <a href="{{ item.url | relative_url }}" class="nav-link {% if page.url == item.url %}active{% endif %}">{{ item.title }}</a>
+                        </li>
+                    {% endif %}
+                {% endfor %}
+            </ul>
+        </nav>
+
+        <!-- Search & Mobile Menu Toggle -->
+        <div class="flex items-center gap-3 ml-auto lg:ml-12 lg:gap-6">
+            <button @click="searchOpen = true" class="search-trigger-btn" aria-label="Open Search">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="11" cy="11" r="8"></circle>
+                    <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                </svg>
+            </button>
+
+            <button class="mobile-toggle" :class="{ 'open': mobileMenuOpen }" @click="mobileMenuOpen = !mobileMenuOpen" aria-label="Toggle menu">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Navigation Overlay -->
+    <template x-teleport="body">
+        <div>
+            <!-- Backdrop -->
+            <div class="mobile-nav-backdrop" x-show="mobileMenuOpen" x-transition.opacity @click="mobileMenuOpen = false"></div>
+            
+            <!-- Sidebar -->
+            <div class="mobile-nav-sidebar" :class="{ 'open': mobileMenuOpen }">
+                <div class="mobile-nav-header">
+                    <img src="{{ "/assets/logo/Logo large.png" | relative_url }}" alt="{{ site.title }}" class="h-10 w-auto">
+                    <button class="mobile-nav-close" @click="mobileMenuOpen = false" aria-label="Close menu">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="18" y1="6" x2="6" y2="18"></line>
+                            <line x1="6" y1="6" x2="18" y2="18"></line>
+                        </svg>
+                    </button>
+                </div>
+
+                <nav class="mobile-nav-content">
+                    <ul class="mobile-nav-list">
+                        {% for item in site.data.navigation %}
+                            <li class="mobile-nav-item" x-data="{ subOpen: false }">
+                                {% if item.dropdown %}
+                                    {% assign is_active = false %}
+                                    {% for sub in item.dropdown %}
+                                        {% if page.url == sub.url %}{% assign is_active = true %}{% endif %}
+                                    {% endfor %}
+                                    <button class="mobile-nav-link w-full flex items-center justify-between {% if is_active %}active{% endif %}" @click="subOpen = !subOpen">
+                                        {{ item.title }}
+                                        <svg class="w-4 h-4 transition-transform duration-300" :class="{ 'rotate-180': subOpen }" viewBox="0 0 20 20" fill="currentColor">
+                                            <path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd" />
+                                        </svg>
+                                    </button>
+                                    <ul class="mobile-sub-list" x-show="subOpen" x-collapse>
+                                        {% for subitem in item.dropdown %}
+                                            <li>
+                                                <a href="{{ subitem.url | relative_url }}" class="mobile-sub-link {% if page.url == subitem.url %}active{% endif %}" @click="mobileMenuOpen = false">
+                                                    {{ subitem.title }}
+                                                </a>
+                                            </li>
+                                        {% endfor %}
+                                    </ul>
+                                {% else %}
+                                    <a href="{{ item.url | relative_url }}" class="mobile-nav-link {% if page.url == item.url %}active{% endif %}" @click="mobileMenuOpen = false">
+                                        {{ item.title }}
+                                    </a>
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </nav>
+
+                <div class="mobile-nav-footer">
+                    <a href="{{ "/contact-us/" | relative_url }}" class="btn btn-primary w-full" @click="mobileMenuOpen = false">Start Your Project</a>
+                </div>
+            </div>
+        </div>
+    </template>
+</header>
+

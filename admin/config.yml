@@ -1,0 +1,81 @@
+backend:
+  name: git-gateway
+  branch: main
+local_backend: true
+
+media_folder: "assets/images/posts"
+public_folder: "/assets/images/posts"
+
+collections:
+  - name: "posts"
+    label: "Blog Posts"
+    folder: "_posts"
+    extension: "markdown"
+    format: "frontmatter"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Date", name: "date", widget: "datetime"}
+      - {label: "Categories", name: "categories", widget: "list"}
+      - {label: "Thumbnail", name: "thumbnail", widget: "image", required: false}
+      - {label: "Author ID", name: "author", widget: "string", hint: "Must match ID in authors list"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "authors"
+    label: "Author Profiles"
+    folder: "author"
+    extension: "markdown"
+    format: "frontmatter"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "author"}
+      - {label: "Author ID", name: "author_id", widget: "string", hint: "Must be unique, e.g. first-last"}
+      - {label: "Full Name", name: "title", widget: "string"}
+      - {label: "Profile Image", name: "image", widget: "image", default: "/assets/images/authors/placeholder.webp"}
+      - {label: "LinkedIn URL", name: "linkedin", widget: "string", required: false}
+      - {label: "Twitter URL", name: "twitter", widget: "string", required: false}
+      - {label: "Permalink", name: "permalink", widget: "string", hint: "Format: /author/name/"}
+      - {label: "Bio/Description", name: "body", widget: "markdown"}
+
+  - name: "data"
+    label: "Global Data"
+    files:
+      - name: "navigation"
+        label: "Site Navigation"
+        file: "_data/navigation.yml"
+        format: "yaml"
+        fields:
+          - name: "items"
+            label: "Nav Menu"
+            widget: "list"
+            fields:
+                - {label: "Title", name: "title", widget: "string"}
+                - {label: "URL", name: "url", widget: "string"}
+                - label: "Dropdown"
+                  name: "dropdown"
+                  widget: "list"
+                  required: false
+                  fields:
+                    - {label: "Title", name: "title", widget: "string"}
+                    - {label: "URL", name: "url", widget: "string"}
+
+  - name: "pages"
+    label: "Main Pages"
+    files:
+      - label: "Project Documentation"
+        name: "documentation"
+        file: "DOCUMENTATION.md"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Permalink", name: "permalink", widget: "string"}
+          - {label: "Body", name: "body", widget: "markdown"}
+      - label: "Home Page"
+        name: "home"
+        file: "index.markdown"
+        fields:
+          - {label: "Title", name: "title", widget: "string"}
+          - {label: "Description", name: "description", widget: "text"}
+          - {label: "Body", name: "body", widget: "markdown"}

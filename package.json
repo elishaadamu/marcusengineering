@@ -1,0 +1,18 @@
+{
+  "name": "marcusengineering",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tailwindcss -i assets/css/input.css -o assets/css/main.css --watch",
+    "build": "tailwindcss -i assets/css/input.css -o assets/css/main.css --minify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@tailwindcss/cli": "^4.2.1",
+    "@tailwindcss/typography": "^0.5.19"
+  }
+}

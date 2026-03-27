@@ -1,0 +1,131 @@
+<div class="relative text-center mb-10 px-4">
+    <!-- Background Watermark -->
+    <div class="absolute inset-0 flex items-center justify-center -top-6 -z-10 select-none pointer-events-none opacity-10">
+        <span class="text-[120px] sm:text-[200px] font-serif text-brand leading-none">&ldquo;</span>
+    </div>
+    
+    <h2 class="text-sm font-black leading-7 text-brand uppercase tracking-[0.4em] mb-3 text-center">Testimonials</h2>
+    <h3 class="text-2xl font-extrabold text-slate-900 font-display uppercase tracking-tight sm:text-5xl mb-6 leading-none">Voice of our <span class="highlight-marker text-slate-900" style="padding: 0 0.1em;">Partners</span></h3>
+</div>
+
+<div x-data="{ 
+        active: 0,
+        count: {{ site.data.testimonials.size }},
+        autoplay: null,
+        touchStartX: 0,
+        touchEndX: 0,
+        next() { this.active = (this.active + 1) % this.count },
+        prev() { this.active = (this.active - 1 + this.count) % this.count },
+        start() {
+            this.stop();
+            this.autoplay = setInterval(() => this.next(), 6000);
+        },
+        stop() {
+            if (this.autoplay) {
+                clearInterval(this.autoplay);
+                this.autoplay = null;
+            }
+        },
+        handleTouchStart(e) { this.touchStartX = e.changedTouches[0].screenX },
+        handleTouchEnd(e) {
+            this.touchEndX = e.changedTouches[0].screenX;
+            if (this.touchStartX - this.touchEndX > 50) this.next();
+            if (this.touchEndX - this.touchStartX > 50) this.prev();
+        }
+    }"
+    x-init="
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    start();
+                } else {
+                    stop();
+                }
+            });
+        }, { threshold: 0.1 });
+        observer.observe($el);
+    "
+    @mouseenter="stop()"
+    @mouseleave="start()"
+    class="relative mx-auto max-w-5xl">
+    
+    <!-- Slides Container -->
+    <div class="relative overflow-hidden" 
+         @touchstart="handleTouchStart($event)" 
+         @touchend="handleTouchEnd($event)">
+        <div class="relative flex transition-transform duration-700 ease-in-out" :style="`transform: translateX(-${active * 100}%)`">
+            {% for testimonial in site.data.testimonials %}
+            <div class="w-full shrink-0">
+                <div class="relative min-h-[340px]">
+                    <div class="relative z-10 grid grid-cols-1 lg:grid-cols-4 gap-3 lg:gap-8 items-center h-full">
+                        
+                        <!-- Partner Logo: On top for mobile, 25% on desktop (Left side) -->
+                        <div class="order-1 lg:order-1 lg:col-span-1 flex items-center justify-center p-4">
+                            <div class="relative w-full flex items-center justify-center">
+                                <img src="{{ testimonial.image | relative_url }}" alt="Company Logo" class="max-h-56 sm:max-h-72 lg:max-h-80 max-w-full w-auto object-contain hover:scale-105 transition-transform duration-500">
+                            </div>
+                        </div>
+
+                        <!-- Quote Content: Below image on mobile, 75% on desktop (Right side) -->
+                        <div class="order-2 lg:order-2 lg:col-span-3 pb-4 md:pb-0 flex flex-col justify-center pl-0 lg:pl-12">
+                            
+                            <!-- Medium Quote Mark -->
+                            <div class="-mb-4 md:-mb-8">
+                                <span class="text-brand text-6xl md:text-[128px] font-serif leading-none select-none">&ldquo;</span>
+                            </div>
+
+                            <!-- Quote Text -->
+                            <p class="text-base md:text-lg lg:text-xl text-slate-700 font-medium leading-relaxed text-justify mb-8">
+                                {{ testimonial.content }}
+                            </p>
+                             <!-- Closing Quote Mark -->
+                            <!-- <div class="-mt-4 md:-mt-8">
+                                <span class="text-brand text-6xl md:text-[128px] font-serif leading-none select-none">&rdquo;</span>
+                            </div> -->
+                            <!-- Author Info + Stars -->
+                            <div class="flex flex-col sm:flex-row sm:items-center gap-6 pt-8 border-t border-slate-100">
+                                <div class="flex-1 text-center sm:text-left">
+                                    <p class="text-slate-900 font-bold text-base tracking-wide">{{ testimonial.name }}</p>
+                                    <p class="text-slate-500 text-[12px] font-medium mt-0.5 uppercase tracking-wider">{{ testimonial.position }}</p>
+                                </div>
+                                <!-- Stars -->
+                                <div class="flex justify-center gap-1.5">
+                                    {% assign filled_stars = testimonial.stars | default: 0 %}
+                                    {% assign empty_stars = 5 | minus: filled_stars %}
+                                    
+                                    {% for i in (1..filled_stars) %}
+                                        <svg class="h-6 w-6 text-brand fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                                    {% endfor %}
+                                    
+                                    {% for i in (1..empty_stars) %}
+                                        <svg class="h-6 w-6 text-slate-200 fill-current" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" /></svg>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+
+    <!-- Navigation Buttons: Hidden on mobile, shown on lg -->
+    <button @click="prev()" class="hidden lg:flex absolute -left-16 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow-lg border border-slate-100 items-center justify-center text-slate-400 hover:text-brand transition-all duration-300 z-20 focus:outline-none group">
+        <svg class="h-6 w-6 transition-transform group-hover:-translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
+    </button>
+    <button @click="next()" class="hidden lg:flex absolute -right-16 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow-lg border border-slate-100 items-center justify-center text-slate-400 hover:text-brand transition-all duration-300 z-20 focus:outline-none group">
+        <svg class="h-6 w-6 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
+    </button>
+
+    <!-- Large Dotted Indicators -->
+    <div class="flex justify-center items-center gap-3.5 mt-8">
+        <template x-for="(item, index) in count" :key="index">
+            <button 
+                @click="active = index" 
+                class="transition-all duration-500 rounded-full focus:outline-none"
+                :class="active === index ? 'w-10 h-2.5 bg-brand shadow-md shadow-brand/20' : 'w-2.5 h-2.5 bg-slate-200 hover:bg-slate-300'"
+            ></button>
+        </template>
+    </div>
+</div>

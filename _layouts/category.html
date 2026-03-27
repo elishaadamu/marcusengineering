@@ -1,0 +1,97 @@
+---
+layout: default
+---
+
+<section class="relative py-32 flex  items-center min-h-[60vh] overflow-hidden bg-slate-900 border-b border-brand/20">
+    <!-- Background Elements -->
+    <div class="absolute inset-0 z-0">
+        <div class="absolute inset-0 bg-slate-900/70 backdrop-blur-[3px]"></div>
+        <div class="absolute inset-0 bg-linear-to-b from-slate-900/80 via-slate-900/50 to-slate-900"></div>
+        <!-- Decorative Grid -->
+        <div class="absolute inset-0 opacity-20" style="background-image: radial-gradient(#49A942 1px, transparent 1px); background-size: 32px 32px;"></div>
+        <!-- Glow Effect -->
+        <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand/10 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="relative z-10 mx-auto max-w-7xl px-6 lg:px-8 w-full text-center">
+        <h2 class="text-sm font-black leading-7 text-brand uppercase tracking-[0.5em] mb-6">Category Archive</h2>
+        <h1 class="text-5xl font-extrabold tracking-tight text-white sm:text-8xl font-display uppercase leading-none mb-8">
+            {{ page.autopage.display_name }}
+        </h1>
+        <div class="h-2 w-32 bg-brand mx-auto mb-10"></div>
+        <p class="text-2xl leading-9 text-slate-300 font-medium max-w-3xl mx-auto drop-shadow-sm">
+            Exploring technical excellence and innovations in <span class="text-brand font-bold">{{ page.autopage.display_name }}</span>.
+        </p>
+    </div>
+</section>
+
+<section class="py-24 bg-transparent min-h-screen">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {% for post in paginator.posts %}
+                {% include post-card.html post=post %}
+            {% endfor %}
+        </div>
+
+        {% if paginator.posts.size == 0 %}
+            <div class="text-center py-20">
+                <p class="text-slate-400 font-display uppercase tracking-widest text-sm">No posts found in this category.</p>
+            </div>
+        {% endif %}
+
+        <!-- Enhanced Pagination -->
+        {% if paginator.total_pages > 1 %}
+        <nav class="blog-pagination mt-24" aria-label="Pagination">
+            <div class="flex flex-col items-center gap-8 w-full">
+                <div class="pagination-container">
+                    {% if paginator.page > 1 %}
+                        <a href="{{ page.autopage.permalink | relative_url }}" class="pagination-btn" title="First Page">
+                            <svg viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M15.79 5.23a.75.75 0 01-.02 1.06L11.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.25-4a.75.75 0 010-1.08l4.25-4a.75.75 0 011.06.02zm-6 0a.75.75 0 01-.02 1.06L5.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.25-4a.75.75 0 010-1.08l4.25-4a.75.75 0 011.06.02z" clip-rule="evenodd" /></svg>
+                        </a>
+                        <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-btn" title="Previous Page">
+                            <svg viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.25-4a.75.75 0 010-1.08l4.25-4a.75.75 0 011.06.02z" clip-rule="evenodd" /></svg>
+                        </a>
+                    {% endif %}
+
+                    <div class="hidden sm:flex gap-2">
+                        {% for trail in paginator.page_trail %}
+                            <a href="{{ trail.path | relative_url }}" class="pagination-number {% if paginator.page == trail.num %}active{% endif %} relative" {% if paginator.page == trail.num %}aria-current="page"{% endif %}>
+                                {{ trail.num }}
+                                {% if paginator.page == trail.num %}
+                                    <span class="pagination-active-dot"></span>
+                                {% endif %}
+                            </a>
+                        {% endfor %}
+                    </div>
+
+                    {% if paginator.next_page %}
+                        <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-btn" title="Next Page">
+                            <svg viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.25 4a.75.75 0 010 1.08l-4.25 4a.75.75 0 01-1.06-.02z" clip-rule="evenodd" /></svg>
+                        </a>
+                        {% assign last_page_path = page.autopage.permalink | append: 'page/' | append: paginator.total_pages | append: '/' | relative_url %}
+                        <a href="{{ last_page_path }}" class="pagination-btn" title="Last Page">
+                            <svg viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M4.21 14.77a.75.75 0 01.02-1.06L8.168 10 4.23 6.29a.75.75 0 111.04-1.08l4.25 4a.75.75 0 010 1.08l-4.25 4a.75.75 0 01-1.06-.02zm6 0a.75.75 0 01.02-1.06L14.168 10 10.23 6.29a.75.75 0 111.04-1.08l4.25 4a.75.75 0 010 1.08l-4.25 4a.75.75 0 01-1.06-.02z" clip-rule="evenodd" /></svg>
+                        </a>
+                    {% endif %}
+                </div>
+
+                <div class="pagination-status">
+                    <div class="pagination-line"></div>
+                    <span class="pagination-label">
+                        Page <span class="current">{{ paginator.page }}</span> of <span class="total">{{ paginator.total_pages }}</span>
+                    </span>
+                    <div class="pagination-line"></div>
+                </div>
+            </div>
+        </nav>
+        {% endif %}
+
+        <div class="mt-20 text-center">
+            <a href="{{ '/blog/' | relative_url }}" class="btn-premium-ghost">
+                <svg class="w-4 h-4 back-icon" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
+                Back to All Insights
+            </a>
+        </div>
+    </div>
+</section>
