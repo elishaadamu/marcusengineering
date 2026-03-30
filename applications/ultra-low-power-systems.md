@@ -2,7 +2,6 @@
 layout: service
 title: Ultra Low Power Systems
 category: Applications
-hero_image: /assets/images/application-images/Applications, Ultra Low Power hero.png
 catchy_phrase: Harnessing Nanowatts, Perfecting Picowatts.
 short_blurb: In the age of electronics, efficiency reigns supreme. Dive deep into the realm of ultra-low power systems, where we optimize every component, every line of code, every electron.
 capabilities:

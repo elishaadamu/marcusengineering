@@ -2,7 +2,6 @@
 layout: service
 title: Electro-Optical Systems
 category: Applications
-hero_image: /assets/images/application-images/Applications, Electroptical hero.jpg
 catchy_phrase: Where Light Meets Innovation.
 short_blurb: Electro-optical systems are at the crossroads of electronics and optics, opening the doors to advanced imaging and control solutions. Discover how meticulous design and cutting-edge technology redefine what's possible in this field.
 capabilities:

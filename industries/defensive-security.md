@@ -12,7 +12,6 @@ capabilities:
   - Side Channel Attack Prevention
   - Secure Chain of Trust
   - ISO/IEC, CWE, CVSS Standards
-hero_image: "/assets/images/industries-images/Defensive Security Image 2.png"
 ---
 
 Marcus Engineering stands at the forefront of secure hardware systems, boasting a rich legacy in designing and fortifying systems spanning from limited-life medical devices to those embedded within untrusted user environments. Partnering with us ensures a ground-up secure product development or fortifying existing products against unauthorized access and potential attackers.

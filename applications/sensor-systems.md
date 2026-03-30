@@ -2,7 +2,6 @@
 layout: service
 title: Sensor Systems
 category: Applications
-hero_image: /assets/images/application-images/Applications, sensor systems hero.png
 catchy_phrase: Navigating Precision and Data in a Digital World.
 short_blurb: In today's digital landscape, sensor systems are crucial. They serve as the backbone that connects precision, efficiency, and diverse applications, offering a comprehensive look into the intricacies of modern technology and its integration.
 capabilities:

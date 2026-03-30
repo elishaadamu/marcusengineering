@@ -2,7 +2,6 @@
 layout: service
 title: Regulatory Compliance
 category: Expertise
-hero_image: /assets/images/expertise-images/Regulatory Compliance image 1.jpg
 catchy_phrase: Guiding You Through Complex Standards and Protocols.
 short_blurb: At Marcus Engineering, our depth of knowledge in regulatory compliance ensures that your products meet the rigorous standards set by global agencies for safety, reliability, and functionality.
 capabilities:
@@ -15,8 +14,6 @@ capabilities:
 ---
 
 Regulatory Compliance plays a pivotal role in product development across numerous sectors. With ever-evolving standards and increasing scrutiny, understanding and navigating these intricate frameworks can be daunting. Marcus Engineering provides the clarity and expertise needed.
-
-![Regulatory Testing and Standards Validation]({{ "/assets/images/expertise-images/Regulatory Compliance image 3.png" | relative_url }})
 
 For industries where reliability is paramount, such as medical, military, and aerospace, ensuring the integrity of designs is essential. Our team specializes in creating designs that not only meet but often exceed, the high-reliability standards these sectors demand.
 

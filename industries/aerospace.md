@@ -12,7 +12,6 @@ capabilities:
   - FAA AC and EASA AMCs Guidance
   - Military vs Civil Requirements
   - Risk Reduction Engineering (R2E™)
-hero_image: /assets/images/industries-images/Aerospace and Defense Image 2.png
 ---
 
 Marcus Engineering's heritage in the aerospace industry is founded on in-depth experience with both civil and military flight applications, encompassing both traditional and unmanned aircraft systems. Collaborating closely with our clients, we delve deep into understanding the nuances of your product, ensuring it aligns with relevant Technical Standard Orders (TSOs), and rigorously preparing a validation and certification package that stands up to scrutiny.

@@ -2,7 +2,6 @@
 layout: service
 title: Battery Management Systems
 category: Applications
-hero_image: /assets/images/application-images/Applications, Battery Management Systems hero.png
 catchy_phrase: Power Management Perfected.
 short_blurb: Battery Management Systems (BMS) are pivotal in maintaining and safeguarding battery health, longevity, and efficiency, particularly for high-demand applications.
 capabilities:

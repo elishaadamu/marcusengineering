@@ -11,7 +11,6 @@ capabilities:
   - Electromagnetic & Vibration Monitoring Tools
   - Mechanically Robust Solutions
   - Risk Reduction Engineering™ (R2E™) for Mining
-hero_image: /assets/images/industries-images/Mining image 1.jpg
 ---
 
 In the demanding environment of mining, safety and efficiency are paramount. Marcus Engineering stands as a beacon of innovation, offering specialized hardware solutions tailored for the mining industry's unique challenges.

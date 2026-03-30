@@ -2,7 +2,6 @@
 layout: service
 title: Laser and LED Drivers
 category: Applications
-hero_image: /assets/images/application-images/Applications, Laser and LED Drivers hero.png
 catchy_phrase: Driving Precision, Every Pulse and Pixel.
 short_blurb: Laser and LED drivers are pivotal in advanced light applications, with a focus on precision current control and high power performance.
 capabilities:

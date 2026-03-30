@@ -2,13 +2,10 @@
 layout: service
 title: Automated Test and Manufacturing Instrumentation (v1.0)
 category: Applications
-hero_image: /assets/images/application-images/automated test and measurement image 1.png
 catchy_phrase: Ensuring Quality in Critical Manufacturing.
 ---
 
 The role of automated test and manufacturing instrumentation has become increasingly vital in ensuring the quality, reliability, and efficiency of modern production processes. This is particularly true for industries that operate under stringent regulations, where the cost of failure is measured not only in monetary terms but also in terms of safety, trust, and sometimes, human lives.
-
-![Production Test System]({{ "/assets/images/application-images/automated test and measurement image 2.jpg" | relative_url }})
 
 ## **High Reliability Systems Suitable for Military, Aerospace, and Medical (ISO 13485, ISO 9001) Manufacturing Quality**
 

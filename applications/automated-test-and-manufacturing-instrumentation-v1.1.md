@@ -2,7 +2,6 @@
 layout: service
 title: Automated Test and Manufacturing Instrumentation (v1.1)
 category: Applications
-hero_image: /assets/images/application-images/automated test and measurement image 1.png
 catchy_phrase: Precision Meets Automation
 short_blurb: Automated systems are evolving the landscapes of military, aerospace, and medical manufacturing, ensuring adherence to the highest quality standards while interfacing with complex data backends for improved decision-making.
 capabilities:
@@ -21,8 +20,6 @@ capabilities:
 *   **Standards Adherence**: Meeting international quality and safety norms.
 *   **User Protocols**: Ensuring appropriate access and operation.
 
-![Production Test System]({{ "/assets/images/application-images/automated test and measurement image 2.jpg" | relative_url }})
-
 **Interface to Complex Data Backends and Databases for Statistical Analysis**
 
 *   **Efficient Data Acquisition**: Seamless collection from diverse sources.
@@ -30,8 +27,6 @@ capabilities:
 *   **System Integration**: Compatibility with varied enterprise solutions.
 *   **Data Visualization**: Clear representation for better understanding.
 *   **Predictive Analysis**: Leveraging AI for future insights.
-
-![Statistical Data Dashboard]({{ "/assets/images/application-images/automated test and measurement image 3.png" | relative_url }})
 
 **Self Management of Wear and Recalibration Timelines Based Upon Usage / Throughput**
 
