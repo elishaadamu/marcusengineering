@@ -1,7 +1,7 @@
 ---
 name: Dr. Patrick Marcus
 role: President
-image: /assets/images/authors/patrick-marcus.webp
+image: /assets/images/authors/Dr.Marcus.jpg
 order: 1
 ---
 

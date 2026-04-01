@@ -32,7 +32,7 @@ layout: default
         <!-- Cards Grid -->
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {% for item in nav_data.dropdown %}
-            <a href="{{ item.url | relative_url }}" class="group relative flex flex-col items-start bg-white/80 backdrop-blur-sm p-8 rounded-3xl border border-slate-100 hover:border-brand/30 hover:shadow-2xl hover:shadow-brand/5 transition-all duration-500 hover:-translate-y-1 overflow-hidden">
+            <a href="{{ item.url | relative_url }}" class="group relative flex flex-col items-start bg-white/80 backdrop-blur-sm p-8 rounded-3xl border border-slate-100 hover:border-brand/30 hover:shadow-2xl hover:shadow-brand/5 transition-all duration-500 hover:-translate-y-1 overflow-hidden" aria-label="Explore more about {{ item.title }}">
                 <!-- Card Number -->
                 <span class="absolute top-6 right-8 text-[80px] font-black text-slate-50 leading-none select-none pointer-events-none group-hover:text-brand/5 transition-colors duration-500">{{ forloop.index }}</span>
                 

@@ -62,7 +62,11 @@
                         <!-- Partner Logo: On top for mobile, 25% on desktop (Left side) -->
                         <div class="order-1 lg:order-1 lg:col-span-1 flex items-center justify-center p-4">
                             <div class="relative w-full flex items-center justify-center">
-                                <img src="{{ testimonial.image | relative_url }}" alt="Company Logo" class="max-h-56 sm:max-h-72 lg:max-h-80 max-w-full w-auto object-contain hover:scale-105 transition-transform duration-500">
+                                <img src="{{ testimonial.image | relative_url }}" 
+                                     alt="Company Logo" 
+                                     class="max-h-56 sm:max-h-72 lg:max-h-80 max-w-full w-auto object-contain hover:scale-105 transition-transform duration-500"
+                                     loading="lazy"
+                                     decoding="async">
                             </div>
                         </div>
 
@@ -111,10 +115,10 @@
     </div>
 
     <!-- Navigation Buttons: Hidden on mobile, shown on lg -->
-    <button @click="prev()" class="hidden lg:flex absolute -left-16 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow-lg border border-slate-100 items-center justify-center text-slate-400 hover:text-brand transition-all duration-300 z-20 focus:outline-none group">
+    <button @click="prev()" class="hidden lg:flex absolute -left-16 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow-lg border border-slate-100 items-center justify-center text-slate-400 hover:text-brand transition-all duration-300 z-20 focus:outline-none group" aria-label="Previous testimonial">
         <svg class="h-6 w-6 transition-transform group-hover:-translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" /></svg>
     </button>
-    <button @click="next()" class="hidden lg:flex absolute -right-16 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow-lg border border-slate-100 items-center justify-center text-slate-400 hover:text-brand transition-all duration-300 z-20 focus:outline-none group">
+    <button @click="next()" class="hidden lg:flex absolute -right-16 top-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow-lg border border-slate-100 items-center justify-center text-slate-400 hover:text-brand transition-all duration-300 z-20 focus:outline-none group" aria-label="Next testimonial">
         <svg class="h-6 w-6 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.5"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" /></svg>
     </button>
 
@@ -125,6 +129,8 @@
                 @click="active = index" 
                 class="transition-all duration-500 rounded-full focus:outline-none"
                 :class="active === index ? 'w-10 h-2.5 bg-brand shadow-md shadow-brand/20' : 'w-2.5 h-2.5 bg-slate-200 hover:bg-slate-300'"
+                :aria-label="'Go to testimonial ' + (index + 1)"
+                :aria-current="active === index ? 'true' : 'false'"
             ></button>
         </template>
     </div>

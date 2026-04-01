@@ -1,13 +1,11 @@
-<header class="main-header" 
-        :class="{ 'scrolled': scrolled }"
-        x-data="{ scrolled: false }" 
-        @scroll.window="scrolled = (window.pageYOffset > 50)">
+<header class="main-header"
+        :class="{ 'scrolled': scrolled }">
     <div class="nav-container">
         <!-- Logo (single image for both states) -->
         <div class="nav-logo">
-            <a href="{{ "/" | relative_url }}" class="nav-logo-link">
-                <img src="{{ "/assets/logo/Logo large.png" | relative_url }}" alt="{{ site.title }}" class="site-logo site-logo-default">
-                <img src="{{ "/assets/logo/Logo white large.png" | relative_url }}" alt="{{ site.title }}" class="site-logo site-logo-sticky" aria-hidden="true">
+            <a href="{{ "/" | relative_url }}" class="nav-logo-link" aria-label="Marcus Engineering Home">
+                <img src="{{ "/assets/logo/Logo large.png" | relative_url }}" alt="Marcus Engineering Logo" class="site-logo site-logo-default" fetchpriority="high" width="1280" height="588" decoding="async">
+                <img src="{{ "/assets/logo/Logo white large.png" | relative_url }}" alt="Marcus Engineering Logo Sticky" class="site-logo site-logo-sticky" aria-hidden="true" width="1280" height="588" decoding="async">
             </a>
         </div>
         
@@ -68,7 +66,7 @@
             <!-- Sidebar -->
             <div class="mobile-nav-sidebar" :class="{ 'open': mobileMenuOpen }">
                 <div class="mobile-nav-header">
-                    <img src="{{ "/assets/logo/Logo large.png" | relative_url }}" alt="{{ site.title }}" class="h-10 w-auto">
+                    <img src="{{ "/assets/logo/Logo large.png" | relative_url }}" alt="Marcus Engineering Logo" class="h-10 w-auto" width="1280" height="588" decoding="async">
                     <button class="mobile-nav-close" @click="mobileMenuOpen = false" aria-label="Close menu">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
                             <line x1="18" y1="6" x2="6" y2="18"></line>

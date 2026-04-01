@@ -3,7 +3,7 @@
     {% assign card_image = post.thumbnail | default: post.image %}
     {% if card_image and card_image != "" %}
     <div class="aspect-video relative overflow-hidden bg-slate-50">
-        <img src="{{ card_image | relative_url }}" alt="{{ post.title }}" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105">
+        <img src="{{ card_image | relative_url }}" alt="Thumbnail for: {{ post.title }}" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105" loading="lazy" decoding="async">
     </div>
     {% else %}
     <div class="aspect-video relative overflow-hidden bg-slate-100 flex items-center justify-center p-6">
@@ -20,7 +20,7 @@
         </div>
 
         <h3 class="text-xl font-black text-slate-900 tracking-tight uppercase font-display leading-tight mb-4 group-hover:text-brand transition-colors">
-            <a href="{{ post.url | relative_url }}" class="hover:text-brand">
+            <a href="{{ post.url | relative_url }}" class="hover:text-brand" aria-label="Read more about {{ post.title | escape }}">
                 {{ post.title | escape }}
             </a>
         </h3>
@@ -40,7 +40,7 @@
                     {% for category in post.categories %}
                         {% assign cat_slug = category | slugify: 'pretty' %}
                         {% assign cat_url = '/category/' | append: cat_slug | append: '/' %}
-                        <a href="{{ cat_url | relative_url }}" class="inline-block text-[10px] font-black text-brand uppercase tracking-widest border-b border-brand/20 hover:border-brand transition-all" onclick="event.stopPropagation();">
+                        <a href="{{ cat_url | relative_url }}" class="inline-block text-[10px] font-black text-brand uppercase tracking-widest border-b border-brand/20 hover:border-brand transition-all" onclick="event.stopPropagation();" aria-label="View all posts in {{ category }}">
                             {{ category }}
                         </a>
                     {% endfor %}
@@ -52,15 +52,15 @@
             {% if post.author %}
                 {% assign author_data = site.pages | where: "layout", "author" | where: "author_id", post.author | first %}
                 {% if author_data %}
-                    <a href="{{ author_data.permalink | relative_url }}" class="flex items-center gap-2 group/author active:scale-95 transition-transform" onclick="event.stopPropagation();">
+                    <a href="{{ author_data.permalink | relative_url }}" class="flex items-center gap-2 group/author active:scale-95 transition-transform" onclick="event.stopPropagation();" aria-label="View posts by {{ author_data.title }}">
                         <div class="h-6 w-6 rounded-full overflow-hidden border border-slate-100">
-                             <img src="{{ author_data.image | relative_url }}" alt="{{ author_data.title }}" class="w-full h-full object-cover">
+                             <img src="{{ author_data.image | relative_url }}" alt="{{ author_data.title }}" class="w-full h-full object-cover" loading="lazy" decoding="async">
                         </div>
                         <span class="text-[9px] font-black text-slate-400 uppercase tracking-widest group-hover/author:text-brand transition-colors">{{ author_data.title }}</span>
                     </a>
                 {% endif %}
             {% endif %}
-            <a href="{{ post.url | relative_url }}" class="post-card-btn ml-auto inline-flex items-center justify-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-2.5 group/btn active:scale-95 transition-all" onclick="event.stopPropagation();">
+            <a href="{{ post.url | relative_url }}" class="post-card-btn ml-auto inline-flex items-center justify-center gap-2 sm:gap-3 px-4 sm:px-6 py-2 sm:py-2.5 group/btn active:scale-95 transition-all" onclick="event.stopPropagation();" aria-label="Read full post: {{ post.title | escape }}">
                 <span class="text-[9px] sm:text-[11px] font-black uppercase tracking-wider">Read Insights</span>
                 <svg class="w-4 h-4 transition-transform duration-300 group-hover/btn:translate-x-1" viewBox="0 0 24 24" fill="none" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
             </a>

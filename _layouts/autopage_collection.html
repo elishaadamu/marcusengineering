@@ -44,10 +44,10 @@ layout: default
             <div class="flex flex-col items-center gap-8 w-full">
                 <div class="pagination-container">
                     {% if paginator.page > 1 %}
-                        <a href="{{ page.autopage.permalink | relative_url }}" class="pagination-btn" title="First Page">
+                        <a href="{{ page.autopage.permalink | relative_url }}" class="pagination-btn" title="First Page" aria-label="Go to the first page of results">
                             <svg viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M15.79 5.23a.75.75 0 01-.02 1.06L11.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.25-4a.75.75 0 010-1.08l4.25-4a.75.75 0 011.06.02zm-6 0a.75.75 0 01-.02 1.06L5.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.25-4a.75.75 0 010-1.08l4.25-4a.75.75 0 011.06.02z" clip-rule="evenodd" /></svg>
                         </a>
-                        <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-btn" title="Previous Page">
+                        <a href="{{ paginator.previous_page_path | relative_url }}" class="pagination-btn" title="Previous Page" aria-label="Go to the previous page of results">
                             <svg viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M12.79 5.23a.75.75 0 01-.02 1.06L8.832 10l3.938 3.71a.75.75 0 11-1.04 1.08l-4.25-4a.75.75 0 010-1.08l4.25-4a.75.75 0 011.06.02z" clip-rule="evenodd" /></svg>
                         </a>
                     {% else %}
@@ -71,11 +71,11 @@ layout: default
                     </div>
 
                     {% if paginator.next_page %}
-                        <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-btn" title="Next Page">
+                        <a href="{{ paginator.next_page_path | relative_url }}" class="pagination-btn" title="Next Page" aria-label="Go to the next page of results">
                             <svg viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.25 4a.75.75 0 010 1.08l-4.25 4a.75.75 0 01-1.06-.02z" clip-rule="evenodd" /></svg>
                         </a>
                         {% assign last_page_path = page.autopage.permalink | append: 'page/' | append: paginator.total_pages | append: '/' | relative_url %}
-                        <a href="{{ last_page_path }}" class="pagination-btn" title="Last Page">
+                        <a href="{{ last_page_path }}" class="pagination-btn" title="Last Page" aria-label="Go to the last page of results">
                             <svg viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5"><path fill-rule="evenodd" d="M4.21 14.77a.75.75 0 01.02-1.06L8.168 10 4.23 6.29a.75.75 0 111.04-1.08l4.25 4a.75.75 0 010 1.08l-4.25 4a.75.75 0 01-1.06-.02zm6 0a.75.75 0 01.02-1.06L14.168 10 10.23 6.29a.75.75 0 111.04-1.08l4.25 4a.75.75 0 010 1.08l-4.25 4a.75.75 0 01-1.06-.02z" clip-rule="evenodd" /></svg>
                         </a>
                     {% else %}
@@ -100,7 +100,7 @@ layout: default
         {% endif %}
 
         <div class="mt-20 text-center">
-            <a href="{{ '/blog/' | relative_url }}" class="inline-flex items-center gap-2 text-xs font-black text-slate-400 hover:text-brand uppercase tracking-[0.3em] transition-colors">
+            <a href="{{ '/blog/' | relative_url }}" class="inline-flex items-center gap-2 text-xs font-black text-slate-400 hover:text-brand uppercase tracking-[0.3em] transition-colors" aria-label="Go back to the main engineering insights page">
                 <svg class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M10 19l-7-7m0 0l7-7m-7 7h18" /></svg>
                 Back to All Insights
             </a>
